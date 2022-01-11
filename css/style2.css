@@ -1,0 +1,183 @@
+/* Appel des différents styles */
+    /* Ecriture du Titre principal de la page */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap'); /* font-family: 'Montserrat', sans-serif; */
+    /* Ecriture du Sous-titre du Titre principal de la page */
+        @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap'); /* font-family: 'Montaga', serif; */
+    /* Ecriture des différentes sous-parties */
+        @import url('https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap'); /* font-family: 'Odor Mean Chey', serif; */
+    /* Ecriture des différents paragraphes */
+        @import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap'); /* font-family: 'Molengo', sans-serif; */
+    
+
+
+
+body {
+    padding: 2% 2% 2% 2%;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #3E3D3D;
+    color: #fff;
+    position: relative;
+    background: transparent;
+}
+  
+body::before {
+    content: "";
+    position: fixed;
+    background: #3E3D3D url("../img/") top right no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+
+/* --------------------------------------------------- */
+
+/* MISE EN FORME DE LA PARTIE PRESENTATION DE NOTRE EQUIPE */
+
+#presentation_entreprise .Teams_flou {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 60px;
+    line-height: 15%;
+    opacity: 5px;
+    color: rgba(3, 125, 141, 0.39);
+}
+
+#presentation_entreprise .Teams {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 45px;
+    line-height: 40%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    color: #FFFFFF;
+}
+
+#presentation_entreprise p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 5%;
+    color: #FFFFFF;
+}
+
+.employes li {
+    display: inline-block;
+}
+
+.employes img {
+    height: 300px;
+    width: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.employes p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Mise en forme pour smartphone */
+@media screen and (max-width: 750px) {
+	#presentation_entreprise .Teams_flou {
+        font-size: 50px;
+	}
+    #presentation_entreprise .Teams {
+        font-size: 40px;
+	}
+    #presentation_entreprise p {
+        font-size: 20px;
+	}
+}
+
+
+
+/* --------------------------------------------------- */
+
+/* MISE EN FORME DE LA PARTIE LOCALISATION DE L'ENTREPRISE */
+
+#localisation_entreprise .Localisation_flou {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 60px;
+    line-height: 15%;
+    padding-top: 25%;
+    opacity: 5px;
+    color: rgba(3, 125, 141, 0.39);
+}
+
+#localisation_entreprise .Localisation {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 45px;
+    line-height: 40%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    color: #FFFFFF;
+}
+
+#localisation_entreprise p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 5%;
+    color: #FFFFFF;
+}
+
+#localisation_entreprise img {
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+}
+
+#localisation_entreprise ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 13%;
+    color: #FFFFFF;
+}
+
+/* Mise en forme pour smartphone */
+@media screen and (max-width: 750px) {
+	#localisation_entreprise .Localistation_flou {
+        font-size: 50px;
+	}
+    #localisation_entreprise .Localisation {
+        font-size: 40px;
+	}
+    #localisation_entreprise p {
+        font-size: 20px;
+	}
+}
+
+
+
+/* --------------------------------------------------- */
+
+/* MISE EN FORME DE LA PARTIE DES PARTENAIRES */
+
+#partenaires_entreprise .Partenaires_flou {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 60px;
+    line-height: 15%;
+    padding-top: 5%;
+    opacity: 5px;
+    color: rgba(3, 125, 141, 0.39);
+}
+
+#partenaires_entreprise .Partenaires {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 45px;
+    line-height: 40%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    color: #FFFFFF;
+}
+
+#partenaires_entreprise .logo_partenaires img {
+    margin-left: 5%;
+    padding-left: 5%;
+    
+}
