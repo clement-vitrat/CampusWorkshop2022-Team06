@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Digital Consultant</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords"> 
+
+        <!-- Mes pages CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style2.css">
+
+        <!-- CSS Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- Lien pour icone -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+        <!-- Icons -->
+        <link rel="icon" href="img/icon_logo.png">
+    </head>
+
+    <body>    
+
+        <!-- CREATION DE LA PARTIE PRESENTATION DE NOTRE ENTREPRISE -->
+        <div class="container-fluid mt-3">       
+            <div class="row" id="presentation_entreprise">         
+                <div class="col-12 col-sm-12 col-lg-8 mb-3 align-text-center">
+                    <h3 class="Teams_flou">NOTRE EQUIPE</h3>
+                    <h3 class="Teams">NOTRE EQUIPE</h3>
+                    
+                    <p>We are a team of designers, developers, strategists and problem solvers, too.
+                        We share a common goal: using the power of imagination and creativity we want
+                        to build digital experiences that can change people’s lives.</p>
+                </div>
+            </div>
+
+            <!-- Création du défilé des personnes de l'entreprise -->
+            <div class="col-12 mb-3">
+                <marquee behavior="alternate" direction="left" scrollamount="7" onmouseover="this.stop();" onmouseout="this.start();" class="employes">
+                    <ul class="liste_employes">
+                        <li>
+                            <img src="img/portrait1.png" alt="Directeur" class="d-inline-block align-text-top">
+                            <p>Monsieur NOM Prenom</p>
+                            <p>Directeur</p>
+                        </li>
+                        <li>
+                            <img src="img/portrait1.png" alt="Co-Directeur" class="d-inline-block align-text-top">
+                            <p>Monsieur NOM Prenom</p>
+                            <p>Co-Directeur</p>
+                        </li>
+                        <li>
+                            <img src="img/portrait1.png" alt="Employé n°1" class="d-inline-block align-text-top">
+                            <p>Monsieur NOM Prenom</p>
+                            <p>Employé n°1</p>
+                        </li>
+                        <li>
+                            <img src="img/portrait1.png" alt="Employé n°2" class="d-inline-block align-text-top">
+                            <p>Monsieur NOM Prenom</p>
+                            <p>Employé n°2</p>
+                        </li>
+                        <li>
+                            <img src="img/portrait1.png" alt="Secrétaire" class="d-inline-block align-text-top">
+                            <p>Monsieur NOM Prenom</p>
+                            <p>Secrétaire</p>
+                        </li>
+                        <li>
+                            <img src="img/portrait1.png" alt="Co-Secrétaire" class="d-inline-block align-text-top">
+                            <p>Monsieur NOM Prenom</p>
+                            <p>Co-Secrétaire</p>
+                        </li>
+                        <li>
+                            <img src="img/portrait1.png" alt="Employé n°3" class="d-inline-block align-text-top">
+                            <p>Monsieur NOM Prenom</p>
+                            <p>Employé n°3</p>
+                        </li>
+                        <li>
+                            <img src="img/portrait1.png" alt="Employé n°4" class="d-inline-block align-text-top">
+                            <p>Monsieur NOM Prenom</p>
+                            <p>Employé n°4</p>
+                        </li>
+                    </ul>
+                </marquee>
+            </div>
+            
+        </div>
+
+
+        <!-- CREATION DE LA PARTIE OU SE TROUVE NOTRE ENTREPRISE -->        
+            <div class="container-fluid mt-3">       
+                <div class="row" id="localisation_entreprise">
+                    <!-- Création des titres et du texte de présentation -->
+                    <div class="col-12 col-sm-5 col-lg-5 mb-3">    
+                        <h3 class="Localisation_flou">OU SOMMES NOUS ?</h3>
+                        <h3 class="Localisation">OU SOMMES NOUS ?</h3>
+                        
+                        <p>Depuis sa fondtion en 2017 par Monsieur NOM Prénom, Digital Consultant
+                            a connu une forte croissance et est a présent implanté dans plusieurs
+                            zones du monde entier :</p>
+                            <ul>
+                                <li>France</li>
+                                <li>Quebec</li>
+                                <li>Espagne</li>
+                                <li>Etats-Unis (prochainement)</li>
+                            </ul>
+                    </div>
+                    <!-- Création du la map de location de notre entreprise -->
+                    <div class="col-12 col-sm-7 col-lg-7 mb-3">    
+                        <img src="img/localisation_entreprise.png" alt="localisation_entreprise" class="float-right">
+                    </div>
+                
+                </div>
+            </div>
+    
+       <!-- CREATION DE LA PARTIE DES PARTENAIRES -->        
+        <!--<div class="row" id="partenaires_entreprise">
+            <div class="col-sm-12">
+                <h3 class="Partenaires_flou">NOS PARTENAIRES</h3>
+                <h3 class="Partenaires">NOS PARTENAIRES</h3>
+            </div>
+        
+            <marquee behavior="scroll" direction="right" scrollamount="7" height="auto"" weight="30%" onmouseover="this.stop();" onmouseout="this.start();" class="logo_partenaires">
+                <img src="img/partenaires.png" alt="Co-Directeur">
+                <img src="img/partenaires.png" alt="Co-Directeur">
+                <img src="img/partenaires.png" alt="Co-Directeur">
+                <img src="img/partenaires.png" alt="Co-Directeur">
+                <img src="img/partenaires.png" alt="Co-Directeur">
+                <img src="img/partenaires.png" alt="Co-Directeur">
+            </marquee>
+
+
+
+        </div>
+
+
+    -->
+
+    </body>
+</html>
