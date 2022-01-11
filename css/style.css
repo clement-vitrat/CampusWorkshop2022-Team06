@@ -1,0 +1,397 @@
+/* Appel des différents styles */
+    /* Ecriture du Titre principal de la page */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap'); /* font-family: 'Montserrat', sans-serif; */
+    /* Ecriture du Sous-titre du Titre principal de la page */
+        @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap'); /* font-family: 'Montaga', serif; */
+    /* Ecriture des différentes sous-parties */
+        @import url('https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap'); /* font-family: 'Odor Mean Chey', serif; */
+    /* Ecriture des différents paragraphes */
+        @import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap'); /* font-family: 'Molengo', sans-serif; */
+    
+
+
+
+
+/* --------------------------------------------------- */
+
+/* MISE  EN FORME DU BODY */
+
+body {
+    padding: 2% 2% 2% 2%;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #3E3D3D;
+    color: #fff;
+    position: relative;
+    background: transparent;
+}
+  
+body::before {
+    content: "";
+    position: fixed;
+    background: #3E3D3D url("../img/") top right no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+/* --------------------------------------------------- */
+
+/* MISE  EN FORME DE LA PAGE LANDING (PAGE D'ACCUEIL) */
+
+
+#LOGO {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    left: 20px;
+}
+
+h1{
+    position: absolute;
+    width: 898px;
+    height: 89px;
+    left: 161px;
+
+    font-family:  sans-serif;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 109px;
+    /* or 114% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+
+    color: #000000;
+}
+h2{
+    position: absolute;
+    width: 675px;
+    height: 96px;
+    left: 167px;
+    top: 80px;
+    
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 96px;
+    line-height: 109px;
+    /* or 114% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+
+    color: #000000;
+}
+#Apropos{
+    position: absolute;
+    width: 362px;
+    height: 65px;
+    left: 288px;
+    top: 220px;
+    
+    font-family: sans-serif;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+
+    color: #199688;
+}
+#service01{
+    position: absolute;
+    width: 195px;
+    height: 56px;
+    left: 852px;
+    
+    /* Body P */
+    
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    
+    letter-spacing: -0.015em;
+    
+    color: #000000;
+}
+#service02{
+    position: absolute;
+    width: 195px;
+    height: 56px;
+    left: 1134px;
+    
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+
+    letter-spacing: -0.015em;
+}
+#Savoirplus01 #Savoirplus02 #Savoirplus03{
+    font-weight: bold;
+    right: 45px;
+    color: #169585; 
+}
+#imageAccueil{
+    position: absolute;
+    width: 776px;
+    height: 856px;
+    left: 837px;
+    top: 84px;
+}
+
+
+/* --------------------------------------------------- */
+
+/* MISE EN FORME DE LA PAGE DE PRESENTATION (A PROPOS) */
+
+
+.separation {
+    position: center;
+    width: 586px;
+    height: 0px;
+    left: 544px;
+    top: 1585px;
+    
+    border: 3px solid #037C8D;
+}
+
+#apropos1 {
+    position: absolute;
+    width: 440px;
+    height: 52px;
+    left: 28px;
+    top: 2101px;
+    
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 50px;
+    line-height: 61px;
+    letter-spacing: -0.015em;
+    
+    color: rgba(3, 124, 141, 0.5);
+    
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 50px;
+    line-height: 61px;
+    letter-spacing: -0.015em;
+    
+    color: rgba(3, 124, 141, 0.5);
+}
+
+#apropos2 {
+    position: absolute;
+    width: 770px;
+    height: 248px;
+    left: 44px;
+    top: 2136px;
+
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.015em;
+
+    color: #FFFFFF;
+}
+
+#apropos3 {
+    height: 170px;
+    width: 1461px;
+    left: 120px;
+    top: 1325px;
+    border-radius: nullpx;
+}
+
+.chiffres {
+    height: 274px;
+    width: 1505px;
+    left: 87px;
+    top: 1095px;
+    border-radius: nullpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
+
+/* MISE EN FORME DE LA PARTIE PRESENTATION DE NOTRE EQUIPE */
+
+#presentation_entreprise .Teams_flou {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 60px;
+    line-height: 15%;
+    opacity: 5px;
+    color: rgba(3, 125, 141, 0.39);
+}
+
+#presentation_entreprise .Teams {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 45px;
+    line-height: 40%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    color: #FFFFFF;
+}
+
+#presentation_entreprise p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 5%;
+    color: #FFFFFF;
+}
+
+.employes li {
+    display: inline-block;
+}
+
+.employes img {
+    height: 300px;
+    width: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.employes p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Mise en forme pour smartphone */
+@media screen and (max-width: 750px) {
+	#presentation_entreprise .Teams_flou {
+        font-size: 50px;
+	}
+    #presentation_entreprise .Teams {
+        font-size: 40px;
+	}
+    #presentation_entreprise p {
+        font-size: 20px;
+	}
+}
+
+
+
+/* --------------------------------------------------- */
+
+/* MISE EN FORME DE LA PARTIE LOCALISATION DE L'ENTREPRISE */
+
+#localisation_entreprise .Localisation_flou {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 60px;
+    line-height: 15%;
+    padding-top: 25%;
+    opacity: 5px;
+    color: rgba(3, 125, 141, 0.39);
+}
+
+#localisation_entreprise .Localisation {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 45px;
+    line-height: 40%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    color: #FFFFFF;
+}
+
+#localisation_entreprise p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 5%;
+    color: #FFFFFF;
+}
+
+#localisation_entreprise img {
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+}
+
+#localisation_entreprise ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 13%;
+    color: #FFFFFF;
+}
+
+/* Mise en forme pour smartphone */
+@media screen and (max-width: 750px) {
+	#localisation_entreprise .Localistation_flou {
+        font-size: 50px;
+	}
+    #localisation_entreprise .Localisation {
+        font-size: 40px;
+	}
+    #localisation_entreprise p {
+        font-size: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
+
+/* MISE EN FORME DU FOOTER */
+
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
+
+/* MISE EN PAGE DU BOUTON RETOUR HAUT PAGE */
+
+#retour_haut {
+	position: fixed;
+  	bottom:15px;
+	right:15px;
+ 	cursor:pointer;
+ 	background: rgba(000,000,000,0.7);
+ 	width:50px;
+ 	font-size:25px;
+ 	line-height:45px;
+ 	color:#fff;
+ 	text-align:center;
+ 	border-radius:50px;
+ 	height:50px;
+}
+#retour_haut img {
+  width: 50px;
+}
+
+/* --------------------------------------------------- */
