@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* font-family: 'Press Start 2P', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); /* font-family: 'Fredoka One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap'); /* font-family: 'Gluten', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); /* font-family: 'Permanent Marker', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap'); /* font-family: 'Chonburi', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap'); /* font-family: 'Benne', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap'); /* font-family: 'Calligraffitti', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap'); /* font-family: 'Chonburi', cursive; */
+
+
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #040404;
+    color: #fff;
+    position: relative;
+    background: transparent;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    background: #040404 url("../img/fond1.jpg") top right no-repeat;
+    background-size: 100% 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+
+
+
+.home-header {
+    font-family: 'Chonburi', cursive;
+    font-size: 45px;
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing: 1.4px;
+    height: 100vh;
+    overflow: hidden;
+}
+header {
+    /* Caractériqtiques principales du HEADER */
+    display: inline-block;
+    margin-top: 2%;
+	position: relative;
+    z-index: 2;
+    font-family: 'Chonburi', cursive;
+    font-size: 60px;
+    /* Animations du HEADER */
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+.home-header .header-nav {
+    -webkit-font-smoothing: initial;
+    font-family: 'Benne', serif;
+    font-weight: lighter;
+    font-size: 104px;
+    text-align: center;
+    margin-top: 24vh;
+    letter-spacing: 0px;
+}
+nav {
+	display: inline-block;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+}
+nav a {
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 90px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-decoration: none;  /* Enlever le truc bleu au niveau des liens */
+}
+nav a::before {
+    content: "";
+    position: absolute;
+    text-decoration: none;
+    width: 0;
+    height: 5px;
+    bottom: 1px;
+    left: 0;
+    background-color: orangered;
+    visibility: hidden;
+    width: 2px;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav a:hover {
+    color: white;
+}
+nav a:hover::before,
+nav li:hover > a::before,
+nav .active > a::before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+
+
+.home-header .header-nav .nav-space {
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background: white;
+    margin-bottom: 23px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.home-header .nav-description {
+    text-align: center;
+    margin-top: 10vh;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-header .nav-description p {
+    font-family: 'Calligraffitti', cursive;
+    font-weight: bolder; /* Texte affichée plus gras que la valeur héritée */
+    font-size: 28px;
+    line-height: 37px;
+    color: white;
+    animation: translation 15s linear infinite;
+}
+@keyframes translation {
+    0% {
+      transform: perspective(350px) translate3d(0px, 0px, 0px);
+    }
+    25%{
+      transform: perspective(350px) translate3d(0px, 0px, -70px)
+    }
+    50% {
+      transform: perspective(350px) translate3d(0px, 0px, 0px);
+    }
+    75% {
+      transform: perspective(350px) translate3d(0px, 0px, 50px);
+    }
+    100% {
+      transform: perspective(350px) translate3d(0px, 0px, 0px);
+    }
+}
+
+
+
