@@ -35,12 +35,321 @@ body::before {
 
 /* --------------------------------------------------- */
 
+/* MISE EN FORME DE LA BARRE DE NAVIGATION */
+
+
+header #Retour_Accueil {
+    padding: 0% 0% 0% 0%;
+    display: contents;
+}
+
+#NavBar .active {
+    border-bottom: 2px solid #0E7894;
+}
+
+#NavBar #Langues img {
+    width: 7%;
+    height: auto;
+}
+
+#NavBar .dropdown-menu {
+    margin-left: 5%;
+}
+
+#NavBar {
+    position: fixed;
+}
+
+
+
+/* --------------------------------------------------- */
+
+
+#apropos1 {
+    width: auto ;
+    height: auto ;
+    left: auto ;
+    top: auto;
+    
+    font-family: 'Molengo', sans-serif;;
+    font-style: normal;
+    font-weight: 0  ;
+    font-size: 180px ;
+    line-height: auto;
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    margin-top: 0%;
+    margin-bottom: 0%;
+    
+    color: #FFFFFF;
+    
+    mix-blend-mode: soft-light;
+    opacity: 0.4;
+}
+
+#apropos2 {
+    width: auto ;
+    height: auto ;
+    left: auto ;
+    top: auto;
+    
+    font-family: 'Molengo', sans-serif;;
+    font-style: bold;
+    font-weight: 0;
+    font: size 85px; ;
+    line-height: auto;  
+    text-align: center;
+    letter-spacing: -0.015em;
+    
+    margin-top: -8%;
+    margin-bottom: 5%;
+
+    color: #109B86;
+}
+
+#apropos3 {
+    width: auto;
+    height: auto;
+    left: auto;
+    top: auto;
+    
+    font-family: 'Molengo', sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    margin-top: -5%;
+    margin-bottom: 5%;
+    
+    color: #FFFFFF;
+}
+
+
+
+.trait_dessus {
+    position: center;
+    text-align: center;
+    width : 400px;
+    height: 0px;
+    left: 0;
+    top: -100%;   
+
+    margin-top: -2%;
+    margin-bottom: -2%;
+    margin-left: 36%;
+
+    border-top : 2px solid #037C8D;
+    
+} 
+
+/*.separation {
+    text-align: center;
+    width: 50;
+    height: 0px;
+    left: 50;
+    top: 0;
+
+    margin-bottom: 5%;
+    
+    border: 2px solid #037C8D;
+}
+    width: 123px;
+    height: 36px;
+    left:  984px;
+    top: auto;
+    
+    font-family: 'Molengo', sans-serif;;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 74px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    padding-bottom: -50%;
+
+    color: #109B86;
+*/
+
+.chiffre1 {
+    z-index: 9;
+    position: absolute;
+    top: 76%;
+    left: 12.5%;
+    transform: translate(-50%, -50%);
+    color: #109B86;
+    letter-spacing: -0.015em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    display: flex;
+    font-family: 'Molengo', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 74px;
+}
+
+/*.domaine1*/
+
+
+.chiffre2 {
+    position: absolute;
+    top: 76%;
+    left: 34.5%;
+    transform: translate(-50%, -50%);
+    color: #109B86;
+    letter-spacing: -0.015em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    display: flex;
+    font-family: 'Molengo', sans-serif;;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 74px;
+}
+
+/*.domaine2 {
+    width: 179px;
+    height: 49px;
+    left: 579px;
+    top: 1904px;
+
+    font-family: 'Molengo', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: -0.015em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #FFFFFF;
+}*/
+
+
+.chiffre3 {
+    position: absolute;
+    top: 76%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    color: #109B86;
+    letter-spacing: -0.015em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    display: flex;
+    font-family: 'Molengo', sans-serif;;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 74px;
+}
+
+/*.domaine3*/
+
+
+
+.chiffre4 {
+    position: absolute;
+    top: 76%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    color: #109B86;
+    letter-spacing: -0.015em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    display: flex;
+    font-family: 'Molengo', sans-serif;;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 74px;
+}
+
+/*.domaine4*/
+
+
+
+.cercles { 
+    z-index: 8;
+    position: center;
+    height: 174px; 
+    width: 174px; 
+    
+    background-color: #c4c4c4;
+    opacity: 6%;
+    
+    border: 0px solid rgba(0, 0, 0, 1);
+    border-radius: 50%; 
+
+    margin-top: 5%;
+}
+
+.groscercle {
+    z-index: 3;
+    height: 776px; 
+    width: 956px;
+    top: 1241px; 
+    left: -397px;
+    
+    background-color: #1B9D8A;
+    opacity: 38%;
+
+    margin-top: -54%;
+    margin-left: -40%;
+    
+    border: 0px solid rgba(0, 0, 0, 1);
+    border-radius: 50%; 
+
+}
+
+.petitcercle {
+    height: 184px; 
+    width: 190px;
+    top: 1225px; 
+    left: 1572px;
+    
+    opacity: 50%;
+
+    background-color: #335B55;
+
+    margin-top: -48%; 
+    margin-left: 87%; 
+
+    margin-bottom: 37%;
+    
+    border: 0px solid rgba(0, 0, 0, 1);
+    border-radius: 50%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MISE EN FORME DE LA PARTIE A PROPOS */
+
+
+
+
+
+/* --------------------------------------------------- */
+
 /* MISE EN FORME DE LA PARTIE PRESENTATION DE NOTRE EQUIPE */
 
 #presentation_entreprise .Teams_flou {
     font-family: 'Odor Mean Chey', serif;
     font-size: 60px;
     line-height: 15%;
+    padding-top: 5%;
     opacity: 5px;
     color: rgba(3, 125, 141, 0.39);
 }
@@ -50,14 +359,15 @@ body::before {
     font-size: 45px;
     line-height: 40%;
     padding-bottom: 5%;
-    padding-left: 5%;
+    padding-left: 3%;
+    margin: 0;
     color: #FFFFFF;
 }
 
 #presentation_entreprise p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    padding-left: 5%;
+    padding-left: 3%;
     color: #FFFFFF;
 }
 
@@ -84,11 +394,37 @@ body::before {
 
 /* Mise en forme pour smartphone */
 @media screen and (max-width: 750px) {
-	#presentation_entreprise .Teams_flou {
-        font-size: 50px;
+    #presentation_entreprise .Teams_flou {
+        font-size: 39px;
 	}
     #presentation_entreprise .Teams {
-        font-size: 40px;
+        font-size: 32px;
+	}
+    #presentation_entreprise p {
+        font-size: 20px;
+	}
+}
+
+/* Mise en forme pour écran 14 pouces ou moins */
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    #presentation_entreprise .Teams_flou {
+        font-size: 60px;
+	}
+    #presentation_entreprise .Teams {
+        font-size: 45px;
+	}
+    #presentation_entreprise p {
+        font-size: 20px;
+	}
+}
+
+/* Mise en forme pour écran 14 pouces ou moins */
+@media screen and (min-width: 1200px) and (max-width: 1470px) {
+    #presentation_entreprise .Teams_flou {
+        font-size: 48px;
+	}
+    #presentation_entreprise .Teams {
+        font-size: 38px;
 	}
     #presentation_entreprise p {
         font-size: 20px;
@@ -105,7 +441,7 @@ body::before {
     font-family: 'Odor Mean Chey', serif;
     font-size: 60px;
     line-height: 15%;
-    padding-top: 25%;
+    padding-top: 20%;
     opacity: 5px;
     color: rgba(3, 125, 141, 0.39);
 }
@@ -115,7 +451,8 @@ body::before {
     font-size: 45px;
     line-height: 40%;
     padding-bottom: 5%;
-    padding-left: 5%;
+    padding-left: 3%;
+    margin: 0;
     color: #FFFFFF;
 }
 
@@ -141,11 +478,38 @@ body::before {
 
 /* Mise en forme pour smartphone */
 @media screen and (max-width: 750px) {
-	#localisation_entreprise .Localistation_flou {
-        font-size: 50px;
+    #localisation_entreprise .Localisation_flou {
+        font-size: 39px;
 	}
     #localisation_entreprise .Localisation {
-        font-size: 40px;
+        font-size: 32px;
+	}
+    #localisation_entreprise p {
+        font-size: 20px;
+	}
+}
+
+/* Mise en forme pour écran 14 pouces ou moins */
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    #localisation_entreprise .Localisation_flou {
+        font-size: 60px;
+        padding-top: 10%;
+
+	}
+    #localisation_entreprise .Localisation {
+        font-size: 45px;
+	}
+    #localisation_entreprise p {
+        font-size: 20px;
+	}
+}
+/* Mise en forme pour écran 14 pouces ou moins */
+@media screen and (min-width: 1200px) and (max-width: 1470px) {
+    #localisation_entreprise .Localisation_flou {
+        font-size: 48px;
+	}
+    #localisation_entreprise .Localisation {
+        font-size: 38px;
 	}
     #localisation_entreprise p {
         font-size: 20px;
@@ -153,16 +517,15 @@ body::before {
 }
 
 
-
 /* --------------------------------------------------- */
 
 /* MISE EN FORME DE LA PARTIE DES PARTENAIRES */
+
 
 #partenaires_entreprise .Partenaires_flou {
     font-family: 'Odor Mean Chey', serif;
     font-size: 60px;
     line-height: 15%;
-    padding-top: 5%;
     opacity: 5px;
     color: rgba(3, 125, 141, 0.39);
 }
@@ -173,11 +536,117 @@ body::before {
     line-height: 40%;
     padding-bottom: 5%;
     padding-left: 2%;
+    margin: 0;
     color: #FFFFFF;
 }
 
-#partenaires_entreprise .logo_partenaires img {
-    margin-left: 5%;
-    padding-left: 5%;
-    
+.partenaires li {
+    display: inline-block;
+}
+
+.partenaires img {
+    height: 100px;
+    width: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* Mise en forme pour smartphone */
+@media screen and (max-width: 750px) {
+    #partenaires_entreprise .Partenaires_flou {
+        font-size: 39px;
+	}
+    #partenaires_entreprise .Partenaires {
+        font-size: 32px;
+	}
+}
+
+/* Mise en forme pour écran 14 pouces ou moins */
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    #partenaires_entreprise .Partenaires_flou {
+        font-size: 60px;
+	}
+    #partenaires_entreprise .Partenaires {
+        font-size: 45px;
+	}
+}
+
+/* Mise en forme pour écran 14 pouces ou moins */
+@media screen and (min-width: 1200px) and (max-width: 1470px) {
+    #partenaires_entreprise .Partenaires_flou {
+        font-size: 48px;
+	}
+    #partenaires_entreprise .Partenaires {
+        font-size: 38px;
+	}
+}
+
+
+
+
+/* --------------------------------------------------- */
+
+/* MISE EN FORME DU PIED DE PAGE (FOOTER) */
+
+footer {
+    background-color: darkslategrey;
+    color: whitesmoke;
+}
+
+footer #footer_final {
+    background-color: darkgray;
+    color: black;
+}
+
+footer #Contact {
+    position: center;
+    align-items: center;
+}
+
+footer #footer #Contacts {
+    text-decoration: none;
+	color: white;
+
+}
+
+footer #footer #Contacts i{
+	color: white;
+	font-size: 25px;
+	padding-left: 14px;
+	padding-top: 5px;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+footer #footer #Contacts i:hover{
+	color: #037C8D;
+}
+footer #Pays li {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 17px;
+    padding-top: 4%;
+    margin: 0;
+    color: #FFFFFF;    
+    text-decoration: none;
+}
+
+footer #adresses h3 {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 15px;
+    padding-top: 4%;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+footer #adresses p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    margin-left: 3%;
+    margin-bottom: 0;
+    color: #FFFFFF;
+}
+
+footer #footer_final #Mention #Conditions {
+    text-decoration: none;
+    color: white;
 }
