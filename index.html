@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">            <!--800x1200 taille de page en pixel-->
+<html lang="fr">            
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" >
@@ -23,202 +23,101 @@
     </head>
 
     <body>
-        
-        <!-- CREATION DE LA PAGE LANDING (PAGE D'ACCUEIL) -->
-        <container id = Accueil>
-        <!--<img id="LOGO" src="img/logo.png">-->
-            <div class="container">
-            <h1 id="home">Digital Consultant</h1>
-        </div>
-            <div class="container">
-                <h2>Audit/training/advice</h2>
-            </div>
-            <div class="container">
-                <p id="Apropos">À propos</p>
-            </div>
-            <div>
-                <p>es ce que vous savez quil y a plus davion dans leau que de sous-marin dans les airs.</p>
-            </div>
-        <div id = service01>
-            <h4>Service</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
-                <div class="container">
-                    <p id = "Savoirplus01">Savoir plus</p>
-                </div>
-        </div>
-        <div id = service02>
-            <h4>Service</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
-                <div>
-                    <p id = "Savoirplus02">Savoir plus</p>
-                </div>
-        </div>
-        <div id = service03>
-            <h4>Service</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
-                <div>
-                    <p id = "Savoirplus03">Savoir plus</p>
-                </div>
-        </div>
-        <img id = "ImageAccueil" src="img/imageAccueil.png">
-        </container>
-        
-        <!-- Création du Menu -->
-
-
-        <!-- Création du titre et sous-titres -->
-
- 
-        <!-- Création du menu des Services -->
-
-
-
-
-        <!-- CREATION DE LA PAGE DE PRESENTATION (A PROPOS) -->
-        <div id = "apropos1">
-            <h3>À Propos</h3>
-        </div>
-            
-        <div id= "apropos2">
-            <h3>À Propos</h3>
-        </div>
-
-        <div id = "apropos3"></div>
-            <h6>Contrary to popular belief, Lorem Ipsum is not simply random text.</h6>
-        </div>
-        
-        <div class="row">
-            <div class="col-sm-3">
-                <img src = "petitrond2.png" alt="" class = "annéesexperience"/>
-                <div class="nombreannées"> 4 </div>
-            </div>
-        
-            <div class="col-sm-3">
-                <img src = "petitrond2.png" alt="" class = "implantation"/>
-                <div class="nombreimplantation"> 4 </div>
-            </div>
-            
-            <div class="col-sm-3">
-                <img src = "petitrond2.png" alt="" class = "employés"/>
-                <div class="nombreemployés"> 50 </div>
-            </div>
-
-            <div class="col-sm-3">
-                <img src = "petitrond2.png" alt="" class = "euroCA"/>
-                <div class="nombre_d'euros_de_C.A"> 15M </div>
-            </div>
-        </div>
-
-        <div class="separation"></div>
-
-        
-
-
-        
-        
-        <!-- CREATION DE LA PARTIE PRESENTATION DE NOTRE ENTREPRISE -->
-        <div class="container-fluid mt-3">       
-            <div class="row" id="presentation_entreprise">         
-                <div class="col-12 col-sm-12 col-lg-8 mb-3 align-text-center">
-                    <h3 class="Teams_flou">NOTRE EQUIPE</h3>
-                    <h3 class="Teams">NOTRE EQUIPE</h3>
+        <!-- CREATION DE LA NAVIGATION DE LA PAGE -->
+        <header class="header py-3">
+            <div class="row">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="NavBar">
+                    <div class="container-fluid">
+                        <!-- Nom et bouton accueil -->
+                        <a id="Retour_Accueil" class="navbar-brand align-items-center" href="index.html">
+                            <img src="img/icon_logo.png" width="auto" height="30" class="d-inline-block" alt="Logo_entreprise">
+                            Digital Consultant
+                        </a>
                     
-                    <p>We are a team of designers, developers, strategists and problem solvers, too.
-                        We share a common goal: using the power of imagination and creativity we want
-                        to build digital experiences that can change people’s lives.</p>
-                </div>
-            </div>
-
-            <!-- Création du défilé des personnes de l'entreprise -->
-            <div class="col-12 mb-3">
-                <marquee behavior="alternate" direction="left" scrollamount="7" onmouseover="this.stop();" onmouseout="this.start();" class="employes">
-                    <ul class="liste_employes">
-                        <li>
-                            <img src="img/portrait1.png" alt="Directeur" class="d-inline-block align-text-top">
-                            <p>Monsieur NOM Prenom</p>
-                            <p>Directeur</p>
-                        </li>
-                        <li>
-                            <img src="img/portrait1.png" alt="Co-Directeur" class="d-inline-block align-text-top">
-                            <p>Monsieur NOM Prenom</p>
-                            <p>Co-Directeur</p>
-                        </li>
-                        <li>
-                            <img src="img/portrait1.png" alt="Employé n°1" class="d-inline-block align-text-top">
-                            <p>Monsieur NOM Prenom</p>
-                            <p>Employé n°1</p>
-                        </li>
-                        <li>
-                            <img src="img/portrait1.png" alt="Employé n°2" class="d-inline-block align-text-top">
-                            <p>Monsieur NOM Prenom</p>
-                            <p>Employé n°2</p>
-                        </li>
-                        <li>
-                            <img src="img/portrait1.png" alt="Secrétaire" class="d-inline-block align-text-top">
-                            <p>Monsieur NOM Prenom</p>
-                            <p>Secrétaire</p>
-                        </li>
-                        <li>
-                            <img src="img/portrait1.png" alt="Co-Secrétaire" class="d-inline-block align-text-top">
-                            <p>Monsieur NOM Prenom</p>
-                            <p>Co-Secrétaire</p>
-                        </li>
-                        <li>
-                            <img src="img/portrait1.png" alt="Employé n°3" class="d-inline-block align-text-top">
-                            <p>Monsieur NOM Prenom</p>
-                            <p>Employé n°3</p>
-                        </li>
-                        <li>
-                            <img src="img/portrait1.png" alt="Employé n°4" class="d-inline-block align-text-top">
-                            <p>Monsieur NOM Prenom</p>
-                            <p>Employé n°4</p>
-                        </li>
-                    </ul>
-                </marquee>
-            </div>
-            
-        </div>
-
-
-        <!-- CREATION DE LA PARTIE OU SE TROUVE NOTRE ENTREPRISE -->        
-            <div class="container-fluid mt-3">       
-                <div class="row" id="localisation_entreprise">
-                    <!-- Création des titres et du texte de présentation -->
-                    <div class="col-12 col-sm-5 col-lg-5 mb-3">    
-                        <h3 class="Localisation_flou">OU SOMMES NOUS ?</h3>
-                        <h3 class="Localisation">OU SOMMES NOUS ?</h3>
-                        
-                        <p>Depuis sa fondtion en 2017 par Monsieur NOM Prénom, Digital Consultant
-                            a connu une forte croissance et est a présent implanté dans plusieurs
-                            zones du monde entier :</p>
-                            <ul>
-                                <li>France</li>
-                                <li>Quebec</li>
-                                <li>Espagne</li>
-                                <li>Etats-Unis (prochainement)</li>
+                        <!-- Configuration du bouton (Toggler/collapsibe Button) -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    
+                        <!-- Liens du NavBar -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul id="Liens" class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="APropos.html">A propos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nos services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
                             </ul>
+                        </div>
                     </div>
-                    <!-- Création du la map de location de notre entreprise -->
-                    <div class="col-12 col-sm-7 col-lg-7 mb-3">    
-                        <img src="img/localisation_entreprise.png" alt="localisation_entreprise" class="float-right">
-                    </div>
-                
-                </div>
+                </nav>
             </div>
-    
+        </header>
 
 
-            
-        <!-- CREATION DU FOOTER (PIED DE PAGE) -->
-
-
-
-
-        <!-- MISE EN PAGE BOUTON RETOUR HAUT DE PAGE -->
-        <div id="retour_haut">
-            <a href="#home"><img src="img/fleche.png" alt="Retourner en haut"></a>
+        <!-- CREATION DE LA PAGE LANDING (PAGE D'ACCUEIL) -->
+        <div class="container" id = Accueil>
+            <!--<img id="LOGO" src="img/logo.png">-->
+                <div class="col">
+                    <div class="row">
+                        <div class="col">                              
+                            <h1 id="home">Digital Consultant</h1>
+                                <h2 id = "Training"><span id = "Audit">Audit</span> / <span id = "training">Training</span> / <span id = "Advice">Advice</span></h2>
+                            <div class="Apropos">
+                                <p id="Apropos">À propos</p>
+                            </div>
+                            <div class="Avion">
+                                <p id="text04">Consultant en transforamtion digitale, spécialiste de l'univers numérique, conseil et accompagnement auprès des entreprises. La planète Web et les nouvelles technologies ayant profondément changé les habitudes, les méthodes de travail et les modes de consommation, le décollage vers le digital est un enjeu vital pour toutes les structures, tous secteurs confondus. Le consultant digital se propose d’établir une feuille de route cohérente pour que l’aventure soit une réussite ! </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div id="Service">
+                                <div class="row">
+                                    <img id = "ImageAccueil" src="img/image2Accueil.png">
+                                    <div id="background01" class="col">
+                                        <h4 id="Service01">Service</h4>
+                                        <p id="Text01">Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent</p>
+                                        <p id = "Savoirplus01">Savoir plus</p>
+                                    </div>
+                                    <div id="background02" class="col">
+                                        <h4 id="Service02">Service</h4>
+                                        <p id="Text02">Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent</p>
+                                        <p id = "Savoirplus02">Savoir plus</p>
+                                    </div>
+                                    <div id="background03" class="col">
+                                        <h4 id="Service03">Service</h4>
+                                        <p id="Text03">Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent</p>
+                                        <p id = "Savoirplus03">Savoir plus</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
         </div>
+    
+        
+    <!-- SCRIPTS JAVASCRIPT -->
+        <!-- Scripts pour le NavBar -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
 
+
+        
+        
+        
 
 
     </body>
