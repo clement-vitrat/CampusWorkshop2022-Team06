@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>A propos</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords"> 
+
+        <!-- Mes pages CSS -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/APropos.css" />
+        
+        <!-- Lien pour icone -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Icons -->
+        <link rel="icon" href="../img/icon_logo.png">
+
+    </head>
+    
+    <body>
+        <!-- CREATION DE LA NAVIGATION DE LA PAGE -->
+            <header>
+                <nav>
+                    <div class="logo">
+                        <a href="../index.html"><img src="../img/icon_logo.png" alt="icon_entreprise"> DIGITAL CONSULTANT</a>
+                    </div>
+                    <div class="toggle">
+                        <i class="fas fa-bars ouvrir fermer"></i>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#">A propos</a></li>
+                        <li><a href="../html/NosServices.html">Nos services</a></li>
+                        <li><a href="../html/Portfolio.html">Portfolio</a></li>
+                        <li><a href="../html/Blog.html">Blog</a></li>
+                        <li><a href="../html/Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        <!-- CREATION DE LA PARTIE TITRE PAGES --> 
+            <div id="titre_page">
+                <div class="valeur_titre"> 
+                    <h3 class="valeur_flou" id="tit_page"></h3>
+                    <h3 class="valeur_double" id="tit2_page"></h3>   
+                </div>
+            </div>
+
+        <!-- CREATION DE LA PARTIE VALEUR ENTREPRISE --> 
+            <div id="valeur_entrep">
+                <div class="valeur_titre"> 
+                    <h3 class="valeur_flou" id="titre_valeur"></h3>
+                    <h3 class="valeur_double" id="titre2_valeur"></h3>   
+                </div>
+                <div class="valeur_design">
+                    <div class="design_info">
+                        <img src="../img/valeur1.png" alt="">
+                        <p id="val1_nom"></p>
+                        <hr noshade style="width:100%; border: 2px solid #128D5A;">
+                        <p class="coll_fonc" id=val1_comm></p>
+                    </div>
+                    <div class="design_info">
+                        <img src="../img/valeur2.png" alt="">
+                        <p id="val2_nom"></p>
+                        <hr noshade style="width:100%; border: 2px solid #128D5A;">
+                        <p class="coll_fonc" id=val2_comm></p>
+                    </div>
+                    <div class="design_info">
+                        <img src="../img/valeur3.png" alt="">
+                        <p id="val3_nom"></p>
+                        <hr noshade style="width:100%; border: 2px solid #128D5A;">
+                        <p class="coll_fonc" id=val3_comm></p>
+                    </div>
+                    <div class="design_info">
+                        <img src="../img/valeur4.png" alt="">
+                        <p id="val4_nom"></p>
+                        <hr noshade style="width:100%; border: 2px solid #128D5A;">
+                        <p class="coll_fonc" id=val4_comm></p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- CREATION DE LA PARTIE NOTRE EQUIPE --> 
+            <div id="equipe_entreprise">
+                <div class="equipe_titre"> 
+                    <h3 class="equipe_flou" id="titre_equipe"></h3>
+                    <h3 class="equipe_double" id="titre2_equipe"></h3> 
+                    <p id="comm_equipe"></p>  
+                </div>
+                <!-- Création du défilé des personnes de l'entreprise -->
+                <div class="equipe_coll">
+                    <marquee behavior="alternate" direction="left" scrollamount="7" onmouseover="this.stop();" onmouseout="this.start();">
+                        <ul>
+                            <li>
+                                <img src="../img/portrait1.png" alt="Directeur" class="rounded-circle d-inline-block align-text-top">
+                                <p id="pers1_nom"></p>
+                                <hr noshade style="width:230px; border: 2px solid #128D5A;">
+                                <p class="coll_fonc" id=pers1_fonc></p>
+                            </li>
+                            <li>
+                                <img src="../img/portrait2.png" alt="Co-Directeur" class="rounded-circle d-inline-block align-text-top">
+                                <p id="pers2_nom"></p>
+                                <hr noshade style="width:230px; border: 2px solid #128D5A;">
+                                <p class="coll_fonc" id=pers2_fonc></p>
+                            </li>
+                            <li>
+                                <img src="../img/portrait3.png" alt="Employé n°2" class="rounded-circle d-inline-block align-text-top">
+                                <p id="pers3_nom"></p>
+                                <hr noshade style="width:230px; border: 2px solid #128D5A;">
+                                <p class="coll_fonc" id=pers3_fonc></p>
+                            </li>
+                            <li>
+                                <img src="../img/portrait4.png" alt="Secrétaire" class="rounded-circle d-inline-block align-text-top">
+                                <p id="pers4_nom"></p>
+                                <hr noshade style="width:230px; border: 2px solid #128D5A;">
+                                <p class="coll_fonc" id=pers4_fonc></p>
+                            </li>
+                            <li>
+                                <img src="../img/portrait5.png" alt="Co-Secrétaire" class="rounded-circle d-inline-block align-text-top">
+                                <p id="pers5_nom"></p>
+                                <hr noshade style="width:230px; border: 2px solid #128D5A;">
+                                <p class="coll_fonc" id=pers5_fonc></p>
+                            </li>
+                            <li>
+                                <img src="../img/portrait6.png" alt="Employé n°3" class="rounded-circle d-inline-block align-text-top">
+                                <p id="pers6_nom"></p>
+                                <hr noshade style="width:230px; border: 2px solid #128D5A;">
+                                <p class="coll_fonc" id=pers6_fonc></p>
+                            </li>
+                            <li>
+                                <img src="../img/portrait7.png" alt="Employé n°4" class="rounded-circle d-inline-block align-text-top">
+                                <p id="pers7_nom"></p>
+                                <hr noshade style="width:230px; border: 2px solid #128D5A;">
+                                <p class="coll_fonc" id=pers7_fonc></p>
+                            </li>
+                            <li>
+                                <img src="../img/portrait8.png" alt="Employé n°1" class="rounded-circle d-inline-block align-text-top">
+                                <p id="pers8_nom"></p>
+                                <hr noshade style="width:230px; border: 2px solid #128D5A;">
+                                <p class="coll_fonc" id=pers8_fonc></p>
+                            </li>
+                        </ul>
+                    </marquee>
+                </div>        
+            </div>
+
+
+        <!-- CREATION DE LA PARTIE OU SE TROUVE NOTRE ENTREPRISE -->  
+            <div id="lieu_entreprise">
+                <div class="lieu_titre"> 
+                    <h3 class="lieu_flou" id="titre_lieu"></h3>
+                    <h3 class="lieu_double" id="titre2_lieu"></h3>
+                    <p id="comm_lieu"></p>
+                    <ul>
+                        <li id="lieu1"></li>
+                        <li id="lieu2"></li>
+                        <li id="lieu3"></li>
+                        <li id="lieu4"></li>
+                    </ul>
+                </div>
+                <div class="lieu_image">
+                    <img src="../img/localisation_entreprise.png" alt="localisation_entreprise" style="width: 100%;">
+                </div>
+            </div>
+
+        <!-- CREATION DE LA PARTIE NOS PARTENAIRES --> 
+            <div id="parten_entreprise">
+                <div class="parten_titre"> 
+                    <h3 class="parten_flou" id="titre_parten"></h3>
+                    <h3 class="parten_double" id="titre2_parten"></h3>
+                    
+                </div>        
+            </div>
+
+
+
+
+        <!-- CREATION DE LA BARRE DES PARTENAIRES -->
+        <section id="section_partenaires" class="partenaires">
+			<div class="partenaires-images">
+				<ol>
+					<li><img src="../img/icon_logo.png" alt="partenaire"></li>
+					<li><img src="../img/icon_logo.png" alt="partenaire"></li>
+                    <li><img src="../img/icon_logo.png" alt="partenaire"></li>
+                    <li><img src="../img/icon_logo.png" alt="partenaire"></li>
+                    <li><img src="../img/icon_logo.png" alt="partenaire"></li>
+                    <li><img src="../img/icon_logo.png" alt="partenaire"></li>
+                    <li><img src="../img/icon_logo.png" alt="partenaire"></li>
+                    <li><img src="../img/icon_logo.png" alt="partenaire"></li>
+                    <li><img src="../img/icon_logo.png" alt="partenaire"></li>
+                    <li><img src="../img/icon_logo.png" alt="partenaire"></li>
+                    <li><img src="../img/icon_logo.png" alt="partenaire"></li>
+				</ol>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+        <!-- CREATION DU FOOTER DE LA PAGE -->
+            <footer class="icons">
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://join.skype.com/"><i class="fab fa-skype"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.twitch.com/"><i class="fab fa-twitch"></i></a>
+                <a href="https://www.github.com/"><i class="fab fa-github"></i></a>
+            </footer>
+
+            <footer class="final">
+                <p id="copy">Copyright © 2022 Digital Consultant</p>
+                <p id="mentions_cond">
+                    <a id="mentions" href="../html/Mentions.html">Mentions Légales</a>
+                    <a id="cond" href="../html/CGU.html">Conditions générales</a>
+                </p>
+            </footer>
+
+
+        <!-- FEUILLES DE JAVASCRIPT (SCRIPT) -->
+            <!-- Script Principal du code complet -->
+                <script src="../js/scripts.js" ></script>
+                <script src="../js/APropos.js" ></script>
+        
+        <!-- FEUILLES DE JSON (SCRIPT) -->
+            <!-- Script principal pour modification du texte de la page -->    
+                <script src="../json/APropos.json"></script> 
+
+    </body>
+</html>

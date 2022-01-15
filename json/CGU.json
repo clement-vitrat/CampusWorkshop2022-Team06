@@ -1,0 +1,30 @@
+
+var id = {
+    // zone pour les "CONDITIONS GENERALES D'UTILISATION"
+    // Introduction 
+    "CGU_vigueur" : "00/00/0000",
+    "CGU_disp" : "Disposition des CGU",
+    "adresse_site" : "www.adresse_site.fr",
+
+    // Article 1 : Les mentions légales
+    "ed_dir_par" : "Clément VITRAT, Lucas GAUSSEN, Bastien DUCIEL",
+    "ed_dir_adr" : " 430 Rue Pierre Simon Laplace, 13 290 Aix-en-Provence",
+    "ed_dir_tel" : "+33 0 00 00 00 00",
+    "ed_dir_mail" : "contact@contact.com",
+    
+    "heb_nom" : "GitHub",
+    "heb_siege" : " 430 Rue Pierre Simon Laplace, 13 290 Aix-en-Provence",
+    "heb_tel" : "+33 1 23 45 67 89",
+    
+    // Article 2 : Acces au site
+    "serv_grat" : "services gratuits",
+    "serv_site" : "service sites",
+    
+    // Article 3 : Collecte de donnée
+    "site_CNIL_num" : "xxx",
+    "droit_acces_mail" : "contact@contact.com",
+    "droit_acces_adr" : "430 Rue Pierre Simon Laplace, 13 290 Aix-en-Provence",
+    
+    // Article 8 : Publication par l'utilisateur
+    "pub_par" : "commentaire...",
+};

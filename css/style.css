@@ -1,213 +1,608 @@
-/* Appel des différents styles */
-    /* Ecriture du Titre principal de la page */
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap'); /* font-family: 'Montserrat', sans-serif; */
-    /* Ecriture du Sous-titre du Titre principal de la page */
-        @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap'); /* font-family: 'Montaga', serif; */
-    /* Ecriture des différentes sous-parties */
-        @import url('https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap'); /* font-family: 'Odor Mean Chey', serif; */
-    /* Ecriture des différents paragraphes */
-        @import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap'); /* font-family: 'Molengo', sans-serif; */
-    
-
-
-
-
 /* --------------------------------------------------- */
+/*            MISE EN FORME DE MA PAGE WEB             */
 
-/* MISE  EN FORME DU BODY */
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html, body{
+    height: 100vh;
+    font-size: 16px;
+    width: 100%;
+}
 body {
-    padding: 2% 2% 2% 2%;
+    margin: 0;
+    padding: 0;
     font-family: 'Noto Sans', sans-serif;
-    background-color: #3E3D3D;
+    background-color: #f3f3f3;
     color: #fff;
     position: relative;
     background: transparent;
+    box-sizing: border-box;
 }
-  
 body::before {
     content: "";
+    padding: 0;
+    margin: 0;
     position: fixed;
-    background: #3E3D3D url("../img/") top right no-repeat;
+    background: #f5ecec url("../img/") top right no-repeat;
     background-size: cover;
     left: 0;
     right: 0;
     top: 0;
+    box-sizing: border-box;
     height: 100%;
     z-index: -1;
 }
 
+span{
+	color: #ff7600;
+}
+/* MISE EN PAGE POUR SMARTPHONE */
+@media screen and (max-width: 750px) {
+	body {
+		padding: 0 0;
+	}
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/*       MISE EN FORME DE LA BARRE DE NAVIGATION       */
+/* --------------------------------------------------- */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    background: white;
+    color: black;
+    padding: 0 2%;
+    z-index: 1;
+}
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    color: green;
+}
+.logo img {
+    vertical-align: middle;
+    width: 70px;
+    height: auto;
+}
+.toggle {
+    display: none;
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.menu li {
+    padding-left: 15px;
+}
+.menu li a {
+    color: black;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+div {
+    color: #125c8d;
+}
+
+/* Mise en forme pour les différentes tailles d'écran */
+@media all and (max-width: 800px) {
+    .toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+    .logo a {
+        position: relative;
+        z-index: 20;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;    
+    }
+    .logo img {
+        width: auto;
+        height: 23px;
+        vertical-align: middle;
+    }
+    .ouvrir {
+        display: block;
+    }
+    .fermer {
+        display: none;
+    }
+    .open .ouvrir {
+        display: none;
+    }
+    .open .fermer {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        background: white;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+    .menu li a {
+        font-size: 2rem;
+    }
+    .open .menu {
+        transform: translateX(0);
+        padding-top: 23%;
+    }
+}
+@media all and (min-width: 920px) and (max-width: 1100px) {
+    .logo a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;    
+    }
+}
+@media all and (min-width: 800px) and (max-width: 920px) {
+    .logo a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 23px;    
+    }
+    .logo img {
+        width: auto;
+        height: 23px;
+        vertical-align: middle;
+    }
+}
+@media all and (min-width: 510px) and (max-width: 800px) {
+    .open .menu {
+        transform: translateX(0);
+        padding-top: 10%;
+    }
+}
+@media all and (min-width: 400px) and (max-width: 510px) {
+    .open .menu {
+        transform: translateX(0);
+        padding-top: 16%;
+    }
+}
+
 
 
 /* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* MISE EN FORME DE LA PARTIE OU SE TROUVE NOTRE ENTREPRISE */
+/* --------------------------------------------------- */
 
-/* MISE  EN FORME DE LA PAGE LANDING (PAGE D'ACCUEIL) */
-
-
-#LOGO {
+#lieu_entreprise {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+.lieu_titre {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+.lieu_image {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center ;
+}
+#lieu_entreprise .lieu_flou {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 60px;
+    line-height: 15%;
+    padding-top: 20%;
+    opacity: 5px;
+    color: rgba(3, 125, 141, 0.39);
+}
+#lieu_entreprise .lieu_double {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 45px;
+    line-height: 40%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+    margin: 0;
+    color: #FFFFFF;
+}
+#lieu_entreprise p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 5%;
+    color: #FFFFFF;
+}
+#lieu_entreprise ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 13%;
+    color: #FFFFFF;
 }
 
-#home{
-    z-index: 5;
+/* Mise en forme pour smartphone */
+@media screen and (min-width: 750px) {
+    #lieu_entreprise .lieu_flou {
+        font-size: 39px;
+	}
+    #lieu_entreprise .lieu_double {
+        font-size: 32px;
+	}
+    #lieu_entreprise p {
+        font-size: 20px;
+	}
+}
+
+/* Mise en forme pour Ã©cran 14 pouces ou moins */
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    #lieu_entreprise .lieu_flou {
+        font-size: 60px;
+        padding-top: 10%;
+	}
+    #lieu_entreprise .lieu_double {
+        font-size: 45px;
+	}
+    #lieu_entreprise p {
+        font-size: 20px;
+	}
+}
+
+/* Mise en forme pour Ã©cran 14 pouces ou moins */
+@media screen and (min-width: 1200px) and (max-width: 1470px) {
+    #lieu_entreprise .lieu_flou {
+        font-size: 48px;
+	}
+    #lieu_entreprise .lieu_double {
+        font-size: 38px;
+	}
+    #lieu_entreprise p {
+        font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+    #lieu_entreprise {
+        grid-template-columns: repeat(2, 40% 60%);
+    }
+}
+
+
+
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/*       MISE EN FORME DE LA BARRE DES PARTENAIRES     */
+/* --------------------------------------------------- */
+
+.partenaires {
+	margin-top: 50px;
+    width: 100%;
+	padding: 100px 0px;
+}
+.partenaires .partenaires-images {
+	display: flex;
+	overflow-x: auto;
+	padding: 20px;
+	margin-top: -30px;
+	align-items: center;
+}
+.partenaires .partenaires-images ol {
+	margin-right: 30px;
+	flex: none;
+	gap: 30px;
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+.partenaires .partenaires-images li img{
+	height: auto;
+    width: 50px;
+    position: center;
+    /* Annimation images noir et blanc puis couleurs */
+    transition: 0.3s ease-in-out;
+	cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+/* Annimation images couleurs puis noir et blanc */
+.partenaires .partenaires-images li img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+
+
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/*              MISE EN FORME DU PORTFOLIO             */
+/* --------------------------------------------------- */
+
+.titre_portfolio {
+    background: #333;
+}
+.titre_portfolio #portfolio_titre .portfolio_flou {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 200px;
+    text-align: center;
+    line-height: 15%;
+    padding-top: 9%;
+    opacity: 5px;
+    color: rgba(3, 125, 141, 0.199);
+}
+.titre_portfolio #portfolio_titre .portfolio_double {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 125px;
+    text-align: center;
+    line-height: 40%;
+    padding-bottom: 5%;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.portfolio picture {
+    --border-width: 10%;
+    position: relative;
+    display: inline-flex;
+}
+.portfolio picture img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10%;
+    width: 155%;
+    height: auto;
+}
+.portfolio figcaption {
     position: absolute;
-    font-size: 100px;
-    font-family:  sans-serif;
-    font-weight: bold;   
-    color: #ffffff;
+    top: 50%;
+    left: var(--border-width);
+    right: var(--border-width);
+    text-align: center;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.637);
+    text-align: -webkit-center;
+    color: white;
+    opacity: 0;
+    transition: opacity .66s 0s ease-in-out;
 }
-h2{  
-    font-size: 55px;
-    padding-top: 150px ;
-    font-family: sans-serif;
-    font-style: normal;
-    color: #ffffff;
+.portfolio picture figcaption h1 {
+    text-align: center;
+    margin-left: auto;
+    margin: 0 0 0 0;
+    margin-right: auto;
+    display: table-cell;
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 30px;
 }
-#Audit{
-    z-index: 11;
+.portfolio picture:hover figcaption {
+    opacity: 1;
+}
+.portfolio picture figcaption p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* Mise en forme pour Ã©cran 14 pouces ou moins */
+@media screen and (max-width: 750px) {
+    .titre_portfolio #portfolio_titre .portfolio_flou {
+        font-size: 60px;
+        padding-top: 25%;
+	}
+    .titre_portfolio #portfolio_titre .portfolio_double {
+        font-size: 50px;
+	}
+    .portfolio picture img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Mise en forme pour Ã©cran 14 pouces ou moins */
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    .titre_portfolio #portfolio_titre .portfolio_flou {
+        font-size: 100px;
+        padding-top: 10%;
+	}
+    .titre_portfolio #portfolio_titre .portfolio_double {
+        font-size: 45px;
+	}
+}
+
+/* Mise en forme pour Ã©cran 14 pouces ou moins */
+@media screen and (min-width: 1200px) and (max-width: 1470px) {
+    .titre_portfolio #portfolio_titre .portfolio_flou {
+        font-size: 48px;
+	}
+    .titre_portfolio #portfolio_titre .portfolio_double {
+        font-size: 38px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+    .titre_portfolio #portfolio_titre .portfolio_flou {
+        grid-template-columns: repeat(2, 40% 60%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/*          MISE EN FORME DE LA PARTIE DES CGU         */
+/* --------------------------------------------------- */
+.MENTIONS_LEG {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 80px;
+}
+.MENTIONS_LEG h1, h2 {
+    margin-bottom: 19px;
+}
+.MENTIONS_LEG h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 108%;
     color: #128D5A;
 }
-
-#training{
-    z-index: 12;
+.MENTIONS_LEG .sous-titre {
+    font-style: italic;
+    margin-bottom: 19px;
+    color: black;
+}
+.MENTIONS_LEG h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 108%;
     color: #199688;
 }
-
-#Advice{   
-    z-index: 13;
+.MENTIONS_LEG p {
+    color: black;
+    line-height: 1.5625rem;
+    font-size: 1.0625rem;
+    flex-wrap: wrap;
+}
+.MENTIONS_LEG p span {
     color: #0E7894;
+    flex-wrap: wrap;
+}
+.MENTIONS_LEG ul li {
+    margin-left: 3%;
 }
 
-.Apropos{
-    font-size: 25px;
-    padding-top: 60px;
-    padding-left: 60px;
-    font-weight: bold;
-    font-family: sans-serif;
-    color: #199688;
-}
 
-.Avion{
-    z-index: 3;
-    padding-top: 35px;
-}
 
-#background01{
-    opacity: 0.5;
-    transition: 0.5s;
-    background-color: #2F2E2E;
-    padding-right: 15%;
-    z-index: 3;
-    box-shadow: 10px 5px 5px rgb(22, 22, 22);
-    padding-bottom: 15%;
-    transition-property: all 1s ease-out;
-}
-#background01:hover{
-    opacity: 1;
-}
-
-#background02{
-    opacity: 0.5;
-    transition: 0.5s;
-    background-color: #2F2E2E;
-    padding-right: 15%;
-    z-index: 2;
-    box-shadow: 10px 5px 5px rgb(22, 22, 22);
-}
-#background02:hover{
-    opacity: 1;
-}
-
-#background03{
-    opacity: 0.5;
-    transition: 0.5s;
-    background-color: #2F2E2E;
-    padding-right: 15%;
-    z-index: 1;
-    box-shadow: 10px 5px 5px rgb(22, 22, 22);
-}
-#background03:hover{
-    opacity: 1;
-}
-
-.col{
-    padding: 30px;
-    color: #ffffff;
-    margin-left: 15px;
-}
-
-#Savoirplus01 {
-    position: absolute;
-    z-index: 2;
-    font-weight: bold;
-    color: #169585; 
-}
-
-#Savoirplus02 {
-    position: absolute;
-    z-index: 3;
-    font-weight: bold;
-    color: #169585; 
-    
-}
-
-#Savoirplus03 {
-    position: absolute;
-    z-index: 4;
-    font-weight: bold;
-    color: #169585; 
-}
-
-#ImageAccueil{
-    position: absolute;
-    opacity: 0.5;
-    right: 50px; top: 60px; width: 950px; height: 550px;
-    z-index: 1;
-    padding-left: 3%; 
-}
-
-#Text01{
-    z-index: 5;
-    padding-right: 4%;
-    padding-left: 15%;
-}
-
-#Text02{
-    z-index: 6;
-    padding-right: 4%;
-    padding-left: 15%;
-}
-
-#Text03{
-    z-index: 7;
-    padding-right: 4%;
-    padding-left: 15%;
-}
-
-#Text04{
-    z-index: 9;
-}
-
-#Service{
-    padding-top: 35%;
-}
-hr{
-    width: 100%;
-    height: 3px;
-}
-#Service01{
-    font-size: 30px;
-    padding-left: 15%;
-}
-#Service02{
-    font-size: 30px;
-    padding-left: 15%;
-}
-#Service03{
-    font-size: 30px;
-    padding-left: 15%;
-}
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/*          MISE EN FORME DE LA PARTIE DES CGU         */
 /* --------------------------------------------------- */
 
-/* MISE EN FORME DE LA PAGE DE PRESENTATION (A PROPOS) */
+.CGU {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 80px;
+}
+.CGU h1, h2 {
+    margin-bottom: 19px;
+}
+.CGU h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 108%;
+    color: #128D5A;
+}
+.CGU .sous-titre {
+    font-style: italic;
+    margin-bottom: 19px;
+    color: black;
+}
+.CGU h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 108%;
+    color: #199688;
+}
+.CGU p {
+    color: black;
+    line-height: 1.5625rem;
+    font-size: 1.0625rem;
+    flex-wrap: wrap;
+}
+.CGU p span {
+    color: #0E7894;
+    flex-wrap: wrap;
+}
+.CGU ul li {
+    margin-left: 3%;
+}
 
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/*        MISE EN FORME DU PIED DE PAGE (FOOTER)       */
+/* --------------------------------------------------- */
 
+footer {
+	text-align: center;
+	background: rgba(0, 0, 0, 0.767);
+	color: white;
+	line-height: 45px;
+	font-size: 20px;
+	font-family: 'Liberation Mono';
+    display: contents;
+}
+footer i{
+	color: #fff;
+    text-align: center;
+    display: contents;
+	font-size: 20px;
+	padding-left: 14px;
+	padding-top: 5px;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+footer i:hover{
+	color: #335B55;
+}
+footer p {
+    font-size: 15px;
+	color: #ccc;
+	cursor: pointer;
+    margin: 0;
+    display: contents;
+    text-decoration: none;
+}
+footer p:hover {
+    color: #fff;
+}
+footer #copy {
+    text-align: left;
+    padding-left: 2%;
+}
+footer #mentions_cond, #mentions, #cond {
+    text-align: left;
+    padding-right: 2%;
+    color: #ccc;
+    cursor: pointer;
+    padding-left: 2%;
+	text-decoration: none;
+}
+footer #mentions_cond:hover, #mentions:hover, #cond:hover {
+    color: #fff;
+}

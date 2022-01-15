@@ -1,0 +1,690 @@
+/* ------------------------------------------------------- */
+/*            MISE EN FORME DE MA PAGE APROPOS             */
+
+/* --------------------------------- */
+/* --------------------------------- */
+/* MISE EN FORME DU TITRE DE LA PAGE */
+/* --------------------------------- */
+
+#titre_page {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 8vh;
+}
+#titre_page .valeur_titre {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+#titre_page .valeur_flou {
+    font-family: cursive;
+    text-align: center;
+    font-size: 200px;
+    line-height: 15%;
+    opacity: 5px;
+    color: rgba(3, 125, 141, 0.39);
+    padding-top: 50px;
+}
+#titre_page .valeur_double {
+    font-family: cursive;
+    text-align: center;
+    font-size: 150px;
+    line-height: 40%;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* MISE EN FORME DE LA PARTIE NOS VALEURS */
+/* -------------------------------------- */
+
+#valeur_entrep {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 10px;
+    margin-top: 3vh;
+}
+#valeur_entrep .valeur_titre {
+    grid-column: 1 / -1;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+#valeur_entrep .valeur_flou {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 60px;
+    line-height: 15%;
+    opacity: 5px;
+    color: rgba(3, 125, 141, 0.39);
+    padding-top: 10px;
+}
+#valeur_entrep .valeur_double {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 45px;
+    line-height: 40%;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    margin: 0;
+    color: #FFFFFF;
+}
+#valeur_entrep .valeur_design {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+#valeur_entrep .design_info {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+#valeur_entrep .design_info img {
+    height: auto;
+    width: 30%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+#valeur_entrep p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 30px;
+    color: #FFFFFF;
+}
+#valeur_entrep ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 100px;
+    color: #FFFFFF;
+}
+
+/* Mise en forme pour écran < 450px */
+@media screen and (max-width: 450px) {
+    #valeur_entrep .valeur_flou {
+        font-size: 30px;
+	}
+    #valeur_entrep .valeur_double {
+        font-size: 22px;
+	}
+    #valeur_entrep .valeur_design {
+        grid-template-columns: repeat(1,1fr);
+    }
+    #valeur_entrep p {
+        font-size: 18px;
+	}
+    #valeur_entrep ul {
+        font-size: 18px;
+    }
+}
+
+/* Mise en forme pour écran entre 450 px et 700px */
+@media screen and (min-width: 450px) and (max-width: 700px) {
+    #valeur_entrep .valeur_flou {
+        font-size: 40px;
+	}
+    #valeur_entrep .valeur_double {
+        font-size: 32px;
+	}
+    #valeur_entrep .valeur_design {
+        grid-template-columns: repeat(1,1fr);
+    }
+    #valeur_entrep p {
+        font-size: 24px;
+	}
+    #valeur_entrep ul {
+        font-size: 24px;
+    }
+}
+
+/* Mise en forme pour écran entre 700 px et 1200px  */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    #valeur_entrep .valeur_flou {
+        font-size: 60px;
+        padding-top: 20px;
+	}
+    #valeur_entrep .valeur_double {
+        font-size: 45px;
+	}
+    #valeur_entrep .valeur_design {
+        grid-template-columns: repeat(2,1fr);
+    }
+    #valeur_entrep p {
+        font-size: 36px;
+	}
+    #valeur_entrep ul {
+        font-size: 36px;
+    }
+}
+
+/* Mise en forme pour écran entre 700 px et 1600px  */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    #valeur_entrep .valeur_flou {
+        font-size: 40px;
+	}
+    #valeur_entrep .valeur_double {
+        font-size: 32px;
+	}
+    #valeur_entrep .valeur_design {
+        grid-template-columns: repeat(4,1fr);
+    }
+    #valeur_entrep p {
+        font-size: 24px;
+	}
+    #valeur_entrep ul {
+        font-size: 24px;
+    }
+}
+
+/* Mise en forme pour écran supérieur à 1600px */
+@media screen and (min-width: 1600px) {
+    #valeur_entrep .valeur_flou {
+        font-size: 60px;
+        padding-top: 20px;
+	}
+    #valeur_entrep .valeur_double {
+        font-size: 45px;
+	}
+    #valeur_entrep .valeur_design {
+        grid-template-columns: repeat(4,1fr);
+    }
+    #valeur_entrep p {
+        font-size: 36px;
+	}
+    #valeur_entrep ul {
+        font-size: 36px;
+    }
+}
+
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* MISE EN FORME DE LA PARTIE NOTRE EQUIPE */
+/* --------------------------------------- */
+
+#equipe_entreprise {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-top: 3vh;
+}
+#equipe_entreprise .equipe_titre {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+#equipe_entreprise .equipe_flou {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 60px;
+    line-height: 15%;
+    opacity: 5px;
+    color: rgba(3, 125, 141, 0.39);
+    padding-top: 10px;
+}
+#equipe_entreprise .equipe_double {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 45px;
+    line-height: 40%;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    margin: 0;
+    color: #FFFFFF;
+}
+#equipe_entreprise p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 30px;
+    color: #FFFFFF;
+}
+#equipe_entreprise ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 100px;
+    color: #FFFFFF;
+}
+#equipe_entreprise .equipe_coll {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center ;
+}
+#equipe_entreprise .equipe_coll li {
+    display: inline-grid;
+}
+
+#equipe_entreprise .equipe_coll img {
+    height: auto;
+    width: 200px;
+    margin-right: 15px;
+    margin-left: 15px;
+    clip-path: ellipse(60% 60%);
+}
+
+#equipe_entreprise .equipe_coll p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    padding-left: 0;
+    padding-bottom: 5px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    text-align: center;
+    color: #FFFFFF;
+    width: 230px;
+    white-space: normal;
+}
+#equipe_entreprise .equipe_coll .coll_fonc{
+    color: #0E7894;
+    padding-top: 5px;
+
+}
+/* Mise en forme pour écran < 450px */
+@media screen and (max-width: 450px) {
+    #equipe_entreprise .equipe_flou {
+        font-size: 30px;
+	}
+    #equipe_entreprise .equipe_double {
+        font-size: 22px;
+	}
+    #equipe_entreprise p {
+        font-size: 18px;
+	}
+    #equipe_entreprise ul {
+        font-size: 18px;
+    }
+}
+
+/* Mise en forme pour écran entre 450 px et 700px */
+@media screen and (min-width: 450px) and (max-width: 700px) {
+    #equipe_entreprise .equipe_flou {
+        font-size: 40px;
+	}
+    #equipe_entreprise .equipe_double {
+        font-size: 32px;
+	}
+    #equipe_entreprise p {
+        font-size: 24px;
+	}
+    #equipe_entreprise ul {
+        font-size: 24px;
+    }
+}
+
+/* Mise en forme pour écran entre 700 px et 1200px  */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    #equipe_entreprise .equipe_flou {
+        font-size: 60px;
+        padding-top: 20px;
+	}
+    #equipe_entreprise .equipe_double {
+        font-size: 45px;
+	}
+    #equipe_entreprise p {
+        font-size: 36px;
+	}
+    #equipe_entreprise ul {
+        font-size: 36px;
+    }
+}
+
+/* Mise en forme pour écran entre 700 px et 1600px  */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    #equipe_entreprise .equipe_flou {
+        font-size: 40px;
+	}
+    #equipe_entreprise .equipe_double {
+        font-size: 32px;
+	}
+    #equipe_entreprise p {
+        font-size: 24px;
+	}
+    #equipe_entreprise ul {
+        font-size: 24px;
+    }
+}
+
+/* Mise en forme pour écran supérieur à 1600px */
+@media screen and (min-width: 1600px) {
+    #equipe_entreprise .equipe_flou {
+        font-size: 60px;
+        padding-top: 20px;
+	}
+    #equipe_entreprise .equipe_double {
+        font-size: 45px;
+	}
+    #equipe_entreprise p {
+        font-size: 36px;
+	}
+    #equipe_entreprise ul {
+        font-size: 36px;
+    }
+}
+
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* MISE EN FORME DE LA PARTIE OU SE TROUVE NOTRE ENTREPRISE */
+/* -------------------------------------------------------- */
+
+#lieu_entreprise {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-top: 3vh;
+}
+#lieu_entreprise .lieu_titre {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+#lieu_entreprise .lieu_image {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center ;
+}
+#lieu_entreprise .lieu_flou {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 60px;
+    line-height: 15%;
+    opacity: 5px;
+    color: rgba(3, 125, 141, 0.39);
+    padding-top: 10px;
+}
+#lieu_entreprise .lieu_double {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 45px;
+    line-height: 40%;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    margin: 0;
+    color: #FFFFFF;
+}
+#lieu_entreprise p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 30px;
+    color: #FFFFFF;
+}
+#lieu_entreprise ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 100px;
+    color: #FFFFFF;
+}
+
+/* Mise en forme pour écran < 450px */
+@media screen and (max-width: 450px) {
+    #lieu_entreprise .lieu_flou {
+        font-size: 30px;
+	}
+    #lieu_entreprise .lieu_double {
+        font-size: 22px;
+	}
+    #lieu_entreprise p {
+        font-size: 18px;
+	}
+    #lieu_entreprise ul {
+        font-size: 18px;
+    }
+}
+
+/* Mise en forme pour écran entre 450 px et 700px */
+@media screen and (min-width: 450px) and (max-width: 700px) {
+    #lieu_entreprise .lieu_flou {
+        font-size: 40px;
+	}
+    #lieu_entreprise .lieu_double {
+        font-size: 32px;
+	}
+    #lieu_entreprise p {
+        font-size: 24px;
+	}
+    #lieu_entreprise ul {
+        font-size: 24px;
+    }
+}
+
+/* Mise en forme pour écran entre 700 px et 1200px  */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    #lieu_entreprise .lieu_flou {
+        font-size: 60px;
+        padding-top: 20px;
+	}
+    #lieu_entreprise .lieu_double {
+        font-size: 45px;
+	}
+    #lieu_entreprise p {
+        font-size: 36px;
+	}
+    #lieu_entreprise ul {
+        font-size: 36px;
+    }
+}
+
+/* Mise en forme pour écran entre 700 px et 1600px  */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    #lieu_entreprise {
+        grid-template-columns: repeat(2, 40% 60%);
+    }
+    #lieu_entreprise .lieu_flou {
+        font-size: 40px;
+	}
+    #lieu_entreprise .lieu_double {
+        font-size: 32px;
+	}
+    #lieu_entreprise p {
+        font-size: 24px;
+	}
+    #lieu_entreprise ul {
+        font-size: 24px;
+    }
+}
+
+/* Mise en forme pour écran supérieur à 1600px */
+@media screen and (min-width: 1600px) {
+    #lieu_entreprise {
+        grid-template-columns: repeat(2, 40% 60%);
+    }
+    #lieu_entreprise .lieu_flou {
+        font-size: 60px;
+        padding-top: 20px;
+	}
+    #lieu_entreprise .lieu_double {
+        font-size: 45px;
+	}
+    #lieu_entreprise p {
+        font-size: 36px;
+	}
+    #lieu_entreprise ul {
+        font-size: 36px;
+    }
+}
+
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* MISE EN FORME DE LA PARTIE NOS PARTENAIRES */
+/* ------------------------------------------ */
+
+#parten_entreprise {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-top: 3vh;
+}
+#parten_entreprise .parten_titre {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+#parten_entreprise .parten_flou {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 60px;
+    line-height: 15%;
+    opacity: 5px;
+    color: rgba(3, 125, 141, 0.39);
+    padding-top: 10px;
+}
+#parten_entreprise .parten_double {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 45px;
+    line-height: 40%;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    margin: 0;
+    color: #FFFFFF;
+}
+#parten_entreprise p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 30px;
+    color: #FFFFFF;
+}
+#parten_entreprise ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 100px;
+    color: #FFFFFF;
+}
+
+/* Mise en forme pour écran < 450px */
+@media screen and (max-width: 450px) {
+    #parten_entreprise .parten_flou {
+        font-size: 30px;
+	}
+    #parten_entreprise .parten_double {
+        font-size: 22px;
+	}
+    #parten_entreprise p {
+        font-size: 18px;
+	}
+    #parten_entreprise ul {
+        font-size: 18px;
+    }
+}
+
+/* Mise en forme pour écran entre 450 px et 700px */
+@media screen and (min-width: 450px) and (max-width: 700px) {
+    #parten_entreprise .parten_flou {
+        font-size: 40px;
+	}
+    #parten_entreprise .parten_double {
+        font-size: 32px;
+	}
+    #parten_entreprise p {
+        font-size: 24px;
+	}
+    #parten_entreprise ul {
+        font-size: 24px;
+    }
+}
+
+/* Mise en forme pour écran entre 700 px et 1200px  */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    #parten_entreprise .parten_flou {
+        font-size: 60px;
+        padding-top: 20px;
+	}
+    #parten_entreprise .parten_double {
+        font-size: 45px;
+	}
+    #parten_entreprise p {
+        font-size: 36px;
+	}
+    #parten_entreprise ul {
+        font-size: 36px;
+    }
+}
+
+/* Mise en forme pour écran entre 700 px et 1600px  */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    #parten_entreprise {
+        grid-template-columns: repeat(2, 40% 60%);
+    }
+    #parten_entreprise .parten_flou {
+        font-size: 40px;
+	}
+    #parten_entreprise .parten_double {
+        font-size: 32px;
+	}
+    #parten_entreprise p {
+        font-size: 24px;
+	}
+    #parten_entreprise ul {
+        font-size: 24px;
+    }
+}
+
+/* Mise en forme pour écran supérieur à 1600px */
+@media screen and (min-width: 1600px) {
+    #parten_entreprise {
+        grid-template-columns: repeat(2, 40% 60%);
+    }
+    #parten_entreprise .parten_flou {
+        font-size: 60px;
+        padding-top: 20px;
+	}
+    #parten_entreprise .parten_double {
+        font-size: 45px;
+	}
+    #parten_entreprise p {
+        font-size: 36px;
+	}
+    #parten_entreprise ul {
+        font-size: 36px;
+    }
+}
+
+
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/*       MISE EN FORME DE LA BARRE DES PARTENAIRES     */
+/* --------------------------------------------------- */
+
+.partenaires {
+	margin-top: 50px;
+    width: 100%;
+	padding: 100px 0px;
+}
+.partenaires .partenaires-images {
+	display: flex;
+	overflow-x: auto;
+	padding: 20px;
+	margin-top: -30px;
+	align-items: center;
+}
+.partenaires .partenaires-images ol {
+	margin-right: 30px;
+	flex: none;
+	gap: 30px;
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+.partenaires .partenaires-images li img{
+	height: auto;
+    width: 50px;
+    position: center;
+    /* Annimation images noir et blanc puis couleurs */
+    transition: 0.3s ease-in-out;
+	cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+/* Annimation images couleurs puis noir et blanc */
+.partenaires .partenaires-images li img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+
+

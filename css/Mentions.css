@@ -1,0 +1,44 @@
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/*          MISE EN FORME DE LA PARTIE DES MENTIONS LEGALES         */
+/* ---------------------------------------------------------------- */
+.MENTIONS_LEG {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 80px;
+    text-align: justify;
+}
+.MENTIONS_LEG h1, h2 {
+    margin-bottom: 19px;
+}
+.MENTIONS_LEG h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 108%;
+    color: #128D5A;
+}
+.MENTIONS_LEG .sous-titre {
+    font-style: italic;
+    margin-bottom: 19px;
+    color: black;
+}
+.MENTIONS_LEG h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 108%;
+    color: #199688;
+}
+.MENTIONS_LEG p {
+    color: black;
+    line-height: 1.5625rem;
+    font-size: 1.0625rem;
+    flex-wrap: wrap;
+}
+.MENTIONS_LEG p span {
+    color: #0E7894;
+    flex-wrap: wrap;
+}
+.MENTIONS_LEG ul li {
+    margin-left: 3%;
+}

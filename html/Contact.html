@@ -1,0 +1,187 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords"> 
+
+        <!-- Mes pages CSS -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/contact.css" />
+
+        <!-- Lien pour icone -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Icons -->
+        <link rel="icon" href="../img/icon_logo.png">
+    </head>
+    
+    <body>
+
+       
+        <!-- CREATION DE LA NAVIGATION DE LA PAGE -->
+            <header>
+                <nav>
+                    <div class="logo">
+                        <a href="../index.html"><img src="../img/icon_logo.png" alt="icon_entreprise"> DIGITAL CONSULTANT</a>
+                    </div>
+                    <div class="toggle">
+                        <i class="fas fa-bars ouvrir fermer"></i>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="../html/APropos.html">A propos</a></li>
+                        <li><a href="../html/NosServices.html">Nos services</a></li>
+                        <li><a href="../html/Portfolio.html">Portfolio</a></li>
+                        <li><a href="../html/Blog.html">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        
+
+        <!-- CREATION  DE LA PARTIE CONTACT -->
+        
+            
+            <div class="contact">
+                <div id="contact_titre">
+                    <h3 class="contact_flou" id="titre_contact">CONTACT</h3>
+                    <h3 class="contact_double" id="titre2_contact">CONTACT</h3>
+                </div>
+
+                <form id="contact" action="mailto:clementvitrat@gmail.com" method="post">
+                    <div>
+                        <!--<div>
+                            <label for="myrequete">Votre requête</label>
+                            <input type="text" id="myrequete" name="requete" list="requeteList">
+                            <datalist id="requeteList">
+                                <select id="suggestion" name="altrequete">
+                                <option>Demande de renseignement sur nos services</option>
+                                <option>Support client</option>
+                                <option>Comptabilité, administrative</option>
+                                <option>Recrutement</option>
+                                <option>Presse</option>
+                                <option>Alliance / Partenariat</option>
+                                </select>
+                            </datalist>
+                        </div>-->
+                        <div>
+                            <input type="textpre" id="prenom" name="user_prenom" placeholder="PRENOM">
+                        </div>
+                        <div>
+                            <input type="text" id="name" name="user_name" placeholder="NOM">
+                        </div>
+                        <div>
+                            <input type="telpro" id="tel" name="user_tel" placeholder="TELEPHONE">
+                        </div>
+                        <div>
+                            <input type="email" id="mail" name="user_mail" placeholder="COURRIEL">
+                        </div>
+                        <div>
+                            <textarea type="msg" id="message" name="user_message" placeholder="PARLEZ-NOUS DE VOTRE PROJETS"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        
+                    </div>
+
+                    <div class="button">
+                        <button type="submit" id="boutton">ENVOYER</button>
+                    </div>
+
+                </form>
+            </div>
+
+
+            <div class="agences">
+                <div id="agences_titre">
+                    <h3 class="agences_flou" id="titre_agences">NOS AGENCES</h3>
+                    <h3 class="agences_double" id="titre2_agences">NOS AGENCES</h3>
+                </div>
+                
+                <button class="accordion">FRANCE</button>
+                <div class="panel">
+                      <h3>Adresse</h3>
+                    <p>3 Boulevard de Michelet</p>
+                    <p>13 008 Marseille, France</p>
+                    <h3>Contact</h3>
+                    <p>contact@contact.com</p>
+                    <p>+33 0 00 00 00 00</p>
+                </div>
+            
+                <button class="accordion">ESPAGNE</button>
+                <div class="panel">
+                     <h3>Adresse</h3>
+                    <p>Calle Virgen de la Paz, 15</p>
+                    <p>29 400 Ronda, Malaga, Espagne</p>
+                    <h3>Contact</h3>
+                    <p>contact@contact.com</p>
+                    <p>+34 000 00 00 00</p>
+                </div>
+            
+                <button class="accordion">QUEBEC</button>
+                <div class="panel">
+                    <h3>Adresse</h3>
+                    <p>805 rue Sherbrooke O</p>
+                    <p>H3A 0B9 Montréal, Québec</p>
+                    <h3>Contact</h3>
+                    <p>contact@contact.com</p>
+                    <p>000-000-0000</p>
+                  </div>
+                
+                <button class="accordion">ETATS-UNIS (prochainement)</button>
+                <div class="panel">
+                    <h3>Adresse</h3>
+                    <p>1350 Massachusetts Ave</p>
+                    <p>Cambridge, MA 01138, USA</p>
+                    <h3>Contact</h3>
+                    <p>contact@contact.com</p>
+                    <p>+1 (000) 000-0000</p>
+                  </div>
+            </div>
+            
+            
+           
+
+
+
+
+
+        <!-- CREATION DU FOOTER DE LA PAGE -->
+            <footer class="icons">
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://join.skype.com/"><i class="fab fa-skype"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.twitch.com/"><i class="fab fa-twitch"></i></a>
+                <a href="https://www.github.com/"><i class="fab fa-github"></i></a>
+            </footer>
+
+            <footer class="final">
+                <p id="copy">Copyright © 2022 Digital Consultant</p>
+                <p id="mentions_cond">
+                    <a id="mentions" href="#home">Mentions Légales</a>
+                    <a id="cond" href="#home">Conditions générales</a>
+                </p>
+            </footer>
+
+
+        <!-- FEUILLES DE JAVASCRIPT (SCRIPT) -->
+            <!-- Script Principal du code complet -->
+                <script src="../js/scripts.js" ></script>
+                <script src="../js/contact.js" ></script>
+        
+        <!-- FEUILLES DE JSON (SCRIPT) -->
+            <!-- Script principal pour modification du texte de la page -->    
+                <script src="../json/donnee.json"></script> 
+
+    </body>
+</html>

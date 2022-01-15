@@ -1,0 +1,46 @@
+var id = {
+    // Ajout du texte dans le tritre de la page
+        "tit_page" : "A PROPOS",
+
+    // Ajout du texte dans le "NOS VALEURS"
+        "titre_valeur" : "NOS VALEURS",
+        "val1_nom" : "AGILITÉ",
+        "val1_comm" : "Commentaire de la Valeur n°1 de notre entreprise",
+        "val2_nom" : "ÉQUITÉ",
+        "val2_comm" : "Commentaire de la Valeur n°2 de notre entreprise",
+        "val3_nom" : "EXCELLENCE",
+        "val3_comm" : "Commentaire de la Valeur n°3 de notre entreprise",
+        "val4_nom" : "PARTAGE",
+        "val4_comm" : "Commentaire de la Valeur n°4 de notre entreprise",
+
+    // Ajout du texte dans le "NOTRE EQUIPE"
+        "titre_equipe" : "NOTRE EQUIPE",
+        "comm_equipe" : "We are a team of designers, developers, strategists and problem solvers, too. We share a common goal: using the power of imagination and creativity we want to build digital experiences that can change people’s lives.",
+        "pers1_nom" : "Nom portrait n°1",
+        "pers1_fonc" : "Fonction  principale du portrait n°1",
+        "pers2_nom" : "Nom de la personne du portrait n°2",
+        "pers2_fonc" : "Fonction portrait n°2",
+        "pers3_nom" : "Nom portrait n°3",
+        "pers3_fonc" : "Fonction portrait n°3",
+        "pers4_nom" : "Nom portrait n°4",
+        "pers4_fonc" : "Fonction portrait n°4",
+        "pers5_nom" : "Nom portrait n°5",
+        "pers5_fonc" : "Fonction portrait n°5",
+        "pers6_nom" : "Nom portrait n°6",
+        "pers6_fonc" : "Fonction principale et secondaire du portrait n°6",
+        "pers7_nom" : "Nom portrait n°7",
+        "pers7_fonc" : "Fonction portrait n°7",
+        "pers8_nom" : "Nom portrait n°8",
+        "pers8_fonc" : "Fonction portrait n°8",
+
+    // Ajout du texte dans le "OU SOMMES-NOUS ?"
+        "titre_lieu" : "OU SOMMES-NOUS ?",
+        "comm_lieu" : "Depuis sa fondtion en 2017 par Monsieur NOM Prénom, Digital Consultant a connu une forte croissance et est a présent implanté dans plusieurs zones du monde entier :",
+        "lieu1" : "France",
+        "lieu2" : "Quebec",
+        "lieu3" : "Espagne",
+        "lieu4" : "Etats-Unis (prochainement)",
+    
+    // Ajout du texte dans le "NOS PARTENAIRES"
+        "titre_parten" : "NOS PARTENAIRES",
+};
