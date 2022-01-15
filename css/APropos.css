@@ -385,6 +385,7 @@
     background: #333;
     color: #fff;
     padding: 20px;
+    width: 100%;
     text-align: center ;
 }
 #lieu_entreprise .lieu_flou {
