@@ -2,7 +2,6 @@
 window.addEventListener("DOMContentLoaded", (event) => {
     // Appel de la zone "NOS VALEURS"
         document.getElementById('tit_page').textContent = id.tit_page;
-        document.getElementById('tit2_page').textContent = id.tit_page;
 
     // Appel de la zone "NOS VALEURS"
         document.getElementById('titre_valeur').textContent = id.titre_valeur;

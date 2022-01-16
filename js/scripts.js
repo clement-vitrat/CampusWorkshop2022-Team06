@@ -10,6 +10,14 @@ toggle.addEventListener('click', function() {
 
 
 
+// CREATION DU CHAT BOT
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
 
 
 
