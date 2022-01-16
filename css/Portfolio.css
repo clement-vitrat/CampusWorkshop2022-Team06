@@ -1,0 +1,113 @@
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/*              MISE EN FORME DU PORTFOLIO             */
+/* --------------------------------------------------- */
+
+.titre_portfolio {
+    background: #333;
+}
+.titre_portfolio #portfolio_titre .portfolio_flou {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 200px;
+    text-align: center;
+    line-height: 15%;
+    padding-top: 9%;
+    opacity: 5px;
+    color: rgba(3, 125, 141, 0.199);
+}
+.titre_portfolio #portfolio_titre .portfolio_double {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 125px;
+    text-align: center;
+    line-height: 40%;
+    padding-bottom: 5%;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.portfolio picture {
+    --border-width: 10%;
+    position: relative;
+    display: inline-flex;
+}
+.portfolio picture img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10%;
+    width: 155%;
+    height: auto;
+}
+.portfolio figcaption {
+    position: absolute;
+    top: 50%;
+    left: var(--border-width);
+    right: var(--border-width);
+    text-align: center;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.637);
+    text-align: -webkit-center;
+    color: white;
+    opacity: 0;
+    transition: opacity .66s 0s ease-in-out;
+}
+.portfolio picture figcaption h1 {
+    text-align: center;
+    margin-left: auto;
+    margin: 0 0 0 0;
+    margin-right: auto;
+    display: table-cell;
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 30px;
+}
+.portfolio picture:hover figcaption {
+    opacity: 1;
+}
+.portfolio picture figcaption p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* Mise en forme pour Ã©cran 14 pouces ou moins */
+@media screen and (max-width: 750px) {
+    .titre_portfolio #portfolio_titre .portfolio_flou {
+        font-size: 60px;
+        padding-top: 25%;
+	}
+    .titre_portfolio #portfolio_titre .portfolio_double {
+        font-size: 50px;
+	}
+    .portfolio picture img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Mise en forme pour Ã©cran 14 pouces ou moins */
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    .titre_portfolio #portfolio_titre .portfolio_flou {
+        font-size: 100px;
+        padding-top: 10%;
+	}
+    .titre_portfolio #portfolio_titre .portfolio_double {
+        font-size: 45px;
+	}
+}
+
+/* Mise en forme pour Ã©cran 14 pouces ou moins */
+@media screen and (min-width: 1200px) and (max-width: 1470px) {
+    .titre_portfolio #portfolio_titre .portfolio_flou {
+        font-size: 48px;
+	}
+    .titre_portfolio #portfolio_titre .portfolio_double {
+        font-size: 38px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+    .titre_portfolio #portfolio_titre .portfolio_flou {
+        grid-template-columns: repeat(2, 40% 60%);
+    }
+}

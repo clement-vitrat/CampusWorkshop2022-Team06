@@ -3,13 +3,14 @@ body::before {
     padding: 0;
     margin: 0;
     position: fixed;
-    background: #f5ecec url("../img/digital_consultant_img1.jpg") top right no-repeat;
+    background: #f5ecec url("../img/contact.webp") top right no-repeat;
     background-size: cover;
+    background-position: center;
     left: 0;
     right: 0;
     top: 0;
     box-sizing: border-box;
-    height: 100%;
+    width: 100%;
     z-index: -1;
 }
 
@@ -84,8 +85,6 @@ body::before {
     border-bottom: red;
 }
 .contact textarea {
-    /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
-    vertical-align: top;
     /* Pour donner assez de place pour écrire du texte */
     height: auto;
     align-items: center;

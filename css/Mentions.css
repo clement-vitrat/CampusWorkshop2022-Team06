@@ -14,7 +14,7 @@
 .MENTIONS_LEG h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    line-height: 108%;
+    line-height: 35px;
     color: #128D5A;
 }
 .MENTIONS_LEG .sous-titre {
@@ -24,15 +24,14 @@
 }
 .MENTIONS_LEG h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 26px;
     margin-top: 40px;
-    line-height: 108%;
     color: #199688;
 }
 .MENTIONS_LEG p {
     color: black;
-    line-height: 1.5625rem;
-    font-size: 1.0625rem;
+    line-height: 25px;
+    font-size: 18px;
     flex-wrap: wrap;
 }
 .MENTIONS_LEG p span {
@@ -41,4 +40,24 @@
 }
 .MENTIONS_LEG ul li {
     margin-left: 3%;
+}
+/* Mise en forme pour écran entre 1200 px et 1600px  */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    .MENTIONS_LEG h2 {
+        font-size: 28px;
+    }
+    .MENTIONS_LEG p {
+        line-height: 28px;
+        font-size: 20px;
+    }
+}
+/* Mise en forme pour écran supérieur à 1600px */
+@media screen and (min-width: 1600px) {
+    .MENTIONS_LEG h2 {
+        font-size: 30px;
+    }
+    .MENTIONS_LEG p {
+        line-height: 30px;
+        font-size: 22px;
+    }
 }

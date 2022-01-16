@@ -5,35 +5,93 @@
 /* --------------------------------- */
 /* MISE EN FORME DU TITRE DE LA PAGE */
 /* --------------------------------- */
-
 #titre_page {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 20vh;
+    align-items: center;
     margin-top: 8vh;
-}
-#titre_page .valeur_titre {
-    background: #333;
-    color: #fff;
-    padding: 20px;
+    background-image: url("../img/Fond_titre.webp");
+    background-size: cover;
 }
 #titre_page .valeur_flou {
     font-family: cursive;
     text-align: center;
     font-size: 200px;
-    line-height: 15%;
-    opacity: 5px;
-    color: rgba(3, 125, 141, 0.39);
-    padding-top: 50px;
+    color: rgb(3 125 141);
+    text-shadow:  white 0.006em 0.006em 0.007em,
+                    #9c9c9c 1px 1px 1px,
+                    #9c9c9c 1px 2px 1px,
+                    #9c9c9c 1px 3px 1px,
+                    #9c9c9c 1px 4px 1px,
+                    #9c9c9c 1px 5px 1px,
+                    #9c9c9c 1px 6px 1px,
+                    #9c9c9c 1px 7px 1px,
+                    #9c9c9c 1px 8px 1px,
+                    #9c9c9c 1px 9px 1px,
+                    #9c9c9c 1px 10px 1px,
+                    #9c9c9c 1px 11px 1px,
+                    #9c9c9c 1px 12px 1px;
 }
-#titre_page .valeur_double {
-    font-family: cursive;
-    text-align: center;
-    font-size: 150px;
-    line-height: 40%;
-    padding-bottom: 40px;
-    padding-left: 30px;
-    margin: 0;
-    color: #FFFFFF;
+/* Mise en forme pour écran < 450px */
+@media screen and (max-width: 450px) {
+    #titre_page {
+        grid-template-rows: 20vh;
+    }
+    #titre_page .valeur_flou {
+        font-size: 50px;
+	}
+    #titre_page .valeur_double {
+        font-size: 35px;
+	}
+}
+/* Mise en forme pour écran entre 450 px et 700px */
+@media screen and (min-width: 450px) and (max-width: 700px) {
+    #titre_page {
+        grid-template-rows: 25vh;
+    }
+    #titre_page .valeur_flou {
+        font-size: 100px;
+	}
+}
+/* Mise en forme pour écran entre 700 px et 1200px  */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    #titre_page {
+        grid-template-rows: 30vh;
+    }
+    #titre_page .valeur_flou {
+        font-size: 120px;
+	}
+}
+/* Mise en forme pour écran entre 1200 px et 1600px  */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    #titre_page {
+        grid-template-rows: 35vh;
+    }
+    #titre_page .valeur_flou {
+        font-size: 150px;
+	}
+}
+/* Mise en forme pour écran supérieur à 1600px */
+@media screen and (min-width: 1600px) {
+    #titre_page {
+        grid-template-rows: 40vh;
+    }
+    #titre_page .valeur_flou {
+        font-size: 200px;
+	}
+}
+
+
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* MISE EN FORME DES LIGNES SEPARATRICES  */
+/* -------------------------------------- */
+#lig_sep{
+    width: 50%;
+    border: 3px solid #4a998c;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -41,13 +99,11 @@
 /* -------------------------------------- */
 /* MISE EN FORME DE LA PARTIE NOS VALEURS */
 /* -------------------------------------- */
-
 #valeur_entrep {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 10px;
-    margin-top: 3vh;
 }
 #valeur_entrep .valeur_titre {
     grid-column: 1 / -1;
@@ -91,6 +147,10 @@
     margin-right: 15px;
     margin-left: 15px;
 }
+#valeur_entrep .design_info hr{
+    width: 100%;
+    border: 2px solid #128D5A;
+}
 #valeur_entrep p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -103,7 +163,6 @@
     padding-left: 100px;
     color: #FFFFFF;
 }
-
 /* Mise en forme pour écran < 450px */
 @media screen and (max-width: 450px) {
     #valeur_entrep .valeur_flou {
@@ -122,7 +181,6 @@
         font-size: 18px;
     }
 }
-
 /* Mise en forme pour écran entre 450 px et 700px */
 @media screen and (min-width: 450px) and (max-width: 700px) {
     #valeur_entrep .valeur_flou {
@@ -141,7 +199,6 @@
         font-size: 24px;
     }
 }
-
 /* Mise en forme pour écran entre 700 px et 1200px  */
 @media screen and (min-width: 700px) and (max-width: 1200px) {
     #valeur_entrep .valeur_flou {
@@ -161,8 +218,7 @@
         font-size: 36px;
     }
 }
-
-/* Mise en forme pour écran entre 700 px et 1600px  */
+/* Mise en forme pour écran entre 1200 px et 1600px  */
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
     #valeur_entrep .valeur_flou {
         font-size: 40px;
@@ -180,7 +236,6 @@
         font-size: 24px;
     }
 }
-
 /* Mise en forme pour écran supérieur à 1600px */
 @media screen and (min-width: 1600px) {
     #valeur_entrep .valeur_flou {
@@ -205,12 +260,10 @@
 /* --------------------------------------- */
 /* MISE EN FORME DE LA PARTIE NOTRE EQUIPE */
 /* --------------------------------------- */
-
 #equipe_entreprise {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
-    margin-top: 3vh;
 }
 #equipe_entreprise .equipe_titre {
     background: #333;
@@ -255,7 +308,6 @@
 #equipe_entreprise .equipe_coll li {
     display: inline-grid;
 }
-
 #equipe_entreprise .equipe_coll img {
     height: auto;
     width: 200px;
@@ -263,7 +315,10 @@
     margin-left: 15px;
     clip-path: ellipse(60% 60%);
 }
-
+#equipe_entreprise .equipe_coll hr{
+    width: 230px;
+    border: 2px solid #128D5A;
+}
 #equipe_entreprise .equipe_coll p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 22px;
@@ -280,7 +335,6 @@
 #equipe_entreprise .equipe_coll .coll_fonc{
     color: #0E7894;
     padding-top: 5px;
-
 }
 /* Mise en forme pour écran < 450px */
 @media screen and (max-width: 450px) {
@@ -297,7 +351,6 @@
         font-size: 18px;
     }
 }
-
 /* Mise en forme pour écran entre 450 px et 700px */
 @media screen and (min-width: 450px) and (max-width: 700px) {
     #equipe_entreprise .equipe_flou {
@@ -313,7 +366,6 @@
         font-size: 24px;
     }
 }
-
 /* Mise en forme pour écran entre 700 px et 1200px  */
 @media screen and (min-width: 700px) and (max-width: 1200px) {
     #equipe_entreprise .equipe_flou {
@@ -330,8 +382,7 @@
         font-size: 36px;
     }
 }
-
-/* Mise en forme pour écran entre 700 px et 1600px  */
+/* Mise en forme pour écran entre 1200 px et 1600px  */
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
     #equipe_entreprise .equipe_flou {
         font-size: 40px;
@@ -346,7 +397,6 @@
         font-size: 24px;
     }
 }
-
 /* Mise en forme pour écran supérieur à 1600px */
 @media screen and (min-width: 1600px) {
     #equipe_entreprise .equipe_flou {
@@ -369,24 +419,23 @@
 /* -------------------------------------------------------- */
 /* MISE EN FORME DE LA PARTIE OU SE TROUVE NOTRE ENTREPRISE */
 /* -------------------------------------------------------- */
-
 #lieu_entreprise {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
-    margin-top: 3vh;
 }
 #lieu_entreprise .lieu_titre {
+    grid-column: 1 / -1;
     background: #333;
     color: #fff;
     padding: 20px;
 }
 #lieu_entreprise .lieu_image {
+    grid-column: 1 / -1;
     background: #333;
-    color: #fff;
-    padding: 20px;
+}
+#lieu_entreprise .lieu_image img {
     width: 100%;
-    text-align: center ;
 }
 #lieu_entreprise .lieu_flou {
     font-family: 'Odor Mean Chey', serif;
@@ -417,7 +466,6 @@
     padding-left: 100px;
     color: #FFFFFF;
 }
-
 /* Mise en forme pour écran < 450px */
 @media screen and (max-width: 450px) {
     #lieu_entreprise .lieu_flou {
@@ -433,7 +481,6 @@
         font-size: 18px;
     }
 }
-
 /* Mise en forme pour écran entre 450 px et 700px */
 @media screen and (min-width: 450px) and (max-width: 700px) {
     #lieu_entreprise .lieu_flou {
@@ -449,7 +496,6 @@
         font-size: 24px;
     }
 }
-
 /* Mise en forme pour écran entre 700 px et 1200px  */
 @media screen and (min-width: 700px) and (max-width: 1200px) {
     #lieu_entreprise .lieu_flou {
@@ -466,11 +512,16 @@
         font-size: 36px;
     }
 }
-
-/* Mise en forme pour écran entre 700 px et 1600px  */
+/* Mise en forme pour écran entre 1200 px et 1600px  */
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
     #lieu_entreprise {
         grid-template-columns: repeat(2, 40% 60%);
+    }
+    #lieu_entreprise .lieu_titre {
+        grid-column: span 1;
+    }
+    #lieu_entreprise .lieu_image {
+        grid-column: span 1;
     }
     #lieu_entreprise .lieu_flou {
         font-size: 40px;
@@ -485,11 +536,16 @@
         font-size: 24px;
     }
 }
-
 /* Mise en forme pour écran supérieur à 1600px */
 @media screen and (min-width: 1600px) {
     #lieu_entreprise {
         grid-template-columns: repeat(2, 40% 60%);
+    }
+    #lieu_entreprise .lieu_titre {
+        grid-column: span 1;
+    }
+    #lieu_entreprise .lieu_image {
+        grid-column: span 1;
     }
     #lieu_entreprise .lieu_flou {
         font-size: 60px;
@@ -511,17 +567,15 @@
 /* ------------------------------------------ */
 /* MISE EN FORME DE LA PARTIE NOS PARTENAIRES */
 /* ------------------------------------------ */
-
 #parten_entreprise {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
-    margin-top: 3vh;
 }
 #parten_entreprise .parten_titre {
     background: #333;
     color: #fff;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 #parten_entreprise .parten_flou {
     font-family: 'Odor Mean Chey', serif;
@@ -552,7 +606,35 @@
     padding-left: 100px;
     color: #FFFFFF;
 }
-
+#parten_entreprise .parten_logo {
+    background: #333;
+	display: flex;
+	overflow-x: auto;
+	padding: 20px;
+	align-items: center;
+}
+#parten_entreprise .parten_logo ol {
+	margin-right: 30px;
+	flex: none;
+	gap: 30px;
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+}
+#parten_entreprise .parten_logo li img{
+	height: auto;
+    width: 50px;
+    /* Annimation images noir et blanc puis couleurs */
+    transition: 0.3s ease-in-out;
+	cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+/* Annimation images couleurs puis noir et blanc */
+#parten_entreprise .parten_logo li img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
 /* Mise en forme pour écran < 450px */
 @media screen and (max-width: 450px) {
     #parten_entreprise .parten_flou {
@@ -567,8 +649,10 @@
     #parten_entreprise ul {
         font-size: 18px;
     }
+    #parten_entreprise .parten_logo li img{
+        width: 50px;
+    }
 }
-
 /* Mise en forme pour écran entre 450 px et 700px */
 @media screen and (min-width: 450px) and (max-width: 700px) {
     #parten_entreprise .parten_flou {
@@ -583,8 +667,10 @@
     #parten_entreprise ul {
         font-size: 24px;
     }
+    #parten_entreprise .parten_logo li img{
+        width: 80px;
+    }
 }
-
 /* Mise en forme pour écran entre 700 px et 1200px  */
 @media screen and (min-width: 700px) and (max-width: 1200px) {
     #parten_entreprise .parten_flou {
@@ -600,13 +686,12 @@
     #parten_entreprise ul {
         font-size: 36px;
     }
+    #parten_entreprise .parten_logo li img{
+        width: 140px;
+    }
 }
-
 /* Mise en forme pour écran entre 700 px et 1600px  */
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
-    #parten_entreprise {
-        grid-template-columns: repeat(2, 40% 60%);
-    }
     #parten_entreprise .parten_flou {
         font-size: 40px;
 	}
@@ -619,13 +704,12 @@
     #parten_entreprise ul {
         font-size: 24px;
     }
+    #parten_entreprise .parten_logo li img{
+        width: 260px;
+    }
 }
-
 /* Mise en forme pour écran supérieur à 1600px */
 @media screen and (min-width: 1600px) {
-    #parten_entreprise {
-        grid-template-columns: repeat(2, 40% 60%);
-    }
     #parten_entreprise .parten_flou {
         font-size: 60px;
         padding-top: 20px;
@@ -639,53 +723,7 @@
     #parten_entreprise ul {
         font-size: 36px;
     }
+    #parten_entreprise .parten_logo li img{
+        width: 360px;
+    }
 }
-
-
-
-
-
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/*       MISE EN FORME DE LA BARRE DES PARTENAIRES     */
-/* --------------------------------------------------- */
-
-.partenaires {
-	margin-top: 50px;
-    width: 100%;
-	padding: 100px 0px;
-}
-.partenaires .partenaires-images {
-	display: flex;
-	overflow-x: auto;
-	padding: 20px;
-	margin-top: -30px;
-	align-items: center;
-}
-.partenaires .partenaires-images ol {
-	margin-right: 30px;
-	flex: none;
-	gap: 30px;
-	display: flex;
-	align-items: center;
-	list-style-type: none;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
-}
-.partenaires .partenaires-images li img{
-	height: auto;
-    width: 50px;
-    position: center;
-    /* Annimation images noir et blanc puis couleurs */
-    transition: 0.3s ease-in-out;
-	cursor: pointer;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-/* Annimation images couleurs puis noir et blanc */
-.partenaires .partenaires-images li img:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
-
-
-

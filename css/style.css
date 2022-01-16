@@ -99,6 +99,12 @@ nav {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
 }
+.menu a.active {
+    border-bottom: 3px solid #125c8d;
+}
+.menu a:hover {
+    border-bottom: 3px solid #128D5A;
+}
 div {
     color: #125c8d;
 }
@@ -188,370 +194,6 @@ div {
 
 
 
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/* MISE EN FORME DE LA PARTIE OU SE TROUVE NOTRE ENTREPRISE */
-/* --------------------------------------------------- */
-
-#lieu_entreprise {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
-}
-.lieu_titre {
-    background: #333;
-    color: #fff;
-    padding: 20px;
-}
-.lieu_image {
-    background: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center ;
-}
-#lieu_entreprise .lieu_flou {
-    font-family: 'Odor Mean Chey', serif;
-    font-size: 60px;
-    line-height: 15%;
-    padding-top: 20%;
-    opacity: 5px;
-    color: rgba(3, 125, 141, 0.39);
-}
-#lieu_entreprise .lieu_double {
-    font-family: 'Odor Mean Chey', serif;
-    font-size: 45px;
-    line-height: 40%;
-    padding-bottom: 5%;
-    padding-left: 3%;
-    margin: 0;
-    color: #FFFFFF;
-}
-#lieu_entreprise p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    padding-left: 5%;
-    color: #FFFFFF;
-}
-#lieu_entreprise ul {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    padding-left: 13%;
-    color: #FFFFFF;
-}
-
-/* Mise en forme pour smartphone */
-@media screen and (min-width: 750px) {
-    #lieu_entreprise .lieu_flou {
-        font-size: 39px;
-	}
-    #lieu_entreprise .lieu_double {
-        font-size: 32px;
-	}
-    #lieu_entreprise p {
-        font-size: 20px;
-	}
-}
-
-/* Mise en forme pour Ã©cran 14 pouces ou moins */
-@media screen and (min-width: 750px) and (max-width: 1200px) {
-    #lieu_entreprise .lieu_flou {
-        font-size: 60px;
-        padding-top: 10%;
-	}
-    #lieu_entreprise .lieu_double {
-        font-size: 45px;
-	}
-    #lieu_entreprise p {
-        font-size: 20px;
-	}
-}
-
-/* Mise en forme pour Ã©cran 14 pouces ou moins */
-@media screen and (min-width: 1200px) and (max-width: 1470px) {
-    #lieu_entreprise .lieu_flou {
-        font-size: 48px;
-	}
-    #lieu_entreprise .lieu_double {
-        font-size: 38px;
-	}
-    #lieu_entreprise p {
-        font-size: 20px;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-    #lieu_entreprise {
-        grid-template-columns: repeat(2, 40% 60%);
-    }
-}
-
-
-
-
-
-
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/*       MISE EN FORME DE LA BARRE DES PARTENAIRES     */
-/* --------------------------------------------------- */
-
-.partenaires {
-	margin-top: 50px;
-    width: 100%;
-	padding: 100px 0px;
-}
-.partenaires .partenaires-images {
-	display: flex;
-	overflow-x: auto;
-	padding: 20px;
-	margin-top: -30px;
-	align-items: center;
-}
-.partenaires .partenaires-images ol {
-	margin-right: 30px;
-	flex: none;
-	gap: 30px;
-	display: flex;
-	align-items: center;
-	list-style-type: none;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
-}
-.partenaires .partenaires-images li img{
-	height: auto;
-    width: 50px;
-    position: center;
-    /* Annimation images noir et blanc puis couleurs */
-    transition: 0.3s ease-in-out;
-	cursor: pointer;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-/* Annimation images couleurs puis noir et blanc */
-.partenaires .partenaires-images li img:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
-
-
-
-
-
-
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/*              MISE EN FORME DU PORTFOLIO             */
-/* --------------------------------------------------- */
-
-.titre_portfolio {
-    background: #333;
-}
-.titre_portfolio #portfolio_titre .portfolio_flou {
-    font-family: 'Odor Mean Chey', serif;
-    font-size: 200px;
-    text-align: center;
-    line-height: 15%;
-    padding-top: 9%;
-    opacity: 5px;
-    color: rgba(3, 125, 141, 0.199);
-}
-.titre_portfolio #portfolio_titre .portfolio_double {
-    font-family: 'Odor Mean Chey', serif;
-    font-size: 125px;
-    text-align: center;
-    line-height: 40%;
-    padding-bottom: 5%;
-    margin: 0;
-    color: #FFFFFF;
-}
-
-.portfolio picture {
-    --border-width: 10%;
-    position: relative;
-    display: inline-flex;
-}
-.portfolio picture img {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 2%;
-    padding-right: 2%;
-    border-radius: 10%;
-    width: 155%;
-    height: auto;
-}
-.portfolio figcaption {
-    position: absolute;
-    top: 50%;
-    left: var(--border-width);
-    right: var(--border-width);
-    text-align: center;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.637);
-    text-align: -webkit-center;
-    color: white;
-    opacity: 0;
-    transition: opacity .66s 0s ease-in-out;
-}
-.portfolio picture figcaption h1 {
-    text-align: center;
-    margin-left: auto;
-    margin: 0 0 0 0;
-    margin-right: auto;
-    display: table-cell;
-    font-family: 'Odor Mean Chey', serif;
-    font-size: 30px;
-}
-.portfolio picture:hover figcaption {
-    opacity: 1;
-}
-.portfolio picture figcaption p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-/* Mise en forme pour Ã©cran 14 pouces ou moins */
-@media screen and (max-width: 750px) {
-    .titre_portfolio #portfolio_titre .portfolio_flou {
-        font-size: 60px;
-        padding-top: 25%;
-	}
-    .titre_portfolio #portfolio_titre .portfolio_double {
-        font-size: 50px;
-	}
-    .portfolio picture img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-
-/* Mise en forme pour Ã©cran 14 pouces ou moins */
-@media screen and (min-width: 750px) and (max-width: 1200px) {
-    .titre_portfolio #portfolio_titre .portfolio_flou {
-        font-size: 100px;
-        padding-top: 10%;
-	}
-    .titre_portfolio #portfolio_titre .portfolio_double {
-        font-size: 45px;
-	}
-}
-
-/* Mise en forme pour Ã©cran 14 pouces ou moins */
-@media screen and (min-width: 1200px) and (max-width: 1470px) {
-    .titre_portfolio #portfolio_titre .portfolio_flou {
-        font-size: 48px;
-	}
-    .titre_portfolio #portfolio_titre .portfolio_double {
-        font-size: 38px;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-    .titre_portfolio #portfolio_titre .portfolio_flou {
-        grid-template-columns: repeat(2, 40% 60%);
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/*          MISE EN FORME DE LA PARTIE DES CGU         */
-/* --------------------------------------------------- */
-.MENTIONS_LEG {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 80px;
-}
-.MENTIONS_LEG h1, h2 {
-    margin-bottom: 19px;
-}
-.MENTIONS_LEG h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    line-height: 108%;
-    color: #128D5A;
-}
-.MENTIONS_LEG .sous-titre {
-    font-style: italic;
-    margin-bottom: 19px;
-    color: black;
-}
-.MENTIONS_LEG h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin-top: 40px;
-    line-height: 108%;
-    color: #199688;
-}
-.MENTIONS_LEG p {
-    color: black;
-    line-height: 1.5625rem;
-    font-size: 1.0625rem;
-    flex-wrap: wrap;
-}
-.MENTIONS_LEG p span {
-    color: #0E7894;
-    flex-wrap: wrap;
-}
-.MENTIONS_LEG ul li {
-    margin-left: 3%;
-}
-
-
-
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/*          MISE EN FORME DE LA PARTIE DES CGU         */
-/* --------------------------------------------------- */
-
-.CGU {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 80px;
-}
-.CGU h1, h2 {
-    margin-bottom: 19px;
-}
-.CGU h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    line-height: 108%;
-    color: #128D5A;
-}
-.CGU .sous-titre {
-    font-style: italic;
-    margin-bottom: 19px;
-    color: black;
-}
-.CGU h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin-top: 40px;
-    line-height: 108%;
-    color: #199688;
-}
-.CGU p {
-    color: black;
-    line-height: 1.5625rem;
-    font-size: 1.0625rem;
-    flex-wrap: wrap;
-}
-.CGU p span {
-    color: #0E7894;
-    flex-wrap: wrap;
-}
-.CGU ul li {
-    margin-left: 3%;
-}
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -559,50 +201,72 @@ div {
 /* --------------------------------------------------- */
 
 footer {
-	text-align: center;
-	background: rgba(0, 0, 0, 0.767);
-	color: white;
-	line-height: 45px;
-	font-size: 20px;
-	font-family: 'Liberation Mono';
-    display: contents;
+    position: sticky;
+    top: 100%;
+    width: 100%;
+    background: #565656;
+    min-height: 100px;
+    padding: 10px 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-footer i{
-	color: #fff;
-    text-align: center;
-    display: contents;
-	font-size: 20px;
-	padding-left: 14px;
-	padding-top: 5px;
-	transition: 0.3s ease-in-out;
-	cursor: pointer;
+footer .social_icon, footer .mentions_CGU {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    color: white;
 }
-footer i:hover{
-	color: #335B55;
+footer .social_icon li, footer .mentions_CGU li {
+    list-style: none;
 }
-footer p {
+footer .social_icon li a, footer .mentions_CGU li a {
+    font-size: 20px;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+    color: #128D5A;
+}
+footer .mentions_CGU li a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
-	color: #ccc;
-	cursor: pointer;
-    margin: 0;
-    display: contents;
+    margin-bottom: 10px;
+    color: white;
+    margin: 0 5px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+
+}
+footer .mentions_CGU li a:hover {
+    opacity: 1;
+    color: white;
+    border-bottom: transparent;
     text-decoration: none;
 }
-footer p:hover {
-    color: #fff;
+footer p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
-footer #copy {
-    text-align: left;
-    padding-left: 2%;
-}
-footer #mentions_cond, #mentions, #cond {
-    text-align: left;
-    padding-right: 2%;
-    color: #ccc;
-    cursor: pointer;
-    padding-left: 2%;
-	text-decoration: none;
-}
-footer #mentions_cond:hover, #mentions:hover, #cond:hover {
-    color: #fff;
-}
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/*               MISE EN FORME DU CHAT BOT             */
+/* --------------------------------------------------- */
+
+
