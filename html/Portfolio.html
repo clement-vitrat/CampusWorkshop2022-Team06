@@ -11,12 +11,13 @@
         <!-- Mes pages CSS -->
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/Portfolio.css" />
 
         <!-- Lien pour icone -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Icons -->
-        <link rel="icon" href="../img/icon_logo.png">
+        <link rel="icon" href="../img/icon_logo.webp">
     </head>
     
     <body>
@@ -24,7 +25,7 @@
             <header>
                 <nav>
                     <div class="logo">
-                        <a href="../index.html"><img src="../img/icon_logo.png" alt="icon_entreprise"> DIGITAL CONSULTANT</a>
+                        <a href="../index.html"><img src="../img/icon_logo.webp" alt="icon_entreprise"> DIGITAL CONSULTANT</a>
                     </div>
                     <div class="toggle">
                         <i class="fas fa-bars ouvrir fermer"></i>
@@ -32,7 +33,7 @@
                     <ul class="menu">
                         <li><a href="../html/APropos.html">A propos</a></li>
                         <li><a href="../html/NosServices.html">Nos services</a></li>
-                        <li><a href="#">Portfolio</a></li>
+                        <li><a class="active" href="#">Portfolio</a></li>
                         <li><a href="../html/Blog.html">Blog</a></li>
                         <li><a href="../html/Contact.html">Contact</a></li>
                     </ul>
@@ -48,21 +49,21 @@
             </div>
             <div class="portfolio">
                 <picture>
-                    <img src="../img/fond.png" alt="image">
+                    <img src="../img/fond.webp" alt="image">
                     <figcaption>
                         <h1>TITRE</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     </figcaption>
                 </picture>
                 <picture>
-                    <img src="../img/fond.png" alt="image">
+                    <img src="../img/fond.webp" alt="image">
                     <figcaption>
                         <h1>TITRE</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     </figcaption>
                 </picture>
                 <picture>
-                    <img src="../img/fond.png" alt="image">
+                    <img src="../img/fond.webp" alt="image">
                     <figcaption>
                         <h1>TITRE</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -86,23 +87,22 @@
 
 
         <!-- CREATION DU FOOTER DE LA PAGE -->
-            <footer class="icons">
-                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                <a href="https://join.skype.com/"><i class="fab fa-skype"></i></a>
-                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.twitch.com/"><i class="fab fa-twitch"></i></a>
-                <a href="https://www.github.com/"><i class="fab fa-github"></i></a>
-            </footer>
-
-            <footer class="final">
-                <p id="copy">Copyright © 2022 Digital Consultant</p>
-                <p id="mentions_cond">
-                    <a id="mentions" href="#home">Mentions Légales</a>
-                    <a id="cond" href="#home">Conditions générales</a>
-                </p>
+            <footer>
+                <ul class="social_icon">
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://join.skype.com/"><i class="fab fa-skype"></i></a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.twitch.com/"><i class="fab fa-twitch"></i></a></li>
+                    <li><a href="https://www.github.com/"><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul class="mentions_CGU">
+                    <li><a href="../html/Mentions.html">Mentions légales</a></li>
+                    <li><a href="../html/CGU.html">Conditions générales</a></li>
+                </ul>
+                <p>Copyright © 2022 Digital Consultant</p>
             </footer>
 
 
