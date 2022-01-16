@@ -5,13 +5,13 @@ var id = {
     // Ajout du texte dans le "NOS VALEURS"
         "titre_valeur" : "NOS VALEURS",
         "val1_nom" : "AGILITÉ",
-        "val1_comm" : "Commentaire de la Valeur n°1 de notre entreprise",
+        "val1_comm" : "« Tout est changement, non pas pour ne plus être, mais pour devenir ce qui n’est pas encore. »",
         "val2_nom" : "ÉQUITÉ",
-        "val2_comm" : "Commentaire de la Valeur n°2 de notre entreprise",
+        "val2_comm" : "« La valeur d’une entreprise se mesure à celle de ses employés. »",
         "val3_nom" : "EXCELLENCE",
-        "val3_comm" : "Commentaire de la Valeur n°3 de notre entreprise",
+        "val3_comm" : "« La réussite tient en grande partie à la rencontre de la chance et du travail acharné. »",
         "val4_nom" : "PARTAGE",
-        "val4_comm" : "Commentaire de la Valeur n°4 de notre entreprise",
+        "val4_comm" : "« Travaillez en équipe, et vous aurez la chance d’avoir toujours quelqu’un à vos côtés. »",
 
     // Ajout du texte dans le "NOTRE EQUIPE"
         "titre_equipe" : "NOTRE EQUIPE",
