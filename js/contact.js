@@ -1,3 +1,18 @@
+// CREATION DU JSON
+window.addEventListener("DOMContentLoaded", (event) => {
+    // Appel de la zone "NOS VALEURS"
+        document.getElementById('tit_page').textContent = id.tit_page;
+
+    // Appel de la zone "CONTACT"
+        document.getElementById('titre_contact').textContent = id.titre_contact;
+        document.getElementById('titre2_contact').textContent = id.titre_contact;
+
+    // Appel de la zone "NOS AGENCES"
+        document.getElementById('titre_agences').textContent = id.titre_agences;
+        document.getElementById('titre2_agences').textContent = id.titre_agences;
+});
+
+
 // CONTACTEZ-NOUS
 $(document).ready(function() {
     $('#boutton').click(function() {

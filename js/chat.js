@@ -31,17 +31,16 @@ function getTime() {
     }
 
     let time = hours + ":" + minutes;
-    return time;
+    $("#chat-timestamp").append(time);
+    
 }
 
 // Creation du premier message
 function firstBotMessage() {
     let firstMessage = "Bonjour, je suis le chatbot DigiConsult ! Comment puis-je vous aidez ? 🤖";
     
-    document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
+    document.getElementById("botStarterMessage").innerHTML = getTime() + '<p class="botText"><span>' + firstMessage + '</span></p>';
 
-    let time = getTime();
-    $("#chat-timestamp").append(time);
     
     document.getElementById("userInput").scrollIntoView(false);
 }
@@ -57,12 +56,12 @@ function getHardResponse(userText) {
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
 
-//Gets the text text from the input box and processes it
+// Configuration de la réponse
 function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-        userText = "I love Code Palace!";
+        userText = getResponse();
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -85,21 +84,19 @@ function buttonSendText(sampleText) {
     $("#chatbox").append(userHtml);
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
-    //Uncomment this if you want the bot to respond to this buttonSendText event
-    // setTimeout(() => {
-    //     getHardResponse(sampleText);
-    // }, 1000)
 }
 
+// Configuration du bouton "enveloppe"
 function sendButton() {
     getResponse();
 }
 
+// Configuration du bouton "coeur"
 function heartButton() {
     buttonSendText("Merci pour votre réponse !")
 }
 
-// Press enter to send a message
+// Appuyez sur enter pour envoyer le message
 $("#textInput").keypress(function (e) {
     getResponse();
 })
