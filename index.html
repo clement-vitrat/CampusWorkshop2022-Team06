@@ -41,23 +41,19 @@
             </header>
         
 
-        <!-- CREATION DU CHAT BOT -->
-            <div class="chat_bot">
-                <button class="open-button" onclick="openForm()">Chat</button>
-
-                <div class="chat-popup" id="myForm">
-                    <form action="" class="form-container">
-                        <h1>Chat Bot</h1>
-
-                        <label for="msg"><b>Message</b></label>
-                        <textarea placeholder="Type message.." name="msg" required></textarea>
-
-                        <button type="submit" class="btn">Send</button>
-                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                    </form>
+        <!-- CREATION DE LA NEWSLETTER -->
+            <div class="newsletter">
+                <div class="newsletter-header">
+                    Abonnez-vous à notre Newsletter
                 </div>
-            </div>    
-            
+                
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">x</span>
+                
+                <div class="newsletter-container">
+                    <input type="text" placeholder="Email address" name="mail" required>
+                    <input type="submit" value="Subscribe">
+                </div>
+            </div>
 
 
         <!-- CREATION DU FOOTER DE LA PAGE -->
