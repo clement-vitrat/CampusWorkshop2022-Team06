@@ -1,0 +1,16 @@
+.retour_haut #myBtn {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    outline: none;
+    background-color: transparent;
+    color: #128d5f;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    font-size: 35px;
+}
+
+.retour_haut #myBtn:hover {
+    background-color: transparent;
+}

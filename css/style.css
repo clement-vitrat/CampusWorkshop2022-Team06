@@ -270,3 +270,73 @@ footer p {
 /* --------------------------------------------------- */
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/*            MISE EN FORME DE LA NEWSLETTER           */
+/* --------------------------------------------------- */
+
+.newsletter {
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    margin-left: 20px;
+    max-width: 310px;
+}  
+.newsletter .newsletter-header {
+    padding: 10px 15px;
+    background: #125c8daf;
+    font-size: 15px;
+    color: white;
+} 
+.newsletter .newsletter-container {
+    padding: 10px;
+    background-color: rgba(204, 204, 204, 0.76);
+    color: black
+} 
+.newsletter .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+} 
+.newsletter .closebtn:hover {
+    color: black;
+}  
+.newsletter input[type=text], .newsletter input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}  
+.newsletter input[type=checkbox] {
+    margin-top: 16px;
+} 
+.newsletter input[type=submit] {
+    background-color: #128d5aaf;
+    color: white;
+    border: none;
+    width: 100%;
+} 
+.newsletter input[type=submit]:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
