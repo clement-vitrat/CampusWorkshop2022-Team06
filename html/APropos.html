@@ -12,7 +12,12 @@
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/APropos.css">
-        
+        <!-- Pages CSS pour le Chat Bot -->
+        <link rel="stylesheet" href="../css/home.css" />
+        <link rel="stylesheet" href="../css/chat.css" />
+        <!-- Page CSS pour retour haut de page -->
+        <link rel="stylesheet" href="../css/haut_page.css">
+
         <!-- Lien pour icone -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
@@ -58,7 +63,7 @@
                 </div>
                 <div class="valeur_design">
                     <div class="design_info">
-                        <img src="../img/valeur1.webp" alt="">
+                        <img src="../img/valeur1.webp" alt="" class="image">
                         <p id="val1_nom"></p>
                         <hr>
                         <p class="coll_fonc" id=val1_comm></p>
@@ -214,11 +219,79 @@
             </ul>
             <p>Copyright © 2022 Digital Consultant</p>
         </footer>
+        
+
+        <!-- CREATION DU CHAT BOT -->
+        <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible">Besoin d'aide ?
+                <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments"></i>
+            </button>
+
+            <div class="content">
+
+                <div class="full-chat-block">
+
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        
+
+                        <div class="chat-container">
+                            <div class="questions_posees">
+                                <h3 id="questions">Questions les plus posées ?</h3>
+                                <ol>
+                                    <li id="question1">En quoi consiste votre offre ?</li>
+                                    <li id="question2">Quelles solutions proposez-vous ?</li>
+                                </ol>
+                            </div>
+                            <!-- Messages -->
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            </div>
+
+                            <!-- User input box -->
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box" type="text" name="msg" placeholder="Taper votre message">
+                                    <p></p>
+                                </div>
+
+                                <div class="chat-bar-icons">
+                                    <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                        onclick="heartButton()"></i>
+                                    <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-paper-plane"
+                                        onclick="sendButton()"></i>
+                                </div>
+                            </div>
+
+                            <div id="chat-bar-bottom">
+                                <p></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Retour haut de page -->
+            <div class="retour_haut">
+                <button onclick="topFunction()" id="myBtn"><i class="fas fa-hand-point-up"></i></button>
+            </div>
 
         <!-- FEUILLES DE JAVASCRIPT (SCRIPT) -->
             <!-- Script Principal du code complet -->
                 <script src="../js/scripts.js" ></script>
                 <script src="../js/APropos.js" ></script>
+            <!-- Script pour le Chat Bot -->
+                <script src="../js/chat.js" ></script>
+                <script src="../js/reponses.js" ></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <!-- Script pour retour haut de page -->
+                <script src="../js/haut_page.js"></script>
         
         <!-- FEUILLES DE JSON (SCRIPT) -->
             <!-- Script principal pour modification du texte de la page -->    
