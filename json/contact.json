@@ -1,0 +1,11 @@
+var id = {
+    // Ajout du texte dans le tritre de la page
+        "tit_page" : "NOUS CONTACTER",
+
+    
+    // Ajout du texte dans le "CONTACT"
+        "titre_contact" : "CONTACT",
+
+	// Ajout du texte dans le "NOS AGENCES"
+        "titre_agences" : "NOS AGENCES",
+};
