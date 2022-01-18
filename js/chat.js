@@ -39,7 +39,7 @@ function getTime() {
 function firstBotMessage() {
     let firstMessage = "Bonjour, je suis le chatbot DigiConsult ! Comment puis-je vous aidez ? 🤖";
     
-    document.getElementById("botStarterMessage").innerHTML = getTime() + '<p class="botText"><span>' + firstMessage + '</span></p>';
+    document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     
     document.getElementById("userInput").scrollIntoView(false);
