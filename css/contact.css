@@ -8,7 +8,7 @@
     grid-template-rows: 20vh;
     align-items: center;
     margin-top: 8vh;
-    background-image: url("../img/contact.webp");
+    background-image: url("../img/digital_consultant_img1.jpg");
     background-size: c;
 	background-size:width 100%
 }
@@ -67,7 +67,7 @@
         grid-template-rows: 35vh;
     }
     #titre_page .valeur_flou {
-        font-size: 150px;
+        font-size: 120px;
 	}
 }
 /* Mise en forme pour écran supérieur à 1600px */
@@ -76,7 +76,7 @@
         grid-template-rows: 40vh;
     }
     #titre_page .valeur_flou {
-        font-size: 200px;
+        font-size: 160px;
 	}
 }
 
@@ -99,24 +99,24 @@
 #page_contact {
 	display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
 }
 #page_contact .contact_entr {
-    grid-column: 1 / -1;
-	display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
+    background: #333;
+    color: #fff;
 }
 #page_contact .contact_titre {
-    grid-column: 1 / -1;
+    grid-column:  1;
+	grid-row: 1;
     background: #333;
     color: #fff;
     padding: 20px;
 }
 #page_contact .contact_mess {
-    grid-column: 1 / -1;
-    grid-row: 2;
+    grid-column: 1;
+	grid-row: 2;
     background: #333;
+	color: #fff;
 	padding: 20px;
 }
 #page_contact .titre_flou {
@@ -136,30 +136,28 @@
     margin: 0;
     color: #FFFFFF;
 }
-#page_contact .contact_mess form {
-    /* Uniquement centrer le formulaire sur la page */
+#page_contact .contact_mess .form_mess {
+    /* Centrage du formulaire sur la page */
     margin: 0 auto;
     width: 80%;
-    /* Encadré pour voir les limites du formulaire */
+    /* Encadrment pour voir les limites du formulaire */
     padding: 1em;
     background: #ccc;
     border-radius: 5px; 
-    -moz-border-radius: 5px; 
-    -webkit-border-radius: 5px; 
+	/* Alignement des champs et du texte */
+	text-align: center;
+	align-items: center;
 }
-#page_contact .contact_mess form:hover {
+#page_contact .contact_mess .form_mess:hover {
     -webkit-animation-name: greenPulse;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: 1;
     -webkit-box-shadow: 0 0 10px #01ffe19c;
 }
-#page_contact .contact_mess form div {
-    margin-top: 1em;
-    align-items: center;
-    text-align: center;
-} 
+
 #page_contact .contact_mess input, textarea {
-    /* Pour s'assurer que tous les champs texte ont la même police. Par défaut, les textarea ont une police monospace */
+    margin-top: 1em;
+	/* Pour s'assurer que tous les champs texte ont la même police. Par défaut, les textarea ont une police monospace */
     font-size: 1em sans-serif;
     /* Pour que tous les champs texte aient la même dimension */
     width: 80%;
@@ -175,13 +173,10 @@
 }
 #page_contact .contact_mess input:focus, textarea:focus {
     /* Pour souligner légèrement les éléments actifs */
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
     border-bottom: red;
 }
 #page_contact .contact_mess textarea {
-    /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+    /* Pour aligner les champs texte multi-ligne avec leur étiquette */
     vertical-align: top;
     /* Pour donner assez de place pour écrire du texte */
     height: auto;
@@ -192,12 +187,8 @@
     box-sizing: border-box;
     padding-left: 10px;
 }
-#page_contact .contact_mess button {
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    width: 140px;
-    height: 40px;
+#page_contact .contact_mess .form_bouton {
+	margin-top: 1em;
     font-size: 15px;
     cursor: pointer;
     background: #0E7894;
@@ -205,76 +196,73 @@
     border-radius: 20px;
     border: 0;
 }
-#page_contact .contact_mess button:hover {
+#page_contact .contact_mess .form_bouton:hover {
     -webkit-animation-duration: 2s;
     background: #128D5A;
     border: 0;
     color: white;
 }
+
 /* NOS AGENCES */
 #page_contact .contact_agences {
-    grid-column: 1 / -1;
-	display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
+    background: #333;
+    color: #fff;
 }
 #page_contact .agences_titre {
-    grid-column: 1 / -1;
+    grid-column: 1;
+	grid-row: 3;
     background: #333;
     color: #fff;
     padding: 20px;
 }
-#page_contact .agences_adress {
-    grid-column: 1 / -1;
-    grid-row: 2;
+#page_contact .agences_adresse {
+    grid-column: 1;
+	grid-row: 4;
     background: #333;
+	color: #fff;
 	padding: 20px;
+	margin: 0 auto;
+    width: 95%;
 }
-#page_contact .accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
+#page_contact .agences_adr {	
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+#page_contact .agences_adr button {
+  background-color: inherit;
+  float: left;
   border: none;
-  text-align: left;
   outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-  font-family: 'Odor Mean Chey', serif, bold;
-  font-size: 20px;
-  color: #128D5A;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-family: cursive;
 }
-#page_contact .active, .accordion:hover {
-  background-color: #ccc;
+#page_contact .agences_adr button:hover {
+  background-color: #ddd;
 }
-#page_contact .accordion:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+#page_contact .agences_adr button.active {
+  background-color: #0e7994;
+  color:white;
 }
-#page_contact .active:after {
-  content: "";
+#page_contact .agence_detail {
+  display: none;
+  padding: 12px;
+  border: 1px solid #0e7994;
+  border-top: none;
 }
-#page_contact .panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-#page_contact .panel h3 {
+#page_contact .agence_detail h3 {
     font-family: 'Odor Mean Chey', serif;
-    font-size: 20px;
-    padding-top: 4%;
+    font-size: 36px;
     margin: 0;
+	padding-top: 20px;
     color: #0E7894;
 }
-#page_contact .panel p {
+#page_contact .agence_detail p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 3%;
     margin-bottom: 0;
     color: #199688;
@@ -287,6 +275,12 @@
     #page_contact .titre_double {
         font-size: 22px;
 	}
+	#page_contact .agence_detail h3 {
+		font-size: 24px;
+	}
+	#page_contact .agence_detail p {
+		font-size: 20px;
+	}
 }
 /* Mise en forme pour écran entre 450 px et 700px */
 @media screen and (min-width: 450px) and (max-width: 700px) {
@@ -295,6 +289,12 @@
 	}
     #page_contact .titre_double {
         font-size: 32px;
+	}
+	#page_contact .agence_detail h3 {
+		font-size: 30px;
+	}
+	#page_contact .agence_detail p {
+		font-size: 25px;
 	}
 }
 /* Mise en forme pour écran entre 700 px et 1200px  */
@@ -306,17 +306,15 @@
     #page_contact .titre_double {
         font-size: 45px;
 	}
+	#page_contact .agences_adr button {
+		font-size: 18px;
+	}
 }
 /* Mise en forme pour écran entre 1200 px et 1600px  */
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
     #page_contact {
         grid-template-columns: repeat(2, 50% 50%);
-    }
-    #page_contact .contact_entr {
-        grid-column: span 1;
-    }
-    #page_contact .contact_agences {
-        grid-column: span 1;
+		grid-template-rows: repeat(2, auto);
     }
     #page_contact .titre_flou {
         font-size: 40px;
@@ -324,17 +322,15 @@
     #page_contact .titre_double {
         font-size: 32px;
 	}
+	#page_contact .agences_adr button {
+		font-size: 15px;
+	}
 }
 /* Mise en forme pour écran supérieur à 1600px */
 @media screen and (min-width: 1600px) {
     #page_contact {
         grid-template-columns: repeat(2, 50% 50%);
-    }
-    #page_contact .contact_entr {
-        grid-column: span 1;
-    }
-    #page_contact .contact_agences {
-        grid-column: span 1;
+		grid-template-rows: repeat(2, auto);
     }
     #page_contact .titre_flou {
         font-size: 60px;
@@ -342,5 +338,8 @@
 	}
     #page_contact .titre_double {
         font-size: 45px;
+	}
+	#page_contact .agences_adr button {
+		font-size: 20px;
 	}
 }

@@ -1,0 +1,165 @@
+/* ------------------------------------------------------- */
+/*                 MISE EN FORME DU BLOG                   */
+
+/* --------------------------------- */
+/* --------------------------------- */
+/* MISE EN FORME DU TITRE DE LA PAGE */
+/* --------------------------------- */
+#titre_page {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 20vh;
+    align-items: center;
+    margin-top: 8vh;
+    background-image: url("../img/Fond_titre.webp");
+    background-size: cover;
+}
+#titre_page .blog_flou {
+    font-family: cursive;
+    text-align: center;
+    font-size: 200px;
+    color: rgb(3 125 141);
+    text-shadow:  white 0.006em 0.006em 0.007em,
+                    #9c9c9c 1px 1px 1px,
+                    #9c9c9c 1px 2px 1px,
+                    #9c9c9c 1px 3px 1px,
+                    #9c9c9c 1px 4px 1px,
+                    #9c9c9c 1px 5px 1px,
+                    #9c9c9c 1px 6px 1px,
+                    #9c9c9c 1px 7px 1px,
+                    #9c9c9c 1px 8px 1px,
+                    #9c9c9c 1px 9px 1px,
+                    #9c9c9c 1px 10px 1px,
+                    #9c9c9c 1px 11px 1px,
+                    #9c9c9c 1px 12px 1px;
+}
+/* Mise en forme pour écran < 450px */
+@media screen and (max-width: 450px) {
+    #titre_page {
+        grid-template-rows: 20vh;
+    }
+    #titre_page .blog_flou {
+        font-size: 50px;
+	}
+    #titre_page .blog_double {
+        font-size: 35px;
+	}
+}
+/* Mise en forme pour écran entre 450 px et 700px */
+@media screen and (min-width: 450px) and (max-width: 700px) {
+    #titre_page {
+        grid-template-rows: 25vh;
+    }
+    #titre_page .blog_flou {
+        font-size: 100px;
+	}
+}
+/* Mise en forme pour écran entre 700 px et 1200px  */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    #titre_page {
+        grid-template-rows: 30vh;
+    }
+    #titre_page .blog_flou {
+        font-size: 120px;
+	}
+}
+/* Mise en forme pour écran entre 1200 px et 1600px  */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    #titre_page {
+        grid-template-rows: 35vh;
+    }
+    #titre_page .blog_flou {
+        font-size: 150px;
+	}
+}
+/* Mise en forme pour écran supérieur à 1600px */
+@media screen and (min-width: 1600px) {
+    #titre_page {
+        grid-template-rows: 40vh;
+    }
+    #titre_page .blog_flou {
+        font-size: 200px;
+	}
+}
+
+
+
+/* --------------------------------- */
+/* --------------------------------- */
+/* MISE EN FORME DU TITRE DE LA PAGE */
+/* --------------------------------- */
+
+#blog {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+
+}
+#blog .comment_blog {
+    width: 350px;
+    background-color: #ffff;
+    margin: 20px;
+    border: 2px solid #333;
+}
+#blog .comment_blog:hover {
+    box-shadow: 0 8px 12px 0 white;
+    color: #198819a8;
+}
+#blog .photo_blog {
+    width: 100%;
+    height: auto;
+}
+#blog .photo_blog img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+#blog .commentaire {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#blog .commentaire h4 {
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(44, 44, 43);
+}
+#blog .commentaire p {
+    color: rgb(44, 44, 43);
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 15px 0px;
+}
+#blog .comment_blog .separation {
+    border-top: 1px solid #9c9c9c;
+    margin-bottom: 15px;
+}
+#blog .comment_blog .comment_like {
+    text-align: right;
+    font-size: 15px;
+    color: #9c9c9c;
+    margin: 0;
+}
+#blog .comment_blog .comment_like i {
+    text-align: right;
+    color: red;
+}
+#blog .comment_blog .comment_time, .comment_time i {
+    text-align: left;
+    font-size: 15px;
+    color: #9c9c9c;
+    margin: 0;
+    margin-bottom: 10px;
+}
+#blog .comment_blog .comment_user, .comment_user i {
+    text-align: left;
+    font-size: 15px;
+    color: #9c9c9c;
+    margin: 0;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,150 @@
+/* ------------------------------------------------------- */
+/*         MISE EN FORME DE LA PAGE NOS SERVICES           */
+
+/* --------------------------------- */
+/* --------------------------------- */
+/* MISE EN FORME DU TITRE DE LA PAGE */
+/* --------------------------------- */
+#titre_page {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 20vh;
+    align-items: center;
+    margin-top: 8vh;
+    background-image: url("../img/Fond_titre.webp");
+    background-size: cover;
+}
+#titre_page .services_flou {
+    font-family: cursive;
+    text-align: center;
+    font-size: 200px;
+    color: rgb(3 125 141);
+    text-shadow:  white 0.006em 0.006em 0.007em,
+                    #9c9c9c 1px 1px 1px,
+                    #9c9c9c 1px 2px 1px,
+                    #9c9c9c 1px 3px 1px,
+                    #9c9c9c 1px 4px 1px,
+                    #9c9c9c 1px 5px 1px,
+                    #9c9c9c 1px 6px 1px,
+                    #9c9c9c 1px 7px 1px,
+                    #9c9c9c 1px 8px 1px,
+                    #9c9c9c 1px 9px 1px,
+                    #9c9c9c 1px 10px 1px,
+                    #9c9c9c 1px 11px 1px,
+                    #9c9c9c 1px 12px 1px;
+}
+/* Mise en forme pour écran < 450px */
+@media screen and (max-width: 450px) {
+    #titre_page {
+        grid-template-rows: 20vh;
+    }
+    #titre_page .services_flou {
+        font-size: 50px;
+	}
+}
+/* Mise en forme pour écran entre 450 px et 700px */
+@media screen and (min-width: 450px) and (max-width: 700px) {
+    #titre_page {
+        grid-template-rows: 25vh;
+    }
+    #titre_page .services_flou {
+        font-size: 100px;
+	}
+}
+/* Mise en forme pour écran entre 700 px et 1200px  */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    #titre_page {
+        grid-template-rows: 30vh;
+    }
+    #titre_page .services_flou {
+        font-size: 120px;
+	}
+}
+/* Mise en forme pour écran entre 1200 px et 1600px  */
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    #titre_page {
+        grid-template-rows: 35vh;
+    }
+    #titre_page .services_flou {
+        font-size: 150px;
+	}
+}
+/* Mise en forme pour écran supérieur à 1600px */
+@media screen and (min-width: 1600px) {
+    #titre_page {
+        grid-template-rows: 40vh;
+    }
+    #titre_page .services_flou {
+        font-size: 200px;
+	}
+}
+
+
+/* --------------------------------- */
+/* --------------------------------- */
+/*    MISE EN FORME DU CAROUSSEL     */
+/* --------------------------------- */
+
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.description {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot .active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .description {
+        font-size: 11px
+    }
+}
