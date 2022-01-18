@@ -8,4 +8,35 @@ var id = {
 
 	// Ajout du texte dans le "NOS AGENCES"
         "titre_agences" : "NOS AGENCES",
+		
+	//Liste des Agences
+		"ag1_lieu" : "FRANCE",
+		"ag2_lieu" : "ESPAGNE",
+		"ag3_lieu" : "QUEBEC",
+		"ag4_lieu" : "ETAS-UNIS (prochainement)",
+		
+	//Info AGENCE n°1
+		"ag1_adr_lig1" : "3 boulevard Michelet",
+		"ag1_adr_lig2" : "Résidence TOTO",
+		"ag1_adr_lig3" : "13 008 MARSEILLE",
+		"ag1_con_mail" : "contact1@mail.com",
+		"ag1_con_tel" : "+33 1 23 45 67 89",
+	//Info AGENCE n°1
+		"ag2_adr_lig1" : "Calle Virgen de la Paz, 15",
+		"ag2_adr_lig2" : "29 400 Ronda,",
+		"ag2_adr_lig3" : "Malaga, Espagne",
+		"ag2_con_mail" : "contact2@mail.com",
+		"ag2_con_tel" : "+34 1 23 45 67 89",
+	//Info AGENCE n°1
+		"ag3_adr_lig1" : "805 rue Sherbrooke O",
+		"ag3_adr_lig2" : "H3A 0B9 Montréal, Québec",
+		"ag3_adr_lig3" : "",
+		"ag3_con_mail" : "contact3@mail.com",
+		"ag3_con_tel" : "000-000-0000",
+	//Info AGENCE n°1
+		"ag4_adr_lig1" : "1350 Massachusetts Ave",
+		"ag4_adr_lig2" : "Cambridge, MA 01138, USA",
+		"ag4_adr_lig3" : "",
+		"ag4_con_mail" : "contact4@mail.com",
+		"ag4_con_tel" : "+1 (000) 000-0000",
 };
