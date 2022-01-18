@@ -11,6 +11,7 @@
         <!-- Mes pages CSS -->
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/Blog.css" />
 
         <!-- Lien pour icone -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -40,6 +41,92 @@
                 </nav>
             </header>
         
+        
+        <!-- CREATION DE LA PARTIE TITRE PAGES --> 
+            <div id="titre_page">
+                <div> 
+                    <h3 class="blog_flou" id="tit_page">BLOG</h3>
+                </div>
+            </div>
+
+
+        <!-- CREATION DU BLOG -->
+            <div id="blog">
+                <div class="comment_blog">
+                    <div class="comment-1">
+                        <div class="photo_blog">
+                            <img src="../img/drapeau_france.webp" alt="">
+                        </div>
+                        <div class="commentaire">
+                            <p class="comment_user"><i class="fas fa-user-circle"></i> Clément VITRAT</p>
+                            <p class="comment_time"><i class="far fa-clock"></i> 13 janvier 2022 - 19h30</p>
+                            <h4>What Has Happened of all of the web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet.</p>
+                            <hr class="separation">
+                            <p class="comment_like">5 <i class="far fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment_blog">
+                    <div id="comment-2">
+                        <div class="photo_blog">
+                            <img src="../img/drapeau_france.webp" alt="">
+                        </div>
+                        <div class="commentaire">
+                            <p class="comment_user"><i class="fas fa-user-circle"></i> Clément VITRAT</p>
+                            <p class="comment_time"><i class="far fa-clock"></i> 13 janvier 2022 - 19h30</p>
+                            <h4>What Has Happened of all of the web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet.</p>
+                            <hr class="separation">
+                            <p class="comment_like">5 <i class="far fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment_blog">
+                    <div class="comment-3">
+                        <div class="photo_blog">
+                            <img src="../img/drapeau_france.webp" alt="">
+                        </div>
+                        <div class="commentaire">
+                            <p class="comment_user"><i class="fas fa-user-circle"></i> Clément VITRAT</p>
+                            <p class="comment_time"><i class="far fa-clock"></i> 13 janvier 2022 - 19h30</p>
+                            <h4>What Has Happened of all of the web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet.</p>
+                            <hr class="separation">
+                            <p class="comment_like">5 <i class="far fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
+            
+
+        <!-- CREATION D'UN NOUVEAU COMMENTAIRE -->
+            <form action="#" id="new-comment">
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="nom" class="form-label me-2">Prénom Nom</label>
+                    <input type="text" class="form-control" id="nom" name="nom">
+                </div>
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="titre" class="form-label me-2">Titre du commentaire</label>
+                    <input type="text" class="form-control" id="titre" name="titre">
+                </div>
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="comm" class="form-label me-2">Commentaire</label>
+                    <input type="text" class="form-control" id="comm" name="comm">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="Votre message ici..." rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-primary" value="Envoyer">
+                </div>
+            </form>
+
+
+
+
+
 
         <!-- CREATION DU FOOTER DE LA PAGE -->
             <footer>
@@ -64,6 +151,8 @@
         <!-- FEUILLES DE JAVASCRIPT (SCRIPT) -->
             <!-- Script Principal du code complet -->
                 <script src="../js/scripts.js" ></script>
+                <script src="../js/Blog.js" ></script>
+
         
         <!-- FEUILLES DE JSON (SCRIPT) -->
             <!-- Script principal pour modification du texte de la page -->    

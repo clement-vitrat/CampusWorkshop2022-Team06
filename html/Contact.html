@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -62,44 +60,14 @@
 					<h3 class="titre_double" id="titre2_contact"></h3>
 				</div>
 				<div class="contact_mess">
-					<form action="../php/contact.php" method="post">
-						<div>
-							<div>
-								<label for="myrequete">Votre requête</label>
-								<select id="suggestion" name="altrequete">
-									<option>Demande de renseignement sur nos services</option>
-									<option>Support client</option>
-									<option>Comptabilité, administrative</option>
-									<option>Recrutement</option>
-									<option>Presse</option>
-									<option>Alliance / Partenariat</option>
-								</select>
-							</div>
-							<div>
-								<input type="textpre" id="user_prenom" name="user_prenom" placeholder="PRENOM" />
-							</div>
-							<div>
-								<input type="text" id="user_name" name="user_name" placeholder="NOM" />
-							</div>
-							<div>
-								<input type="telpro" id="user_tel" name="user_tel" placeholder="TELEPHONE" />
-							</div>
-							<div>
-								<input type="email" id="user_mail" name="user_mail" placeholder="COURRIEL" />
-							</div>
-							<div>
-								<textarea type="msg" id="user_message" name="user_message" placeholder="PARLEZ-NOUS DE VOTRE PROJETS"></textarea>
-							</div>
-							<div>
-								<input type="submit" id="boutton" value="ENVOYER" />
-							</div>
-						</div>
-						
-						
-						<!-- <div class="button">
-							<input type="submit" id="boutton">ENVOYER</input>
-						</div> -->
-
+					<form class="form_mess" action="javascript:EnvoiMail()">
+						<input type="text" id="mess_nom" name="Nom" placeholder="NOM" />
+						<input type="text" id="mess_prenom" name="Prenom" placeholder="PRENOM" />
+						<input type="text" id="mess_tel" name="Numéro de téléphone" placeholder="TELEPHONE" />
+						<input type="email" id="mess_mail" name="Adresse mail" placeholder="COURRIEL" />
+						<textarea id="mess_message" name="Commentaire" placeholder="PARLEZ-NOUS DE VOTRE PROJETS"></textarea>
+						<div></div>
+						<input class="form_bouton" type="submit" name="mess_envoi" value="ENVOYER" />	
 					</form>
 				</div>
 			</div>
@@ -109,43 +77,49 @@
 					<h3 class="titre_flou" id="titre_agences"></h3>
 					<h3 class="titre_double" id="titre2_agences"></h3>
 				</div>
-				<div class="agences_adress">
-					<button class="accordion">FRANCE</button>
-					<div class="panel">
+				<div class="agences_adresse">
+					<div class="agences_adr">
+						<button class="agence_lieu" onclick="ouv_agences(event, 'ag1')" id="ag1_lieu"></button>
+						<button class="agence_lieu" onclick="ouv_agences(event, 'ag2')" id="ag2_lieu"></button>
+						<button class="agence_lieu" onclick="ouv_agences(event, 'ag3')" id="ag3_lieu"></button>
+						<button class="agence_lieu" onclick="ouv_agences(event, 'ag4')" id="ag4_lieu"></button>
+					</div>
+					<div id="ag1" class="agence_detail">
 						  <h3>Adresse</h3>
-						<p>3 Boulevard de Michelet</p>
-						<p>13 008 Marseille, France</p>
+						<p id="ag1_adr_lig1"></p>
+						<p id="ag1_adr_lig2"></p>
+						<p id="ag1_adr_lig3"></p>
 						<h3>Contact</h3>
-						<p>contact@contact.com</p>
-						<p>+33 0 00 00 00 00</p>
+						<p id="ag1_con_mail"></p>
+						<p id="ag1_con_tel"></p>
 					</div>
-					<button class="accordion">ESPAGNE</button>
-					<div class="panel">
+					<div id="ag2" class="agence_detail">
 						 <h3>Adresse</h3>
-						<p>Calle Virgen de la Paz, 15</p>
-						<p>29 400 Ronda, Malaga, Espagne</p>
+						<p id="ag2_adr_lig1"></p>
+						<p id="ag2_adr_lig2"></p>
+						<p id="ag2_adr_lig3"></p>
 						<h3>Contact</h3>
-						<p>contact@contact.com</p>
-						<p>+34 000 00 00 00</p>
+						<p id="ag2_con_mail"></p>
+						<p id="ag2_con_tel"></p>
 					</div>
-					<button class="accordion">QUEBEC</button>
-					<div class="panel">
+					<div id="ag3" class="agence_detail">
 						<h3>Adresse</h3>
-						<p>805 rue Sherbrooke O</p>
-						<p>H3A 0B9 Montréal, Québec</p>
+						<p id="ag3_adr_lig1"></p>
+						<p id="ag3_adr_lig2"></p>
+						<p id="ag3_adr_lig3"></p>
 						<h3>Contact</h3>
-						<p>contact@contact.com</p>
-						<p>000-000-0000</p>
+						<p id="ag3_con_mail"></p>
+						<p id="ag3_con_tel"></p>
 					  </div>
-					<button class="accordion">ETATS-UNIS (prochainement)</button>
-					<div class="panel">
+					<div id="ag4" class="agence_detail">
 						<h3>Adresse</h3>
-						<p>1350 Massachusetts Ave</p>
-						<p>Cambridge, MA 01138, USA</p>
+						<p id="ag4_adr_lig1"></p>
+						<p id="ag4_adr_lig2"></p>
+						<p id="ag4_adr_lig3"></p>
 						<h3>Contact</h3>
-						<p>contact@contact.com</p>
-						<p>+1 (000) 000-0000</p>
-					  </div>
+						<p id="ag4_con_mail"></p>
+						<p id="ag4_con_tel"></p>
+					</div>
 				</div>
 			</div>
 		</div>
