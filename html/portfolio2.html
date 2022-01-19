@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords"> 
+
+        <!-- Mes pages CSS -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/portfolio2.css" />
+        <!-- Page CSS pour retour haut de page -->
+        <link rel="stylesheet" href="../css/haut_page.css">
+
+        <!-- Lien pour icone -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Icons -->
+        <link rel="icon" href="../img/icon_logo.webp">
+    </head>
+    
+    <body>
+        <!-- CREATION DE LA NAVIGATION DE LA PAGE -->
+            <header>
+                <nav>
+                    <div class="logo">
+                        <a href="../index.html"><img src="../img/icon_logo.webp" alt="icon_entreprise"> DIGITAL CONSULTANT</a>
+                    </div>
+                    <div class="toggle">
+                        <i class="fas fa-bars ouvrir fermer"></i>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="../html/APropos.html">A propos</a></li>
+                        <li><a href="../html/NosServices.html">Nos services</a></li>
+                        <li><a class="active" href="#">Portfolio</a></li>
+                        <li><a href="../html/Blog.html">Blog</a></li>
+                        <li><a href="../html/Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        
+
+        <!-- CREATION DU PORTFOLIO (REX CLIENT) -->
+        <div class="grid">
+            <div class="about">Laurène Ipsum, étudiante en design graphique en 2e année à l’<em>ésad Amiens</em>.<br>
+              <br>
+               Actuellement à la recherche d’un <strong>stage</strong> d’un mois sur Paris, Lille ou Amiens pour la période juillet-août.</div>
+            <img src="../img/app_linkedin.png" class="m" alt="affiche">
+            <img src="../img/drapeau_france.webp" class="s" alt="site">
+            <img src="../img/app_linkedin.png" class="m" alt="affiche">
+            <img src="https://dummyimage.com/400x288/FF5046/fff&text=%20" class="s" alt="site">
+            <img src="../img/drapeau_france.webp" class="l" alt="app">
+            <img src="https://dummyimage.com/400x600/FF5046/fff&text=%20" class="m" alt="affiche">
+            <img src="https://dummyimage.com/400x288/FFDE13/fff&text=%20" class="s" alt="site">
+            <img src="https://dummyimage.com/400x600/FF6600/fff&text=%20" class="m" alt="affiche">
+            <img src="https://dummyimage.com/400x288/6100ff/fff&text=%20" class="s" alt="site">
+            <img src="https://dummyimage.com/400x600/00B3ED/fff&text=%20" class="m" alt="site">
+            <img src="https://dummyimage.com/400x288/FF5046/fff&text=%20" class="s" alt="site">
+          </div>
+
+
+
+        <!-- CREATION DU FOOTER DE LA PAGE -->
+            <footer>
+                <ul class="social_icon">
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://join.skype.com/"><i class="fab fa-skype"></i></a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.twitch.com/"><i class="fab fa-twitch"></i></a></li>
+                    <li><a href="https://www.github.com/"><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul class="mentions_CGU">
+                    <li><a href="../html/Mentions.html">Mentions légales</a></li>
+                    <li><a href="../html/CGU.html">Conditions générales</a></li>
+                </ul>
+                <p>Copyright © 2022 Digital Consultant</p>
+            </footer>
+
+
+
+        <!-- RETOUR HAUT DE PAGE -->
+            <div class="retour_haut">
+                <button onclick="topFunction()" id="myBtn"><i class="fas fa-chevron-circle-up"></i></button>
+            </div>
+
+
+
+        <!-- FEUILLES DE JAVASCRIPT (SCRIPT) -->
+            <!-- Script Principal du code complet -->
+                <script src="../js/scripts.js" ></script>
+                <script src="../js/portfolio2.js"></script>
+            <!-- Script pour retour haut de page -->
+                <script src="../js/haut_page.js"></script>
+        
+        <!-- FEUILLES DE JSON (SCRIPT) -->
+            <!-- Script principal pour modification du texte de la page -->    
+                <script src="../json/donnee.json"></script> 
+                <script src="../json/APropos.json"></script> 
+    </body>
+</html>
