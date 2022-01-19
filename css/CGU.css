@@ -4,9 +4,7 @@
 /* --------------------------------------------------- */
 
 .CGU {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 80px;
+    padding: 80px 5% 80px 5%;
     text-align: justify;
 }
 .CGU h1, h2 {

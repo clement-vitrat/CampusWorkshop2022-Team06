@@ -1,3 +1,8 @@
+/* Appel des différents styles */
+/* Ecriture du Titre principal de la page */
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap'); /* font-family: 'Lemonada', cursive; */
+
+
 /* ------------------------------------------------------- */
 /*                 MISE EN FORME DU BLOG                   */
 
@@ -10,75 +15,60 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 20vh;
     align-items: center;
-    margin-top: 8vh;
+    margin-top: 56px;
     background-image: url("../img/Fond_titre.webp");
     background-size: cover;
 }
 #titre_page .blog_flou {
-    font-family: cursive;
+    font-family: 'Lemonada', cursive;
     text-align: center;
     font-size: 200px;
-    color: rgb(3 125 141);
-    text-shadow:  white 0.006em 0.006em 0.007em,
-                    #9c9c9c 1px 1px 1px,
-                    #9c9c9c 1px 2px 1px,
-                    #9c9c9c 1px 3px 1px,
-                    #9c9c9c 1px 4px 1px,
-                    #9c9c9c 1px 5px 1px,
-                    #9c9c9c 1px 6px 1px,
-                    #9c9c9c 1px 7px 1px,
-                    #9c9c9c 1px 8px 1px,
-                    #9c9c9c 1px 9px 1px,
-                    #9c9c9c 1px 10px 1px,
-                    #9c9c9c 1px 11px 1px,
-                    #9c9c9c 1px 12px 1px;
+	font-weight: 500;
+    color: rgb(21 140 94);
 }
 /* Mise en forme pour écran < 450px */
 @media screen and (max-width: 450px) {
     #titre_page {
-        grid-template-rows: 20vh;
+        grid-template-rows: 250px;
     }
     #titre_page .blog_flou {
         font-size: 50px;
-	}
-    #titre_page .blog_double {
-        font-size: 35px;
 	}
 }
 /* Mise en forme pour écran entre 450 px et 700px */
 @media screen and (min-width: 450px) and (max-width: 700px) {
     #titre_page {
-        grid-template-rows: 25vh;
+        grid-template-rows: 250px;
     }
     #titre_page .blog_flou {
-        font-size: 100px;
+        font-size: 70px;
 	}
 }
 /* Mise en forme pour écran entre 700 px et 1200px  */
 @media screen and (min-width: 700px) and (max-width: 1200px) {
     #titre_page {
-        grid-template-rows: 30vh;
+        grid-template-rows: 250px;
     }
     #titre_page .blog_flou {
-        font-size: 120px;
+        font-size: 110px;
 	}
 }
 /* Mise en forme pour écran entre 1200 px et 1600px  */
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
     #titre_page {
-        grid-template-rows: 35vh;
+        grid-template-rows: 250px;
     }
     #titre_page .blog_flou {
-        font-size: 150px;
+        font-size: 120px;
 	}
 }
 /* Mise en forme pour écran supérieur à 1600px */
 @media screen and (min-width: 1600px) {
     #titre_page {
-        grid-template-rows: 40vh;
+        grid-template-rows: 300px;
     }
     #titre_page .blog_flou {
-        font-size: 200px;
+        font-size: 160px;
 	}
 }
 

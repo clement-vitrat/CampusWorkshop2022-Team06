@@ -79,10 +79,29 @@
 	}
 }
 
+
+
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /*              MISE EN FORME DU PORTFOLIO             */
 /* --------------------------------------------------- */
+
+#portfolio_entrep .portfolio .rex_client .superposition {
+    display: inline-block;
+    position: relative;
+}
+#portfolio_entrep .portfolio .rex_client .superposition img:first-of-type {
+    height: auto;
+}
+#portfolio_entrep .portfolio .rex_client .superposition img:last-of-type {
+    height: auto;
+    width: 25%;
+}
+#portfolio_entrep .portfolio .rex_client .superposition img:nth-of-type(2) {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
 
 #portfolio_entrep .header {
     text-align: center;
@@ -95,6 +114,7 @@
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
+    justify-content: space-around;
 }
   
 #portfolio_entrep .column {
@@ -125,16 +145,6 @@
     }
 }
 
-
-/*#portfolio_entrep .portfolio .column .rex_client {
-    float: left;
-    color: black;
-    width: 100;
-    text-align: center;
-    margin: 2px;
-    display: none;
-}*/
- 
 #portfolio_entrep .portfolio .column .rex_client {
     position: relative;
     margin-top: 10px;
@@ -144,28 +154,73 @@
 #portfolio_entrep .portfolio .column .rex_client .overlay {
     position: absolute;
     bottom: 100%;
-    background-color: #008CBA;
+    background-color: #008bba;
     overflow: hidden;
     width: 100%;
     height:0;
     transition: .5s ease;
 }
-  
+
 #portfolio_entrep .portfolio .column .rex_client:hover .overlay {
     bottom: 0;
     height: 100%;
 }
   
-#portfolio_entrep .portfolio .column .rex_client .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
+#portfolio_entrep .portfolio .column .rex_client .text h1 {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 45px;
     text-align: center;
-    align-items: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+#portfolio_entrep .portfolio .column .rex_client .text .separation {
+    border-top: 1px solid #9c9c9c;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#portfolio_entrep .portfolio .column .rex_client .text p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #FFFFFF;
+    text-align: justify;
 }
 
 
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/*         MISE EN FORME DU BANDEAU DES COOKIES        */
+/* --------------------------------------------------- */
 
-
-
-
+.bandeau_cookies {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    z-index: 1000;
+    font-size: 15px;
+    text-align: center;
+}
+.bandeau_cookies .info_cookies span {
+    color: #9c9c9c;
+}
+.bandeau_cookies .plus_cookies, 
+.bandeau_cookies .autoriser_cookies {
+    text-decoration: none;
+    color: #393631;
+    border: none;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.bandeau_cookies .plus_cookies:hover, 
+.bandeau_cookies .autoriser_cookies:hover {
+    color: #0E7894;
+}

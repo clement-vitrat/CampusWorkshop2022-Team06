@@ -7,7 +7,6 @@
     font-family: 'Poppins',sans-serif;
 }
 html, body{
-    height: 100vh;
     font-size: 16px;
     width: 100%;
 }
@@ -32,7 +31,7 @@ body::before {
     right: 0;
     top: 0;
     box-sizing: border-box;
-    height: 100%;
+    height: auto;
     z-index: -1;
 }
 span{
@@ -54,7 +53,7 @@ span{
 	@import url('https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap'); /* font-family: 'Odor Mean Chey', serif; */
 /* Ecriture des différents paragraphes */
 	@import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap'); /* font-family: 'Molengo', sans-serif; */
-    
+    @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap'); /* font-family: 'Shadows Into Light', cursive; */
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -63,7 +62,7 @@ span{
 header {
     position: fixed;
     width: 100%;
-    height: 8vh;
+    height: 56px;
     top: 0;
     left: 0;
     background: white;
@@ -79,15 +78,18 @@ nav {
     align-items: center;
 }
 .logo a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+	font-family: fangsong;
+	font-style: italic;
+    font-weight: bold;
+    font-size: 46px;
     text-decoration: none;
     color: green;
 }
 .logo img {
-    vertical-align: middle;
-    width: 70px;
-    height: auto;
+    vertical-align: initial;
+    width: auto;
+    height: 32px;
 }
 .toggle {
     display: none;
@@ -105,7 +107,7 @@ nav {
     color: black;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 30px;
 }
 .menu a.active {
     border-bottom: 3px solid #125c8d;
@@ -128,13 +130,10 @@ div {
     .logo a {
         position: relative;
         z-index: 20;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 25px;    
+        font-size: 28px;    
     }
     .logo img {
-        width: auto;
-        height: 23px;
-        vertical-align: middle;
+        height: 20px;
     }
     .ouvrir {
         display: block;
@@ -153,51 +152,79 @@ div {
         top: 0;
         left: 0;
         width: 100%;
-        height: 50vh;
+        height: auto;
         background: white;
         flex-direction: column;
-        padding: 2rem;
+        padding-top: 6vh;
+		padding-bottom: 20px;
         justify-content: space-around;
         transform: translateX(-100%);
         transition: transform 1s;
     }
+	.menu li {
+		padding-top: 15px;
+}
     .menu li a {
         font-size: 2rem;
     }
     .open .menu {
         transform: translateX(0);
-        padding-top: 23%;
-    }
-}
-@media all and (min-width: 920px) and (max-width: 1100px) {
-    .logo a {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 30px;    
-    }
-}
-@media all and (min-width: 800px) and (max-width: 920px) {
-    .logo a {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 23px;    
-    }
-    .logo img {
-        width: auto;
-        height: 23px;
-        vertical-align: middle;
-    }
-}
-@media all and (min-width: 510px) and (max-width: 800px) {
-    .open .menu {
-        transform: translateX(0);
-        padding-top: 10%;
     }
 }
 @media all and (min-width: 400px) and (max-width: 510px) {
-    .open .menu {
-        transform: translateX(0);
-        padding-top: 16%;
+    .logo a {
+        font-size: 34px;    
+    }
+   .logo img {
+        height: 24px;
     }
 }
+/* Mise en forme pour écran entre 450 px et 700px */
+@media all and (min-width: 510px) and (max-width: 800px) {
+    .logo a {
+        font-size: 40px;    
+    }
+   .logo img {
+        height: 28px;
+    }
+}
+/* Mise en forme pour écran entre 800 px et 1000px  */
+@media all and (min-width: 800px) and (max-width: 1000px) {
+    .logo a {
+        font-size: 28px;    
+	}
+	.logo img {
+        height: 20px;
+	}
+	.menu li a {
+		font-size: 20px;
+	}
+}
+/* Mise en forme pour écran entre 1000 px et 1200px  */
+@media all and (min-width: 1000px) and (max-width: 1200px) {
+    .logo a {
+        font-size: 34px;    
+	}
+	.logo img {
+        height: 24px;
+	}
+	.menu li a {
+		font-size: 26px;
+	}
+}
+/* Mise en forme pour écran entre 1200 px et 1600px  */
+@media all and (min-width: 1200px) and (max-width: 1600px) {
+    .logo a {
+        font-size: 40px;    
+    }
+	.logo img {
+        height: 28px;
+	}
+	.menu li a {
+		font-size: 28px;
+	}
+}
+
 
 
 /* --------------------------------------------------- */
@@ -206,8 +233,8 @@ div {
 /* --------------------------------------------------- */
 #page_acceuil {
     background: #1d1d1d;
-	height: calc(92vh - 70px);
-	padding: 90px 0;
+	height: 88vh;
+	padding: 6vh 0 0 0;
     /*background-image: url(../img/image2Accueil.png);
     background-position-y: top;
     background-repeat: no-repeat;
@@ -452,25 +479,6 @@ footer p {
     font-size: 15px;
 }
 
-
-
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/*               MISE EN FORME DU CHAT BOT             */
-/* --------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /*            MISE EN FORME DE LA NEWSLETTER           */
@@ -527,4 +535,36 @@ footer p {
 .newsletter input[type=submit]:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/*         MISE EN FORME DU BANDEAU DES COOKIES        */
+/* --------------------------------------------------- */
+.bandeau_cookies {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    z-index: 1000;
+    font-size: 15px;
+    text-align: center;
+}
+.bandeau_cookies .info_cookies span {
+    color: #9c9c9c;
+}
+.bandeau_cookies .plus_cookies, 
+.bandeau_cookies .autoriser_cookies {
+    text-decoration: none;
+    color: #393631;
+    border: none;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.bandeau_cookies .plus_cookies:hover, 
+.bandeau_cookies .autoriser_cookies:hover {
+    color: #0E7894;
 }

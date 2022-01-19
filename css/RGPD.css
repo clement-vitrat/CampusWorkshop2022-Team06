@@ -1,61 +1,86 @@
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
-/*          MISE EN FORME DE LA PARTIE DES MENTIONS LEGALES         */
+/*                MISE EN FORME DE LA PARTIE DES RGPD               */
 /* ---------------------------------------------------------------- */
-.MENTIONS_LEG {
-    padding: 80px 5% 80px 5%;
+.RGPD {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 80px;
     text-align: justify;
 }
-.MENTIONS_LEG h1, h2 {
+.RGPD h1, h2, h4 {
     margin-bottom: 19px;
 }
-.MENTIONS_LEG h1 {
+.RGPD h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     line-height: 35px;
     color: #128D5A;
 }
-.MENTIONS_LEG .sous-titre {
+.RGPD .sous-titre {
     font-style: italic;
+    margin-top: 5px;
     margin-bottom: 19px;
     color: black;
 }
-.MENTIONS_LEG h2 {
+.RGPD h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
     margin-top: 40px;
     color: #199688;
 }
-.MENTIONS_LEG p {
+.RGPD p {
     color: black;
     line-height: 25px;
     font-size: 18px;
     flex-wrap: wrap;
 }
-.MENTIONS_LEG p span {
+.RGPD p span {
     color: #0E7894;
     flex-wrap: wrap;
 }
-.MENTIONS_LEG ul li {
+.RGPD ul li {
     margin-left: 3%;
 }
+.RGPD h3, h3 span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #107795;
+}
+.RGPD h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 25px;
+    color: #128D5A;
+}
+.RGPD .fin {
+    margin-top: 40px;
+}
+.RGPD .retour {
+    margin-top: 20px;
+}
+
 /* Mise en forme pour écran entre 1200 px et 1600px  */
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
-    .MENTIONS_LEG h2 {
+    .RGPD h2 {
         font-size: 28px;
     }
-    .MENTIONS_LEG p {
+    .RGPD p {
         line-height: 28px;
         font-size: 20px;
     }
 }
 /* Mise en forme pour écran supérieur à 1600px */
 @media screen and (min-width: 1600px) {
-    .MENTIONS_LEG h2 {
+    .RGPD h2 {
         font-size: 30px;
     }
-    .MENTIONS_LEG p {
+    .RGPD p {
         line-height: 30px;
         font-size: 22px;
     }
+}
+
+.RGPD .liste {
+    list-style: lower-latin;
 }
