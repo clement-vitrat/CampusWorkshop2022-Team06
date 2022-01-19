@@ -21,7 +21,7 @@ var id = {
     "serv_site" : "service sites",
     
     // Article 3 : Collecte de donnée
-    "site_CNIL_num" : "xxx",
+    "site_CNIL_num" : "000 000 000",
     "droit_acces_mail" : "contact@contact.com",
     "droit_acces_adr" : "430 Rue Pierre Simon Laplace, 13 290 Aix-en-Provence",
     

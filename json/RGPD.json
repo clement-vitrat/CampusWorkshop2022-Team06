@@ -1,0 +1,36 @@
+
+var id = {
+    // zone pour les "RGPD"
+    // Introduction 
+    "tel_DigiConsul" : "+ 33 1 23 45 67 89",
+    "type_site" : "entreprise",
+
+    // Données recueillis de façon non automatique
+    "methode_recup_donne" : "contact, newletter",
+    
+    // Comment nous utilisons les données personnelles
+    "utilisation_donnee" : "à des fins professionnelles...",
+    "utilisation_donnee_recup" : "à des fins professionnelles...",
+    
+    // Avec qui nous partageons les données personnelles
+    "donne_partager_tiers" : "GitHub, GitHub",
+    "donne_partager_fins" : "xxxxx",
+
+    // Comment nous protégeos vos données personnelles
+    "nom_protocole_secu" : "GitHub",
+    
+    // Comment modifier, supprimer ou contester les données recueillies
+    "agent_protect_nom" : "Clément VITRAT",
+    "agent_protect_adr" : "3, Boulevar de Michelet, 13 008 Marseille, France",
+    "agent_protect_mail" : "contact@contact.com",
+    "agent_protect_tel" : "+33 1 23 45 67 89",
+    
+    // Contact
+    "contact_tel" : "+33 1 23 45 67 89",
+    "contact_adr" : "3, Boulevar de Michelet, 13 008 Marseille, France",
+    "contact_mail" : "contact@contact.com",
+
+    // Fin
+    "date_vigueur" : "21/01/2022",
+    "copyright_date" : "2017-2022",
+};
