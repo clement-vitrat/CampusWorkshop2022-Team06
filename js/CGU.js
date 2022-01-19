@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         document.getElementById('adr3_site').textContent = id.adresse_site;
 
     // Article 3 : Collecte de donnée
-        document.getElementById('site_CNIL_num').textContent = id.site_CNI_num;
+        document.getElementById('site_CNIL_num').textContent = id.site_CNIL_num;
         document.getElementById('droit_acces_mail').textContent = id.droit_acces_mail;
         document.getElementById('droit_acces_adr').textContent = id.droit_acces_adr;
 
