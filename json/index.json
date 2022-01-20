@@ -1,0 +1,17 @@
+var id = {
+    // Ajout du texte d'introduction
+        "intro_titre" : "Digital",
+        "intro_titre2" : "Consultant",
+		"intro_apropos" : "À propos",
+		"intro_description" : "Digitale Consultant est la marque qui réunit les meilleurs indépendants et entreprise du web pour livrer un service, personnalisé et de bout en bout qui s'adapte à la structure et au portefeuille de ses clients.",
+
+	// Ajout du texte dans le "NOTRE PRESTATION"
+		"prest1_nom" : "Audit",
+		"prest1_desc" : "Nous récoltons un maximum d'informations sur votre entreprise",
+		"prest_suite" : "Savoir plus",
+		"prest2_nom" : "Conseil",
+		"prest2_desc" : "À cette étape un premier bilan est effectué dans lequel nous ",
+		"prest3_nom" : "Conception",
+		"prest3_desc" : "Nous proposons des solutions adaptées à tous types de clientèle",
+		"prestation_nom" : "Nos Services",
+};

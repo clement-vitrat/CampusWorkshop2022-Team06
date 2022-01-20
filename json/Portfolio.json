@@ -1,0 +1,20 @@
+
+var id = {
+    // zone pour le "PORTFOLIO"
+    // Rex Client 1 
+        "rex1_tit" : "Création du Site Web : Digital Consultant",
+        "rex1_p" : "Dans le cadre du workshop B1 Infotech, Digital Consultant collabore avec Campus Academy afin de proposer un challenge pratique, en lien avec les compétences associées à vos cursus respectifs. L’objectif est de mettre en application les concepts vus en cours ainsi que d’en découvrir de nouveau et de les appliquer à un contexte professionnel.",
+
+    // Rex Client 2
+        "rex2_tit" : "Création du Site Web : Digital Consultant",
+        "rex2_p" : "Dans le cadre du workshop B1 Infotech, Digital Consultant collabore avec Campus Academy afin de proposer un challenge pratique, en lien avec les compétences associées à vos cursus respectifs. L’objectif est de mettre en application les concepts vus en cours ainsi que d’en découvrir de nouveau et de les appliquer à un contexte professionnel.",
+    
+    // Rex Client 3 
+        "rex3_tit" : "Création du Site Web : Digital Consultant",
+        "rex3_p" : "Dans le cadre du workshop B1 Infotech, Digital Consultant collabore avec Campus Academy afin de proposer un challenge pratique, en lien avec les compétences associées à vos cursus respectifs. L’objectif est de mettre en application les concepts vus en cours ainsi que d’en découvrir de nouveau et de les appliquer à un contexte professionnel.",
+    
+    // Rex Client 4 
+        "rex4_tit" : "Création du Site Web : Digital Consultant",
+        "rex4_p" : "Dans le cadre du workshop B1 Infotech, Digital Consultant collabore avec Campus Academy afin de proposer un challenge pratique, en lien avec les compétences associées à vos cursus respectifs. L’objectif est de mettre en application les concepts vus en cours ainsi que d’en découvrir de nouveau et de les appliquer à un contexte professionnel.",
+
+};
