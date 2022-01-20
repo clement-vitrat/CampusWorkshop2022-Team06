@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Icons -->
-        <link rel="icon" href="../img/icon.webp">
+        <link rel="icon" href="../img/icon_logo.webp">
 
     </head>
     
@@ -53,53 +53,93 @@
 
 
         <!-- CREATION DU BLOG -->
-            <div id="blog">
-                <div class="comment_blog">
-                    <div class="comment-1">
-                        <div class="photo_blog">
-                            <img src="../img/drapeau_france.webp" alt="">
-                        </div>
-                        <div class="commentaire">
-                            <p class="comment_user"><i class="fas fa-user-circle"></i> Clément VITRAT</p>
-                            <p class="comment_time"><i class="far fa-clock"></i> 13 janvier 2022 - 19h30</p>
-                            <h4>What Has Happened of all of the web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet.</p>
-                            <hr class="separation">
-                            <p class="comment_like">5 <i class="far fa-heart"></i></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="comment_blog">
-                    <div id="comment-2">
-                        <div class="photo_blog">
-                            <img src="../img/drapeau_france.webp" alt="">
-                        </div>
-                        <div class="commentaire">
-                            <p class="comment_user"><i class="fas fa-user-circle"></i> Clément VITRAT</p>
-                            <p class="comment_time"><i class="far fa-clock"></i> 13 janvier 2022 - 19h30</p>
-                            <h4>What Has Happened of all of the web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet.</p>
-                            <hr class="separation">
-                            <p class="comment_like">5 <i class="far fa-heart"></i></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="comment_blog">
-                    <div class="comment-3">
-                        <div class="photo_blog">
-                            <img src="../img/drapeau_france.webp" alt="">
-                        </div>
-                        <div class="commentaire">
-                            <p class="comment_user"><i class="fas fa-user-circle"></i> Clément VITRAT</p>
-                            <p class="comment_time"><i class="far fa-clock"></i> 13 janvier 2022 - 19h30</p>
-                            <h4>What Has Happened of all of the web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet.</p>
-                            <hr class="separation">
-                            <p class="comment_like">5 <i class="far fa-heart"></i></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <section id="list_blog">
+                <article id ="comment-0" class="comment_blog">
+					<div class="photo_blog">
+						<img src="../img/drapeau_france.webp" alt="">
+					</div>
+					<div class="commentaire">
+						<i class="fas fa-user-circle">
+							<p class="comment_user"> Alexandre VITRAT</p>
+						</i>
+						<i class="far fa-clock">
+							<p class="comment_time"> 13 janvier 2022 - 19h30</p>
+						</i>
+						<h4>What Has Happened of all of the web Design</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet.</p>
+						<hr class="separation">
+						<button id="like_post" class="bt_like">
+                            <i class="fa fa-thumbs-up">
+								<span class="comment_like">4</span>
+							</i>
+                        </button>
+					</div>
+                </article>
+                <article id="comment-1" class="comment_blog">
+					<div class="photo_blog">
+						<img src="../img/drapeau_france.webp" alt="">
+					</div>
+					<div class="commentaire">
+						<i class="fas fa-user-circle">
+							<p class="comment_user"> Clément VITRAT</p>
+						</i>
+						<i class="far fa-clock">
+							<p class="comment_time"> 13 janvier 2022 - 19h30</p>
+						</i>
+						<h4>What Has Happened of all of the web Design</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet.</p>
+						<hr class="separation">
+						<button id="like_post" class="bt_like">
+                            <i class="fa fa-thumbs-up">
+								<span class="comment_like">4</span>
+							</i>
+                        </button>
+					</div>
+                </article>
+                <article id="comment-2" class="comment_blog">
+					<div class="photo_blog">
+						<img src="../img/drapeau_france.webp" alt="">
+					</div>
+					<div class="commentaire">
+						<i class="fas fa-user-circle">
+							<p class="comment_user"> Clément VITRAT</p>
+						</i>
+						<i class="far fa-clock">
+							<p class="comment_time"> 13 janvier 2022 - 19h30</p>
+						</i>
+						<h4>What Has Happened of all of the web Design</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet.</p>
+						<hr class="separation">
+						<button id="like_post" class="bt_like">
+                            <i class="fa fa-thumbs-up">
+								<span class="comment_like">3</span>
+							</i>
+                        </button>
+					</div>
+                </article>
+				<article id="comment-3" class="comment_blog">
+					<div class="photo_blog">
+						<img src="../img/drapeau_france.webp" alt="">
+					</div>
+					<div class="commentaire">
+						<i class="fas fa-user-circle">
+							<p class="comment_user"> Clément VITRAT</p>
+						</i>
+						<i class="far fa-clock">
+							<p class="comment_time"> 13 janvier 2022 - 19h30</p>
+						</i>
+						<h4>What Has Happened of all of the web Design</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet.</p>
+						<hr class="separation">
+						<button id="like_post" class="bt_like">
+                            <i class="fa fa-thumbs-up">
+								<span class="comment_like">1</span>
+							</i>
+                        </button>
+					</div>
+                </article>
+
+            </section>
                
             
 
@@ -114,11 +154,11 @@
             
             <div id="id01" class="ajout_avis">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <form class="avis">
+                <form action="#" id="ajout_post" class="avis">
                     <h3 class="titre_avis">REDIGER UN AVIS</h3>
-                    <input type="text" id="comment_nom" name="Nom" placeholder="NOM PRENOM" />
-                    <input type="email" id="comment_titre" name="Titre avis" placeholder="TITRE COMMENTAIRE" />
-                    <textarea id="comment" name="Commentaire" placeholder="COMMENTAIRE"></textarea>
+                    <input type="text" class="comment_nom" name="Nom" placeholder="NOM PRENOM" />
+                    <input type="text" class="comment_titre" name="Titre avis" placeholder="TITRE COMMENTAIRE" />
+                    <textarea id="text" class="comment_desc" name="Commentaire" placeholder="COMMENTAIRE"></textarea>
                     <div></div>
                     <input class="form_bouton" type="submit" name="comment_envoi" value="ENVOYER" />	
 
@@ -126,36 +166,7 @@
             </div>
         </div>  
         
-        
-        
-        
-        
-            <!--<form action="#" id="new-comment">
-                <div class="mb-3 d-flex align-items-center">
-                    <label for="nom" class="form-label me-2">Prénom Nom</label>
-                    <input type="text" class="form-control" id="nom" name="nom">
-                </div>
-                <div class="mb-3 d-flex align-items-center">
-                    <label for="titre" class="form-label me-2">Titre du commentaire</label>
-                    <input type="text" class="form-control" id="titre" name="titre">
-                </div>
-                <div class="mb-3 d-flex align-items-center">
-                    <label for="comm" class="form-label me-2">Commentaire</label>
-                    <input type="text" class="form-control" id="comm" name="comm">
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" placeholder="Votre message ici..." rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                    <input type="submit" class="btn btn-primary" value="Envoyer">
-                </div>
-            </form>-->
-
-
-
-
-
-
+ 
         <!-- CREATION DU FOOTER DE LA PAGE -->
             <footer>
                 <ul class="social_icon">
@@ -189,12 +200,6 @@
                 <script src="../js/Blog.js" ></script>
             <!-- Script pour retour haut de page -->
                 <script src="../js/haut_page.js"></script>
-
-        
-        <!-- FEUILLES DE JSON (SCRIPT) -->
-            <!-- Script principal pour modification du texte de la page -->    
-                <script src="../json/donnee.json"></script> 
-
 
 
     </body>
