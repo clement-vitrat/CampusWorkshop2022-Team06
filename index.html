@@ -16,11 +16,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Icons -->
-        <link rel="icon" href="img/icon_logo.webp">
+        <link rel="icon" href="img/icon.webp">
         
     </head>
     
-    <body>
+    <body id="index">
         <!-- CREATION DE LA NAVIGATION DE LA PAGE -->
             <header>
                 <nav>
@@ -57,50 +57,53 @@
 
 		<!-- CREATION DE LA PAGE LANDING (PAGE D'ACCUEIL) -->
 			<div id="page_acceuil">
-				<div class="intro_ent">
-					<h1>Digital<br>Consultant</h1>
-					<span>À propos</span>
-					<p>Consultant en transforamtion digitale, spécialiste de l'univers numérique, conseil et accompagnement auprès des entreprises. La planète Web et les nouvelles technologies ayant profondément changé les habitudes, les méthodes de travail et les modes de consommation, le décollage vers le digital est un enjeu vital pour toutes les structures, tous secteurs confondus. Le consultant digital se propose d’établir une feuille de route cohérente pour que l’aventure soit une réussite ! </p>
-				</div>
-				<div class="intro_desc">
-					<div class="desc_etape">
-						<strong>Service 1</strong>
-						<p>Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent</p>
-						<span>Savoir plus</span>
+				<div class="cont_intro">
+					<div class="intro_text">
+						<h1 id="intro_titre"></h1>
+						<h1 id="intro_titre2"></h1>
+						<span id="intro_apropos"></span>
+						<p id="intro_description"></p>
 					</div>
-					<div class="desc_etape">
-						<strong>Service 2</strong>
-						<p>Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent</p>
-						<span>Savoir plus</span>
-					</div>
-					<div class="desc_etape">
-						<strong>Service 3</strong>
-						<p>Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent</p>
-						<span>Savoir plus</span>
+					<div class="intro_desc">
+						<a class="desc_serv js-parallax scroll-start-zero" data-speed="0.075" href="html/NosServices.html">
+							<div class="desc_etape">
+								<strong id="prest1_nom"></strong>
+								<p id="prest1_desc"></p>
+								<span id="prest_suite"></span>
+							</div>
+						</a>
+						<a class="desc_serv js-parallax scroll-start-zero" data-speed="0.075" href="html/NosServices.html">
+							<div class="desc_etape">
+								<strong id="prest2_nom"></strong>
+								<p id="prest2_desc"></p>
+								<span id="prest_suite2"></span>
+							</div>
+						</a>
+						<a class="desc_serv js-parallax scroll-start-zero" data-speed="0.075" href="ihtml/NosServices.html">
+							<div class="desc_etape">
+								<strong id="prest3_nom"></strong>
+								<p id="prest3_desc"></p>
+								<span id="prest_suite3"></span>
+							</div>
+						</a>
+						<div class="desc_choix js-parallax scroll-start-zero" data-speed="0.075">
+							<div class="desc_etape">
+								<h6 id="prestation_nom"></h6>
+							</div>
+						</div>
+						<div class="desc_img">
+							<div>
+								<div class="ctn" style="background-image:url(img/audit.webp)"></div>
+								<div class="ctn" style="background-image:url(img/contact.webp)"></div>
+								<div class="ctn" style="background-image:url(img/solution_erp.webp)"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>    
 
 
-        <!-- CREATION DU FOOTER DE LA PAGE -->
-            <footer>
-                <ul class="social_icon">
-                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://join.skype.com/"><i class="fab fa-skype"></i></a></li>
-                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="https://www.twitch.com/"><i class="fab fa-twitch"></i></a></li>
-                    <li><a href="https://www.github.com/"><i class="fab fa-github"></i></a></li>
-                </ul>
-                <ul class="mentions_CGU">
-                    <li><a href="html/Mentions.html">Mentions légales</a></li>
-                    <li><a href="html/CGU.html">Conditions générales</a></li>
-                </ul>
-                <p>Copyright © 2022 Digital Consultant</p>
-            </footer>
-
+        
 		<!-- CREATION DU BANDEAU DES COOKIES -->
 			<div class="bandeau_cookies">
 				<p class="info_cookies">
@@ -114,10 +117,14 @@
         <!-- FEUILLES DE JAVASCRIPT (SCRIPT) -->
             <!-- Script Principal du code complet -->
                 <script src="js/scripts.js" ></script>
+			<!-- Script des animations -->
+                <script src="js/index_anim.js" ></script>
+			<!-- Script des textes -->
+                <script src="js/index.js" ></script>
         
         <!-- FEUILLES DE JSON (SCRIPT) -->
             <!-- Script principal pour modification du texte de la page -->    
-                <script src="json/donnee.json"></script> 
+                <script src="json/index.json"></script> 
 
     </body>
 </html>
