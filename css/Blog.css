@@ -219,6 +219,7 @@
 
 #new_comment {
     text-align: center;
+    background: #333;
 }
 #new_comment .button_close button {
     background-color: #189687;
