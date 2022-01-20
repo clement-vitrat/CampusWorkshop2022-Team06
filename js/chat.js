@@ -35,6 +35,7 @@ function getTime() {
     
 }
 
+
 // Creation du premier message
 function firstBotMessage() {
     let firstMessage = "Bonjour, je suis le chatbot DigiConsult ! Comment puis-je vous aidez ? 🤖";
@@ -47,7 +48,7 @@ function firstBotMessage() {
 
 firstBotMessage();
 
-// Retrieves the response
+// Récupère la réponse
 function getHardResponse(userText) {
     let botResponse = getBotResponse(userText);
     let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
@@ -76,7 +77,7 @@ function getResponse() {
 
 }
 
-// Handles sending text via button clicks
+// Gère l'envoi de texte via des clics de bouton
 function buttonSendText(sampleText) {
     let userHtml = '<p class="userText"><span>' + sampleText + '</span></p>';
 

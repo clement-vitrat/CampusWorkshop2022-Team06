@@ -1,3 +1,15 @@
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+
 // AJOUT D'UN COMMENTAIRE ENTIER
 
 function addComment(commentaire_nom, commentaire_date, commentaire_titre, commentaire_paragraphe, commentaire_like, commentaire_img) {

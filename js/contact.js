@@ -40,7 +40,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 // ENVOI MESSAGE
 function EnvoiMail() {
 	// Adresse de destination du mail de contact
-	var dest="clementvitrat@gmail.com";
+	var dest="contact@contact.com";
 	
 	//Objet du message
 	var obj="Message de contact depuis le site DIGITAL CONSULTING"

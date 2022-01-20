@@ -1,42 +1,19 @@
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+window.addEventListener("DOMContentLoaded", (event) => {
+  // Appel de la zone pour le "PORTFOLIO"
+  // Rex Client 1 
+      document.getElementById('rex1_tit').textContent = id.rex1_tit;
+      document.getElementById('rex1_p').textContent = id.rex1_p;
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+  // Rex Client 2
+    document.getElementById('rex2_tit').textContent = id.rex2_tit;
+    document.getElementById('rex2_p').textContent = id.rex2_p;
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
+  // Rex Client 3
+    document.getElementById('rex3_tit').textContent = id.rex3_tit;
+    document.getElementById('rex3_p').textContent = id.rex3_p;
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+  // Rex Client 4
+    document.getElementById('rex4_tit').textContent = id.rex4_tit;
+    document.getElementById('rex4_p').textContent = id.rex4_p;
+
+});

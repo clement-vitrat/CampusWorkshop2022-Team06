@@ -1,12 +1,12 @@
 function getBotResponse(input) {
     // Question 1 : En quoi consiste votre offre ?
     if ((input == "En quoi consiste votre offre ?") || (input == "en quoi consiste votre offre ?") || (input == "en quoi consiste votre offre") || (input == "En quoi consiste votre offre")) {
-        return "";
+        return "Digital Consultant est la marque qui réunit les meilleurs indépendants et entreprise du Web pour livrer un service, personnalisé et de bout en bout qui s'adapte à la structure et au portefeuille de ses clients.";
     }
 
     // Question 2 : Quelles solutions proposez-vous ?
     if ((input == "Quelles solutions proposez-vous ?") || (input == "quelles solutions proposez-vous ?") || (input == "Quelles solutions proposez-vous") || (input == "quelles solutions proposez-vous")) {
-        return ("Voici quelques solutions que nous pouvons réaliser avec vous :\run site web,\tun e-commerce,\rune création de marque,\rune stratégie de communivation,\run audit,\run chat bot,\rune application mobile,\rdes solutions ERP.");
+        return "Voici quelques solutions que nous pouvons réaliser avec vous : un site web, un e-commerce, une création de marque, une stratégie de communivation, un audit, un chat bot, une application mobile, des solutions ERP.";
     } 
 
     // Question 2b : site web :
@@ -55,6 +55,10 @@ function getBotResponse(input) {
         return "Bonjour !";
     } else if ((input == "Merci au revoir") || (input == "Au revoir")) {
         return "Au revoir !";
+    } else if (input == "Merci pour votre réponse !") {
+        return "Je vous en prie !";
+    } else if ((input == "Merci") || (input == "merci")) {
+        return "Si vous des questions plus spécifiques veuillez vous dirigez vers la page 'Contact' ";
     } else {
         return "Je n'ai pas compris votre question.";
     }
