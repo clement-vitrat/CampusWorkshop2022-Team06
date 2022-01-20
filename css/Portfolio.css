@@ -1,3 +1,7 @@
+/* Appel des différents styles */
+/* Ecriture du Titre principal de la page */
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap'); /* font-family: 'Lemonada', cursive; */
+
 /* ------------------------------------------------------- */
 /*           MISE EN FORME DE MA PAGE PORTFOLIO            */
 
@@ -5,77 +9,65 @@
 /* --------------------------------- */
 /* MISE EN FORME DU TITRE DE LA PAGE */
 /* --------------------------------- */
-#portfolio_entrep .portfolio_titre {
+#titre_page {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 20vh;
     align-items: center;
-    margin-top: 8vh;
+    margin-top: 56px;
     background-image: url("../img/Fond_titre.webp");
     background-size: cover;
 }
-#portfolio_entrep .portfolio_titre .portfolio_flou {
-    font-family: cursive;
+#titre_page .portfolio_flou {
+    font-family: 'Lemonada', cursive;
     text-align: center;
     font-size: 200px;
-    color: rgb(3 125 141);
-    text-shadow:  white 0.006em 0.006em 0.007em,
-                    #9c9c9c 1px 1px 1px,
-                    #9c9c9c 1px 2px 1px,
-                    #9c9c9c 1px 3px 1px,
-                    #9c9c9c 1px 4px 1px,
-                    #9c9c9c 1px 5px 1px,
-                    #9c9c9c 1px 6px 1px,
-                    #9c9c9c 1px 7px 1px,
-                    #9c9c9c 1px 8px 1px,
-                    #9c9c9c 1px 9px 1px,
-                    #9c9c9c 1px 10px 1px,
-                    #9c9c9c 1px 11px 1px,
-                    #9c9c9c 1px 12px 1px;
+	font-weight: 500;
+    color: rgb(21 140 94);
 }
 /* Mise en forme pour écran < 450px */
 @media screen and (max-width: 450px) {
-    #portfolio_entrep .portfolio_titre {
-        grid-template-rows: 20vh;
+    #titre_page {
+        grid-template-rows: 250px;
     }
-    #portfolio_entrep .portfolio_titre .portfolio_flou {
+    #titre_page .portfolio_flou {
         font-size: 50px;
 	}
 }
 /* Mise en forme pour écran entre 450 px et 700px */
 @media screen and (min-width: 450px) and (max-width: 700px) {
-    #portfolio_entrep .portfolio_titre {
-        grid-template-rows: 25vh;
+    #titre_page {
+        grid-template-rows: 250px;
     }
-    #portfolio_entrep .portfolio_titre .portfolio_flou {
-        font-size: 100px;
+    #titre_page .portfolio_flou {
+        font-size: 70px;
 	}
 }
 /* Mise en forme pour écran entre 700 px et 1200px  */
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-    #portfolio_entrep .portfolio_titre {
-        grid-template-rows: 30vh;
+    #titre_page {
+        grid-template-rows: 250px;
     }
-    #portfolio_entrep .portfolio_titre .portfolio_flou {
-        font-size: 120px;
+    #titre_page .portfolio_flou {
+        font-size: 110px;
 	}
 }
 /* Mise en forme pour écran entre 1200 px et 1600px  */
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
-    #portfolio_entrep .portfolio_titre {
-        grid-template-rows: 35vh;
+    #titre_page {
+        grid-template-rows: 250px;
     }
-    #portfolio_entrep .portfolio_titre .portfolio_flou {
-        font-size: 150px;
+    #titre_page .portfolio_flou {
+        font-size: 120px;
 	}
 }
 /* Mise en forme pour écran supérieur à 1600px */
 @media screen and (min-width: 1600px) {
-    #portfolio_entrep .portfolio_titre {
-        grid-template-rows: 40vh;
+    #titre_page {
+        grid-template-rows: 300px;
     }
-    #portfolio_entrep .portfolio_titre .portfolio_flou {
-        font-size: 200px;
+    #titre_page .portfolio_flou {
+        font-size: 160px;
 	}
 }
 
@@ -85,111 +77,113 @@
 /* --------------------------------------------------- */
 /*              MISE EN FORME DU PORTFOLIO             */
 /* --------------------------------------------------- */
-
-#portfolio_entrep .portfolio .rex_client .superposition {
+#portfolio_entrep {
+    background: #333;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+#portfolio_entrep .portfolio .rex_client_img .superposition {
     display: inline-block;
     position: relative;
 }
-#portfolio_entrep .portfolio .rex_client .superposition img:first-of-type {
+#portfolio_entrep .portfolio .rex_client_img .superposition img:first-of-type {
     height: auto;
 }
-#portfolio_entrep .portfolio .rex_client .superposition img:last-of-type {
+#portfolio_entrep .portfolio .rex_client_img .superposition img:last-of-type {
     height: auto;
     width: 25%;
 }
-#portfolio_entrep .portfolio .rex_client .superposition img:nth-of-type(2) {
+#portfolio_entrep .portfolio .rex_client_img .superposition img:nth-of-type(2) {
     position: absolute;
     left: 10px;
     top: 10px;
 }
-
-#portfolio_entrep .header {
-    text-align: center;
-    padding: 32px;
-}
-  
 #portfolio_entrep .portfolio {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-    justify-content: space-around;
+    background-color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
 }
-  
-#portfolio_entrep .column {
-    -ms-flex: 33%; /* IE10 */
-    flex: 33%;
-    max-width: 33%;
-    padding: 0 4px;
+#portfolio_entrep .portfolio:hover {
+    box-shadow: 2px 2px 20px white;
 }
-  
-#portfolio_entrep .column img {
-    vertical-align: middle;
+#portfolio_entrep .portfolio .rex_client_tit {
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#portfolio_entrep .portfolio .rex_client_img img {
     width: 100%;
+    height: auto;
 }
-  
-@media screen and (max-width: 1200px) {
-    #portfolio_entrep .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-}
-  
-@media screen and (max-width: 600px) {
-    #portfolio_entrep .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-}
-
-#portfolio_entrep .portfolio .column .rex_client {
-    position: relative;
-    margin-top: 10px;
-    padding: 0 0px;
-}
-  
-#portfolio_entrep .portfolio .column .rex_client .overlay {
-    position: absolute;
-    bottom: 100%;
-    background-color: #008bba;
-    overflow: hidden;
-    width: 100%;
-    height:0;
-    transition: .5s ease;
-}
-
-#portfolio_entrep .portfolio .column .rex_client:hover .overlay {
-    bottom: 0;
-    height: 100%;
-}
-  
-#portfolio_entrep .portfolio .column .rex_client .text h1 {
+#portfolio_entrep .portfolio .rex_client_tit h1 {
     font-family: 'Odor Mean Chey', serif;
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
-    color: #FFFFFF;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 5px;
-}
-#portfolio_entrep .portfolio .column .rex_client .text .separation {
-    border-top: 1px solid #9c9c9c;
-    margin-bottom: 15px;
+    color: #0E7894;
+    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 5px;
 }
-#portfolio_entrep .portfolio .column .rex_client .text p {
+#portfolio_entrep .portfolio .rex_client_tit .separation {
+    border-top: 1px solid #9c9c9c;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#portfolio_entrep .portfolio .rex_client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#portfolio_entrep .portfolio .rex_client img {
+    width: 100px;
+    height: auto;
+}
+#portfolio_entrep .portfolio .rex_client p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    color: #FFFFFF;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: black;
     text-align: justify;
 }
+
+/* Mise en forme pour écran entre 300 px et 700px */
+@media screen and (min-width: 300px) and (max-width: 700px) {
+    #portfolio_entrep .portfolio .rex_client_tit h1 {
+        font-size: 35px;
+    }
+    #portfolio_entrep .portfolio .rex_client p {
+        font-size: 20px;
+    }
+    #portfolio_entrep {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* Mise en forme pour écran entre 700 px et 1100px  */
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+    #portfolio_entrep .portfolio .rex_client_tit h1 {
+        font-size: 35px;
+    }
+    #portfolio_entrep .portfolio .rex_client p {
+        font-size: 20px;
+    }
+    #portfolio_entrep {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+/* Mise en forme pour écran entre 700 px et 1100px  */
+@media screen and (min-width: 1100px) and (max-width: 1600px) {
+    #portfolio_entrep {
+        grid-template-columns: repeat(2, 50% 50%);
+    }
+}
+
 
 
 /* --------------------------------------------------- */
