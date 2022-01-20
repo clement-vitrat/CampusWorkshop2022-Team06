@@ -19,112 +19,111 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Icons -->
-        <link rel="icon" href="../img/icon_logo.webp">
+        <link rel="icon" href="../img/icon.webp">
     </head>
     
     <body>
-
-       
         <!-- CREATION DE LA NAVIGATION DE LA PAGE -->
-		<header>
-			<nav>
-				<div class="logo">
-					<a href="../index.html"><img src="../img/icon_logo.webp" alt="icon_entreprise">  Digital Consultant</a>
-				</div>
-				<div class="toggle">
-					<i class="fas fa-bars ouvrir fermer"></i>
-				</div>
-				<ul class="menu">
-					<li><a href="../html/APropos.html">A propos</a></li>
-					<li><a href="../html/NosServices.html">Nos services</a></li>
-					<li><a href="../html/Portfolio.html">Portfolio</a></li>
-					<li><a href="../html/Blog.html">Blog</a></li>
-					<li><a class="active" href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+			<header>
+				<nav>
+					<div class="logo">
+						<a href="../index.html"><img src="../img/icon_logo.webp" alt="icon_entreprise">  Digital Consultant</a>
+					</div>
+					<div class="toggle">
+						<i class="fas fa-bars ouvrir fermer"></i>
+					</div>
+					<ul class="menu">
+						<li><a href="../html/APropos.html">A propos</a></li>
+						<li><a href="../html/NosServices.html">Nos services</a></li>
+						<li><a href="../html/Portfolio.html">Portfolio</a></li>
+						<li><a href="../html/Blog.html">Blog</a></li>
+						<li><a class="active" href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
         
 
 		<!-- CREATION DE LA PARTIE TITRE PAGES --> 
-		<div id="titre_page">
-			<div> 
-				<h3 class="valeur_flou" id="tit_page"></h3>
+			<div id="titre_page">
+				<div> 
+					<h3 class="valeur_flou" id="tit_page"></h3>
+				</div>
 			</div>
-		</div>
 
 		<hr id="lig_sep">
 
         <!-- CREATION  DE LA PARTIE CONTACT -->
-		<div id="page_contact">
-			<div class="contact_entr">
-				<div class="contact_titre">
-					<h3 class="titre_flou" id="titre_contact"></h3>
-					<h3 class="titre_double" id="titre2_contact"></h3>
+			<div id="page_contact">
+				<div class="contact_entr">
+					<div class="contact_titre">
+						<h3 class="titre_flou" id="titre_contact"></h3>
+						<h3 class="titre_double" id="titre2_contact"></h3>
+					</div>
+					<div class="contact_mess">
+						<form class="form_mess" action="javascript:EnvoiMail()">
+							<input type="text" id="mess_nom" name="Nom" placeholder="NOM" />
+							<input type="text" id="mess_prenom" name="Prenom" placeholder="PRENOM" />
+							<input type="text" id="mess_tel" name="Numéro de téléphone" placeholder="TELEPHONE" />
+							<input type="email" id="mess_mail" name="Adresse mail" placeholder="COURRIEL" />
+							<textarea id="mess_message" name="Commentaire" placeholder="PARLEZ-NOUS DE VOTRE PROJETS"></textarea>
+							<div></div>
+							<input class="form_bouton" type="submit" name="mess_envoi" value="ENVOYER" />	
+						</form>
+					</div>
 				</div>
-				<div class="contact_mess">
-					<form class="form_mess" action="javascript:EnvoiMail()">
-						<input type="text" id="mess_nom" name="Nom" placeholder="NOM" />
-						<input type="text" id="mess_prenom" name="Prenom" placeholder="PRENOM" />
-						<input type="text" id="mess_tel" name="Numéro de téléphone" placeholder="TELEPHONE" />
-						<input type="email" id="mess_mail" name="Adresse mail" placeholder="COURRIEL" />
-						<textarea id="mess_message" name="Commentaire" placeholder="PARLEZ-NOUS DE VOTRE PROJETS"></textarea>
-						<div></div>
-						<input class="form_bouton" type="submit" name="mess_envoi" value="ENVOYER" />	
-					</form>
-				</div>
-			</div>
 
-			<div class="contact_agences">
-				<div class="agences_titre">
-					<h3 class="titre_flou" id="titre_agences"></h3>
-					<h3 class="titre_double" id="titre2_agences"></h3>
-				</div>
-				<div class="agences_adresse">
-					<div class="agences_adr">
-						<button class="agence_lieu" onclick="ouv_agences(event, 'ag1')" id="ag1_lieu"></button>
-						<button class="agence_lieu" onclick="ouv_agences(event, 'ag2')" id="ag2_lieu"></button>
-						<button class="agence_lieu" onclick="ouv_agences(event, 'ag3')" id="ag3_lieu"></button>
-						<button class="agence_lieu" onclick="ouv_agences(event, 'ag4')" id="ag4_lieu"></button>
+				<!-- Addresses et contacts des différentes agences -->
+				<div class="contact_agences">
+					<div class="agences_titre">
+						<h3 class="titre_flou" id="titre_agences"></h3>
+						<h3 class="titre_double" id="titre2_agences"></h3>
 					</div>
-					<div id="ag1" class="agence_detail">
-						  <h3>Adresse</h3>
-						<p id="ag1_adr_lig1"></p>
-						<p id="ag1_adr_lig2"></p>
-						<p id="ag1_adr_lig3"></p>
-						<h3>Contact</h3>
-						<p id="ag1_con_mail"></p>
-						<p id="ag1_con_tel"></p>
-					</div>
-					<div id="ag2" class="agence_detail">
-						 <h3>Adresse</h3>
-						<p id="ag2_adr_lig1"></p>
-						<p id="ag2_adr_lig2"></p>
-						<p id="ag2_adr_lig3"></p>
-						<h3>Contact</h3>
-						<p id="ag2_con_mail"></p>
-						<p id="ag2_con_tel"></p>
-					</div>
-					<div id="ag3" class="agence_detail">
-						<h3>Adresse</h3>
-						<p id="ag3_adr_lig1"></p>
-						<p id="ag3_adr_lig2"></p>
-						<p id="ag3_adr_lig3"></p>
-						<h3>Contact</h3>
-						<p id="ag3_con_mail"></p>
-						<p id="ag3_con_tel"></p>
-					  </div>
-					<div id="ag4" class="agence_detail">
-						<h3>Adresse</h3>
-						<p id="ag4_adr_lig1"></p>
-						<p id="ag4_adr_lig2"></p>
-						<p id="ag4_adr_lig3"></p>
-						<h3>Contact</h3>
-						<p id="ag4_con_mail"></p>
-						<p id="ag4_con_tel"></p>
+					<div class="agences_adresse">
+						<div class="agences_adr">
+							<button class="agence_lieu" onclick="ouv_agences(event, 'ag1')" id="ag1_lieu"></button>
+							<button class="agence_lieu" onclick="ouv_agences(event, 'ag2')" id="ag2_lieu"></button>
+							<button class="agence_lieu" onclick="ouv_agences(event, 'ag3')" id="ag3_lieu"></button>
+							<button class="agence_lieu" onclick="ouv_agences(event, 'ag4')" id="ag4_lieu"></button>
+						</div>
+						<div id="ag1" class="agence_detail">
+							<h3>Adresse</h3>
+							<p id="ag1_adr_lig1"></p>
+							<p id="ag1_adr_lig2"></p>
+							<p id="ag1_adr_lig3"></p>
+							<h3>Contact</h3>
+							<p id="ag1_con_mail"></p>
+							<p id="ag1_con_tel"></p>
+						</div>
+						<div id="ag2" class="agence_detail">
+							<h3>Adresse</h3>
+							<p id="ag2_adr_lig1"></p>
+							<p id="ag2_adr_lig2"></p>
+							<p id="ag2_adr_lig3"></p>
+							<h3>Contact</h3>
+							<p id="ag2_con_mail"></p>
+							<p id="ag2_con_tel"></p>
+						</div>
+						<div id="ag3" class="agence_detail">
+							<h3>Adresse</h3>
+							<p id="ag3_adr_lig1"></p>
+							<p id="ag3_adr_lig2"></p>
+							<p id="ag3_adr_lig3"></p>
+							<h3>Contact</h3>
+							<p id="ag3_con_mail"></p>
+							<p id="ag3_con_tel"></p>
+						</div>
+						<div id="ag4" class="agence_detail">
+							<h3>Adresse</h3>
+							<p id="ag4_adr_lig1"></p>
+							<p id="ag4_adr_lig2"></p>
+							<p id="ag4_adr_lig3"></p>
+							<h3>Contact</h3>
+							<p id="ag4_con_mail"></p>
+							<p id="ag4_con_tel"></p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
             
            
 

@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/Portfolio.css" />
+        
         <!-- Page CSS pour retour haut de page -->
         <link rel="stylesheet" href="../css/haut_page.css">
 
@@ -19,7 +20,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Icons -->
-        <link rel="icon" href="../img/icon_logo.webp">
+        <link rel="icon" href="../img/icon.webp">
     </head>
     
     <body>
@@ -27,7 +28,7 @@
             <header>
                 <nav>
                     <div class="logo">
-                        <a href="../index.html"><img src="../img/icon_logo.webp" alt="icon_entreprise"> DIGITAL CONSULTANT</a>
+                        <a href="../index.html"><img src="../img/icon_logo.webp" alt="icon_entreprise"> Digital Consultant</a>
                     </div>
                     <div class="toggle">
                         <i class="fas fa-bars ouvrir fermer"></i>
@@ -43,103 +44,85 @@
             </header>
         
 
+
+        <!-- CREATION DE LA PARTIE TITRE PAGES --> 
+            <div id="titre_page">
+                <div> 
+                    <h3 class="portfolio_flou" id="tit_page">PORTFOLIO</h3>
+                </div>
+            </div>
+            
+
         <!-- CREATION DU PORTFOLIO (REX CLIENT) -->
             <div id="portfolio_entrep">
-                <div class="portfolio_titre"> 
-                    <h3 class="portfolio_flou" id="titre_valeur">PORTFOLIO</h3>
-                </div>
-
-                <div class="portfolio"> 
-                    <div class="column">
-                        <div class="rex_client">
-                            <figure class="superposition">
-                                <img src="../img/app_linkedin.png" alt="">
-                                <img src="../img/logo_linkedin.png" alt="">
-                            </figure>
-                            <div class="overlay">
-                                <div class="text">
-                                    <h1>Création du Site Web : Digital Consultant</h1>
-                                    <hr class="separation">
-                                    <p>Dans le cadre du workshop B1 Infotech, Digital Consultant collabore avec 
-                                        Campus Academy afin de proposer un challenge pratique, en lien avec les 
-                                        compétences associées à vos cursus respectifs. L’objectif est de mettre en 
-                                        application les concepts vus en cours ainsi que d’en découvrir de nouveau 
-                                        et de les appliquer à un contexte professionnel.</p>
-                                </div>
-                            </div>
+                <div class="portfolio">
+                    <div class="rex_client_intro">
+                        <div class="rex_client_tit">
+                            <h1 id="rex1_tit"></h1>
+                            <hr class="separation">
                         </div>
-                        <div class="rex_client">
+                        <div class="rex_client_img">
                             <figure class="superposition">
-                                <img src="../img/site_bfmtv.png" alt="">
-                                <img src="../img/logo_bfm.png" alt="">
+                                <img src="../img/site_bfmtv.webp" alt="">
+                                <img src="../img/logo_bfm.webp" alt="">
                             </figure>
-                            <div class="overlay">
-                                <div class="text">
-                                    <h1>TITRE</h1>
-                                    <hr class="separation">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="rex_client">
-                            <figure class="superposition">
-                                <img src="../img/site_bfmtv.png" alt="">
-                                <img src="../img/logo_bfm.png" alt="">
-                            </figure>
-                            <div class="overlay">
-                                <div class="text">
-                                    <h1>TITRE</h1>
-                                    <hr class="separation">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rex_client">
-                            <figure class="superposition">
-                                <img src="../img/site_bfmtv.png" alt="">
-                                <img src="../img/logo_bfm.png" alt="">
-                            </figure>
-                            <div class="overlay">
-                                <div class="text">
-                                    <h1>TITRE</h1>
-                                    <hr class="separation">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="column">
-                        <div class="rex_client">
-                            <figure class="superposition">
-                                <img src="../img/app_linkedin.png" alt="">
-                                <img src="../img/logo_linkedin.png" alt="">
-                            </figure>
-                            <div class="overlay">
-                                <div class="text">
-                                    <h1>TITRE</h1>
-                                    <hr class="separation">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rex_client">
-                            <figure class="superposition">
-                                <img src="../img/site_bfmtv.png" alt="">
-                                <img src="../img/logo_bfm.png" alt="">
-                            </figure>
-                            <div class="overlay">
-                                <div class="text">
-                                    <h1>TITRE</h1>
-                                    <hr class="separation">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="rex_client">
+                        <p id="rex1_p"></p>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="rex_client_tit">
+                        <h1 id="rex2_tit"></h1>
+                        <hr class="separation">
+                    </div>
+                    <div class="rex_client_img">
+                        <figure class="superposition">
+                            <img src="../img/site_bfmtv.webp" alt="">
+                            <img src="../img/logo_bfm.webp" alt="">
+                        </figure>
+                    </div>
+                    <div class="rex_client">
+                        <p id="rex2_p"></p>
                     </div>
                 </div>
             </div>
+
+            <div id="portfolio_entrep">
+                <div class="portfolio">
+                    <div class="rex_client_intro">
+                        <div class="rex_client_tit">
+                            <h1 id="rex3_tit"></h1>
+                            <hr class="separation">
+                        </div>
+                        <div class="rex_client_img">
+                            <figure class="superposition">
+                                <img src="../img/site_bfmtv.webp" alt="">
+                                <img src="../img/logo_bfm.webp" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="rex_client">
+                        <p id="rex3_p"></p>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="rex_client_tit">
+                        <h1 id="rex4_tit"></h1>
+                        <hr class="separation">
+                    </div>
+                    <div class="rex_client_img">
+                        <figure class="superposition">
+                            <img src="../img/site_bfmtv.webp" alt="">
+                            <img src="../img/logo_bfm.webp" alt="">
+                        </figure>
+                    </div>
+                    <div class="rex_client">
+                        <p id="rex4_p"></p>
+                    </div>
+                </div>
+            </div>            
 
 
 
@@ -163,12 +146,10 @@
             </footer>
 
 
-
         <!-- RETOUR HAUT DE PAGE -->
             <div class="retour_haut">
                 <button onclick="topFunction()" id="myBtn"><i class="fas fa-chevron-circle-up"></i></button>
             </div>
-
 
 
         <!-- FEUILLES DE JAVASCRIPT (SCRIPT) -->
@@ -180,7 +161,6 @@
         
         <!-- FEUILLES DE JSON (SCRIPT) -->
             <!-- Script principal pour modification du texte de la page -->    
-                <script src="../json/donnee.json"></script> 
-                <script src="../json/APropos.json"></script> 
+                <script src="../json/Portfolio.json"></script> 
     </body>
 </html>

@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Icons -->
-        <link rel="icon" href="../img/icon_logo.webp">
+        <link rel="icon" href="../img/icon.webp">
 
     </head>
     
@@ -104,7 +104,33 @@
             
 
         <!-- CREATION D'UN NOUVEAU COMMENTAIRE -->
-            <form action="#" id="new-comment">
+        <div id="new_comment">
+            <div class="button_close">
+                <button class="comment" onclick="document.getElementById('id01').style.display='block'">
+                    <i class="far fa-edit"></i>
+                    Rédiger un avis
+                </button>
+            </div>
+            
+            <div id="id01" class="ajout_avis">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="avis">
+                    <h3 class="titre_avis">REDIGER UN AVIS</h3>
+                    <input type="text" id="comment_nom" name="Nom" placeholder="NOM PRENOM" />
+                    <input type="email" id="comment_titre" name="Titre avis" placeholder="TITRE COMMENTAIRE" />
+                    <textarea id="comment" name="Commentaire" placeholder="COMMENTAIRE"></textarea>
+                    <div></div>
+                    <input class="form_bouton" type="submit" name="comment_envoi" value="ENVOYER" />	
+
+                </form>
+            </div>
+        </div>  
+        
+        
+        
+        
+        
+            <!--<form action="#" id="new-comment">
                 <div class="mb-3 d-flex align-items-center">
                     <label for="nom" class="form-label me-2">Prénom Nom</label>
                     <input type="text" class="form-control" id="nom" name="nom">
@@ -123,7 +149,7 @@
                 <div class="mb-3">
                     <input type="submit" class="btn btn-primary" value="Envoyer">
                 </div>
-            </form>
+            </form>-->
 
 
 
