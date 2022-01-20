@@ -86,8 +86,8 @@ function addBlog(blog_div_photo_img, blog_div_com_user, blog_div_com_time, blog_
 	new_blog_div_com_like_nb.innerText = '0'
 }
 
-
-addBlog('../img/chatbot.webp', 'Petit JEAN', 'Jeudi 20 janvier 2022 - 21:105', 'External Intervenant', 'Je suis le meilleur!!!')
+// Exemple 
+// addBlog('../img/chatbot.webp', 'Petit JEAN', 'Jeudi 20 janvier 2022 - 21:105', 'External Intervenant', 'Je suis le meilleur!!!')
 
 
 // ENOIE LE FORMULAIRE
@@ -97,24 +97,26 @@ bt_envoyer.setAttribute('type', 'button') /* Changement du type du bouton 'Envoy
 bt_envoyer.onclick = function() {
     /* Récupération nom et commentaire saisie dans la zone de donnée */
     const nom_comment = document.querySelector("#ajout_post input.comment_nom").value
+    const image_comment = document.querySelector("#ajout_post input.comment_img").value
     const titre_comment = document.querySelector("#ajout_post input.comment_titre").value
     const desc_comment = document.querySelector("#ajout_post textarea.comment_desc").value
     /* Définition de la date */
     let date_com = new Date()
     let date_com_jour = date_com.toLocaleDateString('fr-FR', {year: 'numeric', month: 'long', day: 'numeric'})
-    let date_com_heure = date_com.toLocaleTimeString('fr-FR', {hour: 'numeric', minute: 'numeric', second: 'numeric'})
+    let date_com_heure = date_com.toLocaleTimeString('fr-FR', {hour: 'numeric', minsute: 'numeric', second: 'numeric'})
     let date_com_total = date_com_jour + ' - ' + date_com_heure
     /* Ajout du commentaire */   
-    addBlog('',nom_comment, date_com_total, titre_comment,desc_comment)
+    addBlog(image_comment, nom_comment, date_com_total, titre_comment,desc_comment)
     /* Remise à zéro du formulaire */
     document.querySelector("#ajout_post input.comment_nom").value = ''
+    document.querySelector("#ajout_post input.comment_img").value = ''
 	document.querySelector("#ajout_post input.comment_titre").value = ''
     document.querySelector("#ajout_post textarea.comment_desc").value = ''
 	modal.style.display = "none";
 
 }
 
-AUGMENTER LE NOMBRE AFFICHE SUR LE BOUTON LIKE
+// AUGMENTER LE NOMBRE AFFICHE SUR LE BOUTON LIKE
 var bt_like = document.getElementById('like_post')
 var num_bt_like = bt_like.querySelector('span')
 var like_fait; /* Création d'une variable like_fait valeur indéfinie */
