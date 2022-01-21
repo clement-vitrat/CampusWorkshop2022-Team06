@@ -101,7 +101,7 @@ Pour réaliser un belle interface utilisateur et un joli rendu, nous avons mis e
 ## Conclusion.
 Ces deux semaines de WorkShop Tech nous on permis de découvrir le travail en groupe avec un but précis à réaliser. De plus, nous avons tous appris de nouvelles choses, de nouveaux langages mais surtout appris des un et des autres.
 
-Merci à *Campus Academy* et *Digital Consultant* pour ce challence et ce projet.
+Merci à *Campus Academy* et *Digital Consultant* pour ce challenge et ce projet.
 
-Merci aux anonceurs pour nous avoir accompagné pendant ces deux semaines.
+Merci aux annonceurs pour nous avoir accompagné pendant ces deux semaines.
 
