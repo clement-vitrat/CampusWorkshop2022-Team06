@@ -47,6 +47,7 @@ Pour créer notre site internet, nous avons du utiliser plusieurs logiciels :
 * *Moteur de recherche* :
     * __Chrome Google__
     * __Microsoft Edge__
+    * __Opera GX__
 * *Réalisation des Wireframes* :
     * __Figma__
     * __Axure__
