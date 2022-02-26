@@ -3,7 +3,7 @@
 ## Qui sommes-nous ?
 Clément VITRAT, Bastien DUCIEL, Lucas GAUSSEN, trois étudiants en Bachelor 1 Info Tech à Aix-en-Provence. Pendant deux semaines (10 janvier 2022 - 21 janvier 2022), nous avons participer à un challenge, en lien avec les compétences associées à notre cursus. Nous avons réaliser l'intégralité d'un site internet pour une entreprise "Digital Consultant" (DC).
 
-Voici le lien de notre site [Digital Consultant](https://campusteam06.github.io/CampusWorkshop2022-Team06/).
+Voici le lien de notre site [Digital Consultant](https://clement-vitrat.github.io/CampusWorkshop2022-Team06/).
 
 -------------------------
 -------------------------
